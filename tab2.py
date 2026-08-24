@@ -1887,10 +1887,8 @@ def render_policy_signal_market_reaction(
 
     # --------------------------------------------------------
     # 1. GENERAL POLICY EVENTS
-    #
-    # IMPORTANT
-    # 상단 selected_member와 연결하지 않는다.
-    # 전체 Policy Event 중 FOMC를 제외한 이벤트를 사용한다.
+    # selected_member의 일반 발언 이벤트만 표시한다.
+    # FOMC 이벤트는 아래 FOMC Calendar에서 별도로 표시한다.
     # --------------------------------------------------------
 
     daily_events = [
@@ -1903,6 +1901,13 @@ def render_policy_signal_market_reaction(
             )
         ).upper()
         != "USMPD_FOMC"
+        and str(
+            event.get(
+                "speaker",
+                ""
+            )
+        ).strip().lower()
+        == str(selected_member or "").strip().lower()
     ]
 
     daily_events = sorted(
