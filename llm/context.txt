@@ -1,0 +1,138 @@
+"""
+WorldCentralBanks 아이디어를 단순화한 맥락 판정 모듈.
+
+기존 stance.py를 수정하지 않고 앞단/보조 판정기로 사용할 수 있다.
+
+핵심:
+1) monetary-policy relevance
+2) Hawkish / Dovish / Neutral
+3) forward-looking 여부
+4) intensity 0~1
+
+이 모듈은 특정 LLM SDK에 종속되지 않는다.
+현재 프로젝트의 LLM 호출 함수를 llm_call(prompt) 형태로 넘기면 된다.
+"""
+
+from __future__ import annotations
+
+from dataclasses import dataclass
+import json
+import re
+from typing import Callable, Any
+
+
+@dataclass
+class ContextResult:
+    relevant: bool
+    direction: str
+    forward_looking: bool
+    intensity: float
+    score: float
+    reason: str
+
+
+SYSTEM_RULES = """
+You classify Federal Reserve communication.
+
+Judge the SPEAKER'S monetary-policy stance, not the journalist's tone,
+market reaction, or surrounding narrative.
+
+Step 1: Relevant?
+Relevant only when the passage conveys information about monetary policy,
+inflation/employment risks as they relate to policy, rates, balance sheet,
+policy restraint, easing/tightening, or conditions for future action.
+
+Step 2: Direction.
+HAWKISH: favors tighter policy, higher-for-longer, delayed easing, or
+emphasizes upside inflation risks requiring restraint.
+DOVISH: favors easing, lower rates, less restraint, or emphasizes downside
+growth/employment risks that support easing.
+NEUTRAL: relevant but does not clearly favor either direction.
+
+Step 3: Forward-looking.
+True when the speaker expresses expectations, conditions, intentions,
+risks, or likely future policy implications. Pure descriptions of past/current
+data are False unless tied to future policy.
+
+Step 4: Intensity.
+0.0 = essentially neutral/weak signal.
+1.0 = explicit and strong policy signal.
+
+Return JSON only:
+{
+  "relevant": true,
+  "direction": "HAWKISH|DOVISH|NEUTRAL",
+  "forward_looking": true,
+  "intensity": 0.0,
+  "reason": "short reason"
+}
+""".strip()
+
+
+def build_context_prompt(text: str, speaker: str = "") -> str:
+    who = speaker.strip() or "Unknown Fed speaker"
+    return (
+        SYSTEM_RULES
+        + "\n\nSPEAKER: "
+        + who
+        + "\nPASSAGE:\n"
+        + text.strip()
+    )
+
+
+def _extract_json(raw: str) -> dict[str, Any]:
+    raw = raw.strip()
+    try:
+        return json.loads(raw)
+    except json.JSONDecodeError:
+        match = re.search(r"\{.*\}", raw, flags=re.DOTALL)
+        if not match:
+            raise ValueError("LLM response does not contain JSON.")
+        return json.loads(match.group(0))
+
+
+def _score(direction: str, intensity: float, relevant: bool) -> float:
+    if not relevant:
+        return 0.0
+
+    direction = direction.upper()
+    intensity = max(0.0, min(1.0, float(intensity)))
+
+    if direction == "HAWKISH":
+        return intensity
+    if direction == "DOVISH":
+        return -intensity
+    return 0.0
+
+
+def analyze_context(
+    text: str,
+    llm_call: Callable[[str], str],
+    speaker: str = "",
+) -> ContextResult:
+    """
+    llm_call 예:
+        def llm_call(prompt: str) -> str:
+            ...
+            return '{"relevant": true, ...}'
+    """
+    raw = llm_call(build_context_prompt(text, speaker))
+    data = _extract_json(raw)
+
+    relevant = bool(data.get("relevant", False))
+    direction = str(data.get("direction", "NEUTRAL")).upper()
+    if direction not in {"HAWKISH", "DOVISH", "NEUTRAL"}:
+        direction = "NEUTRAL"
+
+    forward = bool(data.get("forward_looking", False))
+    intensity = float(data.get("intensity", 0.0) or 0.0)
+    intensity = max(0.0, min(1.0, intensity))
+
+    return ContextResult(
+        relevant=relevant,
+        direction=direction,
+        forward_looking=forward,
+        intensity=intensity,
+        score=_score(direction, intensity, relevant),
+        reason=str(data.get("reason", "")).strip(),
+    )

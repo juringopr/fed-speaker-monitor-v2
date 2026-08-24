@@ -1,0 +1,32 @@
+{
+  "news_alberto_musalem_1492afa36e3e||news_alberto_musalem_dc720687f1fa": {
+    "result": "SAME_EVENT",
+    "confidence": "HIGH",
+    "reason": "Both items report the same remark by St. Louis Fed President Alberto Musalem to the Financial Times on 2026-08-01 — that a U.S. Treasury selloff signals the Fed must bolster its inflation-fighting credibility with interest-rate increases. Same speaker, same date, same quoted point, reported by multiple outlets."
+  },
+  "news_neel_kashkari_a67cdde53c34||news_neel_kashkari_ede6d81447a8": {
+    "result": "SAME_EVENT",
+    "confidence": "HIGH",
+    "reason": "Both news pieces (same date) report Minneapolis Fed President Neel Kashkari’s dissent around the July 28–29 FOMC meeting—arguing the Fed should have raised rates and warning about sticky inflation—so they describe the same underlying policy event (the post‑meeting dissent/remarks)."
+  },
+  "news_beth_hammack_a67cdde53c34||news_beth_hammack_d610cff7faa6": {
+    "result": "SAME_EVENT",
+    "confidence": "HIGH",
+    "reason": "Both items refer to the same Fed episode on 2026-07-31: Beth Hammack’s dissenting vote in the recent FOMC action and her hawkish comments about tackling sticky inflation. Same speaker, same date, same policy action (voted to raise rates)."
+  },
+  "news_kevin_warsh_7caadb418b14||news_kevin_warsh_ea6b04c9d931": {
+    "result": "SAME_EVENT",
+    "confidence": "HIGH",
+    "reason": "Both signals refer to Kevin Warsh’s debut press conference/first policy meeting on June 18, 2026, reporting the same hawkish messaging (won’t tolerate high inflation / vowed to restore price stability) and market reaction—clearly the same underlying event."
+  },
+  "news_kevin_warsh_249d3be3fc45||news_kevin_warsh_ee925e7c755a": {
+    "result": "SAME_EVENT",
+    "confidence": "HIGH",
+    "reason": "Both items report on Kevin Warsh’s remarks on 2026-06-17 following the Fed decision—one describing his vow to restore price stability after officials left rates unchanged and signaled hikes, the other describing his aggressive stance in his (first) press conference the same day. They refer to the same Fed decision/press-conference event."
+  },
+  "beth_hammack_e9702e8bdf_001||news_beth_hammack_d610cff7faa6": {
+    "result": "SAME_EVENT",
+    "confidence": "HIGH",
+    "reason": "Both items refer to the same July 28–29 FOMC vote and Beth Hammack’s July 31 statement that she dissented and voted for a rate hike; the Reuters piece is reporting her official statement."
+  }
+}

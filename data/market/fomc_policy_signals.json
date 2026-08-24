@@ -1,0 +1,134 @@
+[
+  {
+    "date": "2026-01-28",
+    "event_type": "FOMC",
+    "statement_found": true,
+    "statement_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260128a.htm",
+    "comparison_date": "2025-12-10",
+    "stance": "HAWKISH",
+    "score": 0.4,
+    "policy_action": "HOLD",
+    "decision": "Maintained the target range for the federal funds rate at 3-1/2 to 3-3/4 percent",
+    "target_rate": "3.50-3.75%",
+    "statement_change": "MORE_HAWKISH",
+    "dissent": "DOVISH",
+    "policy_drivers": [
+      "Decision to maintain the target range without a cut after a prior cut",
+      "Language emphasizing careful assessment of incoming data and balance of risks",
+      "Statement that the Committee is strongly committed to returning inflation to 2 percent",
+      "Dissenters preferred a rate cut, indicating some dovish views but minority",
+      "Removal of explicit mention of downside risks to employment compared to prior statement"
+    ],
+    "key_evidence": "The Committee decided to maintain the target range for the federal funds rate at 3-1/2 to 3-3/4 percent. In considering the extent and timing of additional adjustments... the Committee will carefully assess incoming data, the evolving outlook, and the balance of risks.",
+    "reason": "The Committee held rates steady (HOLD) but signaled a hawkish bias by not cutting after a prior cut and emphasizing vigilance on inflation and risks, while dissenters preferred easing."
+  },
+  {
+    "date": "2026-03-18",
+    "event_type": "FOMC",
+    "statement_found": true,
+    "statement_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260318a.htm",
+    "comparison_date": "2026-01-28",
+    "stance": "NEUTRAL",
+    "score": 0.0,
+    "policy_action": "HOLD",
+    "decision": "Maintain target range for federal funds rate at 3.5 to 3.75 percent",
+    "target_rate": "3.5 to 3.75 percent",
+    "statement_change": "UNCHANGED",
+    "dissent": "DOVISH",
+    "policy_drivers": [
+      "Decision to maintain the target range for the federal funds rate at 3.5 to 3.75 percent",
+      "Language indicating the Committee will carefully assess incoming data and balance of risks before adjusting policy",
+      "Statement that the Committee is strongly committed to supporting maximum employment and returning inflation to 2 percent",
+      "No change in forward guidance or reaction function compared to previous statement",
+      "Dissent by one member preferring a 0.25 percentage point rate cut"
+    ],
+    "key_evidence": "The Committee decided to maintain the target range for the federal funds rate at 3½ to 3¾ percent. In considering the extent and timing of additional adjustments... the Committee will carefully assess incoming data, the evolving outlook, and the balance of risks.",
+    "reason": "The Committee held rates steady, signaling no immediate tightening or easing, and maintained balanced language about future policy, resulting in a neutral stance despite a dissent favoring easing."
+  },
+  {
+    "date": "2026-04-29",
+    "event_type": "FOMC",
+    "statement_found": true,
+    "statement_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260429a.htm",
+    "comparison_date": "2026-03-18",
+    "stance": "HAWKISH",
+    "score": 0.4,
+    "policy_action": "HOLD",
+    "decision": "Maintained the target range for the federal funds rate at 3½ to 3¾ percent",
+    "target_rate": "3.5-3.75%",
+    "statement_change": "MORE_HAWKISH",
+    "dissent": "MIXED",
+    "policy_drivers": [
+      "Decision to maintain the target range without easing bias despite some dissent",
+      "Removal of easing bias from the statement as indicated by dissenters opposing easing language",
+      "Commitment to carefully assess incoming data and balance of risks with no explicit indication of imminent easing",
+      "Strong commitment to returning inflation to 2 percent objective",
+      "Preparedness to adjust policy if risks emerge that could impede goals, implying vigilance"
+    ],
+    "key_evidence": "The Committee decided to maintain the target range for the federal funds rate at 3½ to 3¾ percent. ... dissenters ... did not support inclusion of an easing bias in the statement at this time.",
+    "reason": "The Committee held rates steady (HOLD) but removed easing bias and emphasized vigilance and commitment to inflation goals, signaling a hawkish tilt despite no rate change."
+  },
+  {
+    "date": "2026-06-17",
+    "event_type": "FOMC",
+    "statement_found": true,
+    "statement_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617a.htm",
+    "comparison_date": "2026-04-29",
+    "stance": "NEUTRAL",
+    "score": 0.0,
+    "policy_action": "HOLD",
+    "decision": "Maintain target range for federal funds rate at 3.5 to 3.75 percent",
+    "target_rate": "3.5-3.75%",
+    "statement_change": "MORE_HAWKISH",
+    "dissent": "NONE",
+    "policy_drivers": [
+      "Decision to maintain target range unchanged",
+      "Removal of previous easing bias language",
+      "Reaffirmation of commitment to price stability",
+      "No forward guidance indicating future easing or tightening",
+      "Unanimous vote with no dissent"
+    ],
+    "key_evidence": "The Committee decided to maintain the target range for the federal funds rate at 3-1/2 to 3-3/4 percent, in support of the Federal Reserve's dual mandate.",
+    "reason": "The Committee held rates steady but removed prior easing bias and emphasized commitment to price stability, signaling a balanced stance without clear hawkish or dovish bias."
+  },
+  {
+    "date": "2026-07-29",
+    "event_type": "FOMC",
+    "statement_found": true,
+    "statement_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm",
+    "comparison_date": "2026-06-17",
+    "stance": "HAWKISH",
+    "score": 0.4,
+    "policy_action": "HOLD",
+    "decision": "Maintained the target range for the federal funds rate at 3-1/2 to 3-3/4 percent",
+    "target_rate": "3.5-3.75%",
+    "statement_change": "MORE_HAWKISH",
+    "dissent": "HAWKISH",
+    "policy_drivers": [
+      "9-3 vote with three dissenters preferring a 25 basis point rate hike",
+      "Reaffirmation of commitment to price stability despite elevated inflation",
+      "No change in target rate but presence of dissenters wanting tightening",
+      "Language emphasizing inflation remains elevated and the Committee's resolve to deliver price stability"
+    ],
+    "key_evidence": "Voting against the monetary policy action were Beth M. Hammack, Neel Kashkari, and Lorie K. Logan, who preferred to raise the target range for the federal funds rate by 1/4 percentage point at this meeting.",
+    "reason": "The Committee held rates steady (HOLD) but the presence of dissenters favoring a hike and the firm language on inflation and price stability indicate a hawkish bias toward maintaining restrictive policy longer."
+  },
+  {
+    "date": "2026-09-16",
+    "event_type": "FOMC",
+    "statement_found": false,
+    "statement_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm"
+  },
+  {
+    "date": "2026-10-28",
+    "event_type": "FOMC",
+    "statement_found": false,
+    "statement_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm"
+  },
+  {
+    "date": "2026-12-09",
+    "event_type": "FOMC",
+    "statement_found": false,
+    "statement_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261209a.htm"
+  }
+]

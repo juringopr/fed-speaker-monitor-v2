@@ -1,0 +1,82 @@
+[
+  {
+    "event_type": "FOMC",
+    "year": 2026,
+    "meeting_start": "2026-01-27",
+    "meeting_end": "2026-01-28",
+    "decision_date": "2026-01-28",
+    "date": "2026-01-28",
+    "has_sep": false,
+    "status": "PAST"
+  },
+  {
+    "event_type": "FOMC",
+    "year": 2026,
+    "meeting_start": "2026-03-17",
+    "meeting_end": "2026-03-18",
+    "decision_date": "2026-03-18",
+    "date": "2026-03-18",
+    "has_sep": true,
+    "status": "PAST"
+  },
+  {
+    "event_type": "FOMC",
+    "year": 2026,
+    "meeting_start": "2026-04-28",
+    "meeting_end": "2026-04-29",
+    "decision_date": "2026-04-29",
+    "date": "2026-04-29",
+    "has_sep": false,
+    "status": "PAST"
+  },
+  {
+    "event_type": "FOMC",
+    "year": 2026,
+    "meeting_start": "2026-06-16",
+    "meeting_end": "2026-06-17",
+    "decision_date": "2026-06-17",
+    "date": "2026-06-17",
+    "has_sep": true,
+    "status": "PAST"
+  },
+  {
+    "event_type": "FOMC",
+    "year": 2026,
+    "meeting_start": "2026-07-28",
+    "meeting_end": "2026-07-29",
+    "decision_date": "2026-07-29",
+    "date": "2026-07-29",
+    "has_sep": false,
+    "status": "PAST"
+  },
+  {
+    "event_type": "FOMC",
+    "year": 2026,
+    "meeting_start": "2026-09-15",
+    "meeting_end": "2026-09-16",
+    "decision_date": "2026-09-16",
+    "date": "2026-09-16",
+    "has_sep": true,
+    "status": "FUTURE"
+  },
+  {
+    "event_type": "FOMC",
+    "year": 2026,
+    "meeting_start": "2026-10-27",
+    "meeting_end": "2026-10-28",
+    "decision_date": "2026-10-28",
+    "date": "2026-10-28",
+    "has_sep": false,
+    "status": "FUTURE"
+  },
+  {
+    "event_type": "FOMC",
+    "year": 2026,
+    "meeting_start": "2026-12-08",
+    "meeting_end": "2026-12-09",
+    "decision_date": "2026-12-09",
+    "date": "2026-12-09",
+    "has_sep": true,
+    "status": "FUTURE"
+  }
+]

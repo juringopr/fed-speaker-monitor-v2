@@ -1,0 +1,153 @@
+{
+  "source": "Reuters",
+  "source_url": "https://graphics.thomsonreuters.com/testfiles/2025/1wtMSweut5YR/",
+  "reuters_updated_at": "2026-08-11T15:30:00.000Z",
+  "collected_at": "2026-08-24T01:46:15.712807+00:00",
+  "member_count": 18,
+  "members": {
+    "Michelle Bowman": {
+      "stance": "DOVISH",
+      "title": "Fed Vice Chair of Supervision",
+      "voting_status": "Permanent Voter",
+      "quote": "“The more persistent higher oil prices are—or if we start to see broader effects of higher energy prices on PCE inflation—the more likely I will consider shifting my approach to thinking about the balance of risks.”",
+      "quote_date": "May 29, 2026",
+      "article_url": "https://www.reuters.com/business/feds-bowman-says-extended-energy-shock-could-drive-policy-outlook-shift-2026-05-29/"
+    },
+    "Jerome Powell": {
+      "stance": "CENTRIST",
+      "title": "Governor",
+      "voting_status": "Permanent Voter",
+      "quote": "“We’re right kind of at the high end of neutral or perhaps mildly restrictive. The labor market shows more and more signs of stability, whereas inflation is kind of misbehaving. And so maybe a little bit of restriction or the high end of neutral is just the right place to be.”",
+      "quote_date": "April 29, 2026",
+      "article_url": "https://www.reuters.com/business/fed-likely-hold-rates-steady-what-may-be-last-meeting-powell-era-2026-04-29/"
+    },
+    "John Williams": {
+      "stance": "CENTRIST",
+      "title": "New York Fed President",
+      "voting_status": "Permanent Voter",
+      "quote": "“My forecast personally is for inflation to come down in ⁠the second half of this year and come down further next year...if ​the economy is not on a trajectory that will bring inflation back down to 2% ... it would absolutely be appropriate to act.”",
+      "quote_date": "August 3, 2026",
+      "article_url": "https://www.reuters.com/business/feds-williams-expects-inflation-ease-says-fed-will-act-if-it-doesnt-2026-08-03/"
+    },
+    "Philip Jefferson": {
+      "stance": "CENTRIST",
+      "title": "Vice Chair",
+      "voting_status": "Permanent Voter",
+      "quote": "“This policy stance should continue to support the labor market while allowing inflation to resume its decline toward our 2% target.…In a scenario where actual ​inflation does not start to cool down soon, I believe that it could ⁠be appropriate to reconsider our current policy stance to ensure we fulfill our commitment to deliver price ​stability.”",
+      "quote_date": "July 16, 2026",
+      "article_url": "https://www.reuters.com/business/fed-may-need-hike-rates-if-inflation-does-not-ease-soon-jefferson-says-2026-07-16/"
+    },
+    "Michael Barr": {
+      "stance": "CENTRIST",
+      "title": "Governor",
+      "voting_status": "Permanent Voter",
+      "quote": "“I am particularly concerned that yet another price shock could increase longer-term inflation expectations.”",
+      "quote_date": "March 26, 2026",
+      "article_url": "https://www.reuters.com/business/energy/feds-faith-anchored-inflation-expectations-may-be-coming-under-stress-2026-03-30/"
+    },
+    "Chris Waller": {
+      "stance": "CENTRIST",
+      "title": "Governor",
+      "voting_status": "Permanent Voter",
+      "quote": "“I will need to see several months of lower readings to feel that inflation is moving in the right direction.”",
+      "quote_date": "July 13, 2026",
+      "article_url": "https://www.reuters.com/markets/us/feds-waller-says-higher-rates-possibly-needed-near-term-2026-07-13/"
+    },
+    "Anna Paulson": {
+      "stance": "CENTRIST",
+      "title": "Philadelphia Fed President",
+      "voting_status": "2026 Voter",
+      "quote": "“If policy is appropriately calibrated, I would expect to see growing signs that inflation is coming down…. If instead underlying inflation remains stubbornly elevated, the passage of time without progress would itself signal that more restrictive policy is needed.”",
+      "quote_date": "August 4 2026",
+      "article_url": "https://www.reuters.com/business/feds-paulson-keeps-open-mind-rate-policy-outlook-amid-high-inflation-2026-08-04/"
+    },
+    "Mary Daly": {
+      "stance": "CENTRIST",
+      "title": "San Francisco Fed President",
+      "voting_status": "2027 Voter",
+      "quote": "“I also hear a lot about, should we be making preemptive cuts, or hikes rather, and I don't see a lot of evidence that that's an urgent problem to solve….Policy is in a good place.”",
+      "quote_date": "August 20, 2026",
+      "article_url": "https://www.reuters.com/business/feds-daly-tells-bloomberg-focused-mandates-amid-treasury-actions-2026-08-20/\\"
+    },
+    "Kevin Warsh": {
+      "stance": "HAWKISH",
+      "title": "Chairman",
+      "voting_status": "Permanent Voter",
+      "quote": "“The path to central bank heaven requires delivering on our remit. These days that means delivering on price stability. I wouldn't measure that path in 42 days, or any one particular meeting.”",
+      "quote_date": "July 29, 2026",
+      "article_url": "https://www.reuters.com/markets/us/uncertainty-creeps-into-feds-rate-decision-warsh-keeps-his-cards-hidden-2026-07-29/"
+    },
+    "Lisa Cook": {
+      "stance": "HAWKISH",
+      "title": "Governor",
+      "voting_status": "Permanent Voter",
+      "quote": "“I would support an ​increase, if it becomes necessary, to bring inflation down. It may not.”",
+      "quote_date": "August 5, 2026",
+      "article_url": "https://www.reuters.com/business/feds-cook-says-ready-raise-rates-if-inflation-doesnt-start-easing-2026-08-05/"
+    },
+    "Thomas Barkin": {
+      "stance": "HAWKISH",
+      "title": "Richmond Fed President",
+      "voting_status": "2027 Voter",
+      "quote": "The July jobs report was \"very consistent with how I've been seeing the labor market, which is: it's not loose, it's not tight.”",
+      "quote_date": "August 7, 2026",
+      "article_url": "https://www.reuters.com/business/us-rate-futures-cut-chances-september-rate-hike-after-jobs-data-2026-08-07/"
+    },
+    "Alberto Musalem": {
+      "stance": "HAWKISH",
+      "title": "St. Louis Fed President",
+      "voting_status": "2028 Voter",
+      "quote": "“More gradual interest rate increases are preferable, better, less disruptive than later, potentially larger, potentially more abrupt increases.”",
+      "quote_date": "August 20, 2026",
+      "article_url": "https://www.reuters.com/markets/us/feds-musalem-says-wont-prejudge-rate-call-view-september-fomc-cnbc-2026-08-20/"
+    },
+    "Neel Kashkari": {
+      "stance": "HAWK",
+      "title": "Minneapolis Fed President",
+      "voting_status": "2026 Voter",
+      "quote": "“My goal is not to slow the economy down….The goal is to ⁠get inflation ​back down to our 2% target.”",
+      "quote_date": "August 5, 2026",
+      "article_url": "https://www.reuters.com/business/feds-kashkari-communicating-feds-reaction-function-is-helpful-2026-08-05/"
+    },
+    "Lorie Logan": {
+      "stance": "HAWK",
+      "title": "Dallas Fed President",
+      "voting_status": "2026 Voter",
+      "quote": "“Without any policy restraint, inflation will likely continue to trend above target until there's an unanticipated shock.”",
+      "quote_date": "July 31, 2026",
+      "article_url": "https://www.reuters.com/business/fed-chief-warsh-faces-hard-choice-inflation-after-bond-markets-red-flag-2026-07-31/"
+    },
+    "Beth Hammack": {
+      "stance": "HAWK",
+      "title": "Cleveland Fed President",
+      "voting_status": "2026 Voter",
+      "quote": "“One 25-basis-point move probably doesn't do a whole lot for the economy, so it's probably some number of movements, but I don't want to prejudge what that number is going to be.”",
+      "quote_date": "August 10, 2026",
+      "article_url": "https://finance.yahoo.com/economy/policy/article/cleveland-feds-hammack-it-will-take-more-than-one-interest-rate-hike-to-bring-down-inflation-173530729.html?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAAM4x9ASnURdHZvDVt2Z3jrpJ50xHsKwJlGk5gIUXbS6W1-baA_0ZkQpEWJFct99QemuGYJugUCUE1prpgfjHbVcGNKQfHlbm__s7s2e8-dI7QCGNmJJm2cDyxX2mirVjYrbpsjyYh0ejkS0yndTWPEyApdGBoqGdITPptJVZZc0U"
+    },
+    "Austan Goolsbee": {
+      "stance": "HAWK",
+      "title": "Chicago Fed President",
+      "voting_status": "2027 Voter",
+      "quote": "\"I'm heartened by this CPI today but we need a lot more than one month to think that it is going well.”",
+      "quote_date": "July 14, 2026",
+      "article_url": "https://www.reuters.com/world/top-fed-officials-embrace-cooler-inflation-reading-clamor-more-2026-07-14/"
+    },
+    "Susan Collins": {
+      "stance": "HAWK",
+      "title": "Boston Fed President",
+      "voting_status": "2028 Voter",
+      "quote": "“While it is not in my most likely outlook, I could envision a scenario in which some policy tightening is needed to ensure that inflation returns durably to 2% in a timely manner.”",
+      "quote_date": "May 13, 2026",
+      "article_url": "https://www.reuters.com/markets/us/feds-collins-says-rate-hikes-may-be-needed-quell-inflation-2026-05-13/"
+    },
+    "Jeffrey Schmid": {
+      "stance": "HAWK",
+      "title": "Kansas City Fed President",
+      "voting_status": "2028 Voter",
+      "quote": "“I believe that bringing inflation down to the Fed’s 2% objective will require tighter policy.”",
+      "quote_date": "August 4, 2026",
+      "article_url": "https://www.reuters.com/world/feds-schmid-calls-tighter-monetary-policy-tamp-down-too-high-inflation-2026-08-05/"
+    }
+  }
+}
