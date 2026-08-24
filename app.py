@@ -1827,7 +1827,9 @@ with tab1:
         f"""
         <div class="fed-topline">
             <div>
-                <h1 class="fed-title">Current Fed Member Stance</h1>
+                <h1 class="fed-title" style="font-size:22px;">
+                    Current Fed Member Stance
+                </h1>
             </div>
             <div class="fed-mini-metrics">
                 Members&nbsp;&nbsp;<b>{len(summary)}</b>
