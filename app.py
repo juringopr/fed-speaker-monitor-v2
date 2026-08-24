@@ -1904,7 +1904,9 @@ with tab2:
     st.markdown(
         """
         <div class="fed-topline">
-            <div><h1 class="fed-title">Speaker Intelligence Dashboard</h1></div>
+            <div><h1 class="fed-title" style="font-size:22px;">
+    Speaker Intelligence Dashboard
+        </h1></div>
         </div>
         """,
         unsafe_allow_html=True,
