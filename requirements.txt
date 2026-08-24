@@ -1,0 +1,4 @@
+trafilatura>=2.1,<3
+# Optional validator:
+# transformers>=4.40
+# torch
