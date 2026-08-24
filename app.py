@@ -9,9 +9,16 @@ import pandas as pd
 import streamlit as st
 import altair as alt
 
-from fed_speaker_monitor_v2.tab2 import (
-    render_policy_signal_market_reaction,
-)
+try:
+    # 로컬: C:\juringo 에서 package 실행
+    from fed_speaker_monitor_v2.tab2 import (
+        render_policy_signal_market_reaction,
+    )
+except ModuleNotFoundError:
+    # Streamlit Cloud: repository root에서 app.py 실행
+    from tab2 import (
+        render_policy_signal_market_reaction,
+    )
 
 
 # ============================================================
