@@ -333,6 +333,103 @@ st.markdown(
     .intel-news-title { color: #263746; font-size: 0.88rem; font-weight: 700; line-height: 1.35; }
     .intel-news-score { color: #0c9aa6; font-size: 0.76rem; font-weight: 800; margin-top: 4px; }
     .intel-footnote { color: #8a97a6; font-size: 0.76rem; line-height: 1.5; margin-top: 8px; }
+    
+        @media (max-width: 768px) {
+
+        /* 전체 화면 */
+        .block-container {
+            padding-left: 0.8rem !important;
+            padding-right: 0.8rem !important;
+            padding-top: 1.2rem !important;
+            max-width: 100% !important;
+        }
+
+        /* 상단 제목 + metrics */
+        .fed-topline {
+            display: block !important;
+            width: 100% !important;
+        }
+
+        .fed-topline > div {
+            width: 100% !important;
+            min-width: 0 !important;
+        }
+
+        .fed-title {
+            width: 100% !important;
+            max-width: none !important;
+            min-width: 0 !important;
+            font-size: 20px !important;
+            line-height: 1.25 !important;
+            white-space: normal !important;
+            word-break: keep-all !important;
+            overflow-wrap: normal !important;
+        }
+
+        .fed-mini-metrics {
+            width: 100% !important;
+            margin-top: 10px !important;
+            font-size: 11px !important;
+            line-height: 1.5 !important;
+            white-space: normal !important;
+            text-align: left !important;
+        }
+
+        /* 설명 박스 */
+        .info-box {
+            font-size: 11px !important;
+            line-height: 1.5 !important;
+            padding: 10px 12px !important;
+            overflow-wrap: break-word !important;
+        }
+
+        /* Fed Member 테이블 */
+        .fed-table-wrap {
+            width: 100% !important;
+            overflow-x: auto !important;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .fed-table {
+            width: max-content !important;
+            min-width: 680px !important;
+            font-size: 10px !important;
+        }
+
+        .fed-table th {
+            font-size: 9px !important;
+            padding: 7px 8px !important;
+            white-space: nowrap !important;
+        }
+
+        .fed-table td {
+            font-size: 10px !important;
+            padding: 7px 8px !important;
+            white-space: nowrap !important;
+        }
+
+        /* Speaker Intelligence */
+        .intel-card {
+            min-height: auto !important;
+            padding: 14px !important;
+        }
+
+        /* Methodology */
+        .method-card {
+            min-height: auto !important;
+            padding: 14px !important;
+        }
+
+        .reference-row {
+            grid-template-columns: 1fr !important;
+            gap: 4px !important;
+        }
+
+        .reference-board {
+            padding: 14px !important;
+        }
+    }
+    
     </style>
     """,
     unsafe_allow_html=True,
