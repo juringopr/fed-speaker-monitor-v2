@@ -1828,7 +1828,7 @@ with tab1:
         <div class="fed-topline">
             <div>
                 <h1 class="fed-title" style="font-size:22px;">
-                    Current Fed Member Stance
+                    Base Fed Member Stance 기본 성향
                 </h1>
             </div>
             <div class="fed-mini-metrics">
@@ -1905,15 +1905,16 @@ with tab2:
         """
         <div class="fed-topline">
             <div><h1 class="fed-title" style="font-size:22px;">
-    Speaker Intelligence Dashboard
+    Current 연준 분석 Dashboard
         </h1></div>
         </div>
         """,
         unsafe_allow_html=True,
     )
     st.caption(
-        "최근 14일 뉴스 발언과 2026 월별 Official·News stance, "
-        "현재 Combined Score를 한 화면에서 확인합니다."
+        "Current = 현재 정책 성향  ·  "
+        "Monthly = 월별 성향 변화  ·  "
+        "LLM Signal = 개별 이벤트의 정책 신호"
     )
 
     available_members = [m for m in selected_members if m in MEMBER_INFO]
@@ -1977,7 +1978,7 @@ with tab2:
                     <div class="intel-role">{html.escape(role)}</div>
                     <div class="intel-kpi"><span class="intel-kpi-label">Official</span><span class="intel-kpi-value">{fmt(official_score)}</span></div>
                     <div class="intel-kpi"><span class="intel-kpi-label">News 30D</span><span class="intel-kpi-value">{fmt(news_score)}</span></div>
-                    <div class="intel-kpi"><span class="intel-kpi-label">Combined</span><span class="intel-kpi-value accent">{fmt(combined_score)}</span></div>
+                    <div class="intel-kpi"><span class="intel-kpi-label">Current combined</span><span class="intel-kpi-value">{fmt(combined_score)}</span></div>
                     <div class="intel-kpi"><span class="intel-kpi-label">Articles · 14D</span><span class="intel-kpi-value">{len(recent_news)}</span></div>
                     <div style="margin-top:16px">
                         <div class="intel-eyebrow">Current Stance</div>
@@ -2000,7 +2001,7 @@ with tab2:
             chart_data["MonthDate"] = pd.to_datetime(
                 chart_data["Month"] + "-01", errors="coerce"
             )
-            chart_data = chart_data.dropna(subset=["MonthDate"])
+            chart_data = chart_data.dropna(subset=["MonthDate", "Score"])
 
             if chart_data["Score"].notna().sum() == 0:
                 st.info("월별 stance score가 없습니다.")
@@ -2027,9 +2028,12 @@ with tab2:
                             "Series:N",
                             scale=alt.Scale(
                                 domain=["Official", "News", "Combined"],
-                                range=["#0aa3ad", "#f3aa3d", "#4f7df3"],
+                                range=["#9CA3AF", "#D1D5DB", "#0046FF"],
                             ),
-                            legend=alt.Legend(orient="top", title=None),
+                            legend=alt.Legend(
+                                orient="top",
+                                title=None,
+                            ),
                         ),
                         tooltip=[
                             alt.Tooltip("Month:N", title="Month"),
@@ -2045,63 +2049,182 @@ with tab2:
                 st.altair_chart(line + zero, use_container_width=True)
 
             st.markdown(
-                '<div class="intel-footnote">빈 월은 0점으로 채우지 않습니다. 해당 월에 실제 scoring 데이터가 없다는 뜻입니다.</div>',
+                """
+                <div class="intel-footnote">
+                   월별 공식 발언(Official)과 뉴스 신호(News)의 정책 성향 추이입니다.
+                    같은 월에 두 신호가 모두 존재하면 50:50으로 결합해 Combined를 산출하며,
+                    한쪽만 존재하면 해당 신호를 사용합니다. 데이터가 없는 월은 0점으로 간주하지 않습니다.
+                </div>
+                """,
                 unsafe_allow_html=True,
             )
 
         with news_col:
-            st.markdown('<div class="intel-section-title">Recent News Remarks · 14D</div>', unsafe_allow_html=True)
+            st.markdown(
+                '<div class="intel-section-title">Recent News Remarks · 14D</div>',
+                unsafe_allow_html=True,
+            )
+
             if recent_news.empty:
                 st.info("최근 14일 뉴스가 없습니다.")
+
             else:
                 if news_history_date_col:
-                    recent_news = recent_news.sort_values(news_history_date_col, ascending=False)
-
-                for _, row in recent_news.head(6).iterrows():
-                    published = row.get(news_history_date_col, "")
-                    if pd.notna(published) and hasattr(published, "strftime"):
-                        published = published.strftime("%b %d")
-                    source_value = str(row.get("source", ""))
-                    publisher = source_value.split("|", 1)[1] if "|" in source_value else source_value
-                    title = str(row.get("title", ""))
-                    score = pd.to_numeric(row.get("score"), errors="coerce")
-                    stance = normalize_label(row.get("stance", ""), score)
-                    score_text = "-" if pd.isna(score) else f"{float(score):+.2f}"
-                    st.markdown(
-                        f"""
-                        <div class="intel-news">
-                            <div class="intel-news-meta">{html.escape(str(published))} · {html.escape(publisher)}</div>
-                            <div class="intel-news-title">{html.escape(title)}</div>
-                            <div class="intel-news-score">{html.escape(stance)} · {score_text}</div>
-                        </div>
-                        """,
-                        unsafe_allow_html=True,
+                    recent_news = recent_news.sort_values(
+                        news_history_date_col,
+                        ascending=False,
                     )
 
-                with st.expander("View news details"):
-                    for _, row in recent_news.head(20).iterrows():
-                        published = row.get(news_history_date_col, "")
-                        if pd.notna(published) and hasattr(published, "strftime"):
-                            published = published.strftime("%Y-%m-%d")
-                        title = str(row.get("title", ""))
-                        st.markdown(f"**{published}** · {title}")
-                        summary_text = str(row.get("summary", ""))
-                        if summary_text:
-                            st.caption(summary_text[:700])
-                        evidence = str(row.get("evidence", ""))
-                        reasoning = str(row.get("reasoning", ""))
-                        if evidence:
-                            st.markdown(f"**Evidence**  \n{evidence}")
-                        if reasoning:
-                            st.markdown(f"**Reasoning**  \n{reasoning}")
-                        url = row.get("url", "")
-                        if url:
-                            st.markdown(f"[기사 열기]({url})")
-                        st.divider()
+                timeline_items = []
 
-render_policy_signal_market_reaction(
-    trend_member
-)
+                for _, row in recent_news.head(5).iterrows():
+                    published = row.get(
+                        news_history_date_col,
+                        "",
+                    )
+
+                    if (
+                        pd.notna(published)
+                        and hasattr(published, "strftime")
+                    ):
+                        published = published.strftime("%b %d").upper()
+
+                    source_value = str(
+                        row.get("source", "")
+                    )
+
+                    publisher = (
+                        source_value.split("|", 1)[1]
+                        if "|" in source_value
+                        else source_value
+                    )
+
+                    title = str(
+                        row.get("title", "")
+                    )
+
+                    score = pd.to_numeric(
+                        row.get("score"),
+                        errors="coerce",
+                    )
+
+                    stance = normalize_label(
+                        row.get("stance", ""),
+                        score,
+                    )
+
+                    score_text = (
+                        "-"
+                        if pd.isna(score)
+                        else f"{float(score):+.2f}"
+                    )
+
+                    timeline_items.append(
+                        '<div style="position:relative;padding:0 4px 14px 18px;">'
+                        '<span style="position:absolute;left:-4px;top:5px;'
+                        'width:7px;height:7px;border-radius:50%;'
+                        'background:#4b5563;border:2px solid #ffffff;'
+                        'box-sizing:content-box;z-index:2;"></span>'
+                        '<div style="font-size:10px;line-height:1.25;'
+                        'color:#8a939d;margin-bottom:4px;">'
+                        f'{html.escape(str(published))}&nbsp;&nbsp;'
+                        f'{html.escape(stance)}&nbsp;{html.escape(score_text)}'
+                        '</div>'
+                        '<div style="font-size:12px;line-height:1.35;'
+                        'font-weight:600;color:#182230;margin-bottom:3px;'
+                        'word-break:break-word;">'
+                        f'{html.escape(title)}'
+                        '</div>'
+                        '<div style="font-size:9px;line-height:1.2;color:#a0a7af;">'
+                        f'{html.escape(publisher)}'
+                        '</div>'
+                        '</div>'
+                    )
+
+                timeline_html = (
+                    '<div style="border:1px solid #d9dee5;border-radius:14px;'
+                    'background:#ffffff;padding:14px 12px 4px 14px;'
+                    'box-sizing:border-box;width:100%;">'
+                    '<div style="position:relative;margin-left:5px;">'
+                    '<div style="position:absolute;left:0;top:7px;bottom:18px;'
+                    'width:1px;background:#d8dde3;"></div>'
+                    + "".join(timeline_items)
+                    + '</div></div>'
+                )
+
+                st.markdown(
+                    timeline_html,
+                    unsafe_allow_html=True,
+                )
+
+                with st.expander(
+                    f"View all {len(recent_news)} remarks"
+                ):
+                    with st.container(height=420):
+                        for _, row in recent_news.head(20).iterrows():
+
+                            published = row.get(
+                                news_history_date_col,
+                                "",
+                            )
+
+                            if (
+                                pd.notna(published)
+                                and hasattr(published, "strftime")
+                            ):
+                                published = published.strftime(
+                                    "%Y-%m-%d"
+                                )
+
+                            title = str(
+                                row.get("title", "")
+                            )
+
+                            st.caption(
+                                f"**{published}** · {title}"
+                            )
+
+                            summary_text = str(
+                                row.get("summary", "")
+                            )
+
+                            if summary_text:
+                                st.caption(
+                                    summary_text[:700]
+                                )
+
+                            evidence = str(
+                                row.get("evidence", "")
+                            )
+
+                            reasoning = str(
+                                row.get("reasoning", "")
+                            )
+
+                            if evidence:
+                                st.caption(
+                                    f"**Evidence**  \n{evidence}"
+                                )
+
+                            if reasoning:
+                                st.caption(
+                                    f"**Reasoning**  \n{reasoning}"
+                                )
+
+                            url = row.get("url", "")
+
+                            if url:
+                                st.caption(
+                                    f"[기사 열기]({url})"
+                                )
+
+                            st.divider()
+        # Policy Signal × Market Reaction belongs to Speaker Intelligence.
+        # Keep it inside the member-available branch for now because the current
+        # tab2 renderer still requires trend_member.
+        render_policy_signal_market_reaction(
+            trend_member
+        )
 
 # ============================================================
 # TAB 3
@@ -2112,7 +2235,7 @@ with tab3:
         """
         <div class="fed-topline">
             <div>
-                <h1 class="fed-title">Methodology</h1>
+                <h1 class="fed-title" style="font-size:22px;">Methodology</h1>
                 <div style="color:#7b8794;font-size:0.92rem;margin-top:4px;">
                     How Fed Speaker Monitor V2 collects, filters and scores Fed communication
                 </div>
@@ -2335,4 +2458,3 @@ with tab3:
 <div class="reference-row"><div>Reuters Stance</div><div class="reference-desc">Displayed as an external benchmark only. It is not used in LLM score or Combined Score calculation.</div></div>
 </div>"""
     st.markdown(reference_html, unsafe_allow_html=True)
-
