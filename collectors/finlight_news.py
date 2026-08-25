@@ -392,18 +392,12 @@ def search_finlight(
     page_size: int = 100,
 ):
     """
-    Finlight에서 2026-01-01부터 현재까지 전 페이지를 수집한다.
-
-    lookback_days 인자는 기존 호출부 호환성을 위해 유지하지만,
-    Finlight 수집 범위에는 사용하지 않는다.
+    Finlight에서 lookback_days 기간의 전 페이지를 수집한다.
     """
     api_key = _get_api_key()
 
-    start_date = "2026-01-01"
-    end_date = datetime.now(
-        timezone.utc
-    ).strftime(
-        "%Y-%m-%d"
+    start_date, end_date = _date_range(
+        lookback_days
     )
 
     all_articles = []
