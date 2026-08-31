@@ -290,71 +290,91 @@ def _build_news_clusters(
     date_window_days,
 ):
     """
-    connected-component event clustering.
+    Anchor-based event clustering.
 
-    A-B 유사, B-C 유사이면
-    A/B/C를 하나의 event cluster로 묶는다.
+    각 cluster의 최초 기사(anchor)와 직접 비교한다.
+
+    같은 speaker이고,
+    날짜 차이가 date_window_days 이내이며,
+    anchor와 cosine similarity가 threshold 이상일 때만
+    기존 cluster에 포함한다.
+
+    Connected-component처럼
+    A-B 유사 + B-C 유사만으로
+    A/B/C 전체가 연결되는 chain clustering은 허용하지 않는다.
     """
 
-    count = len(news_documents)
+    if not news_documents:
+        return []
 
-    adjacency = [
-        set()
-        for _ in range(count)
-    ]
+    clusters = []
+    anchors = []
 
-    for left in range(count):
-        left_doc = news_documents[left]
-
-        left_speaker = _clean_text(
+    for current_index, current_doc in enumerate(
+        news_documents
+    ):
+        current_speaker = _clean_text(
             getattr(
-                left_doc,
+                current_doc,
                 "speaker",
                 "",
             )
         )
 
-        left_date = _parse_date(
+        current_date = _parse_date(
             getattr(
-                left_doc,
+                current_doc,
                 "published_at",
                 "",
             )
         )
 
-        for right in range(
-            left + 1,
-            count,
-        ):
-            right_doc = news_documents[right]
+        best_cluster = None
+        best_similarity = -1.0
 
-            right_speaker = _clean_text(
+        # ----------------------------------------------------
+        # 기존 cluster의 anchor와만 비교
+        # ----------------------------------------------------
+
+        for cluster_id, anchor_index in enumerate(
+            anchors
+        ):
+            anchor_doc = news_documents[
+                anchor_index
+            ]
+
+            anchor_speaker = _clean_text(
                 getattr(
-                    right_doc,
+                    anchor_doc,
                     "speaker",
                     "",
                 )
             )
 
-            if left_speaker != right_speaker:
+            # 다른 Fed member끼리는 묶지 않음
+            if (
+                current_speaker
+                != anchor_speaker
+            ):
                 continue
 
-            right_date = _parse_date(
+            anchor_date = _parse_date(
                 getattr(
-                    right_doc,
+                    anchor_doc,
                     "published_at",
                     "",
                 )
             )
 
+            # 날짜 window 유지
             if (
-                left_date is not None
-                and right_date is not None
+                current_date is not None
+                and anchor_date is not None
             ):
                 day_gap = abs(
                     (
-                        left_date
-                        - right_date
+                        current_date
+                        - anchor_date
                     ).days
                 )
 
@@ -364,9 +384,14 @@ def _build_news_clusters(
                 ):
                     continue
 
+            # Anchor와 직접 cosine similarity 비교
             similarity = _cosine_similarity(
-                embeddings[left],
-                embeddings[right],
+                embeddings[
+                    current_index
+                ],
+                embeddings[
+                    anchor_index
+                ],
             )
 
             if (
@@ -375,38 +400,43 @@ def _build_news_clusters(
             ):
                 continue
 
-            adjacency[left].add(right)
-            adjacency[right].add(left)
+            # 여러 anchor와 유사하면
+            # 가장 similarity가 높은 cluster 선택
+            if (
+                similarity
+                > best_similarity
+            ):
+                best_similarity = similarity
+                best_cluster = cluster_id
 
-    visited = set()
-    clusters = []
+        # ----------------------------------------------------
+        # 기존 cluster에 합류
+        # ----------------------------------------------------
 
-    for start in range(count):
-        if start in visited:
-            continue
+        if best_cluster is not None:
+            clusters[
+                best_cluster
+            ].append(
+                current_index
+            )
 
-        stack = [start]
-        visited.add(start)
-        cluster = []
+        # ----------------------------------------------------
+        # 새로운 cluster 생성
+        # 현재 기사가 새로운 anchor
+        # ----------------------------------------------------
 
-        while stack:
-            current = stack.pop()
+        else:
+            clusters.append(
+                [
+                    current_index
+                ]
+            )
 
-            cluster.append(current)
-
-            for neighbor in adjacency[
-                current
-            ]:
-                if neighbor in visited:
-                    continue
-
-                visited.add(neighbor)
-                stack.append(neighbor)
-
-        clusters.append(cluster)
+            anchors.append(
+                current_index
+            )
 
     return clusters
-
 
 SOURCE_PRIORITY = (
     "reuters",

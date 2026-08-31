@@ -15,6 +15,8 @@ from fed_speaker_monitor_v2.config import (
 from fed_speaker_monitor_v2.llm.prompt import (
     STANCE_SYSTEM_PROMPT,
     build_stance_prompt,
+    NEWS_STANCE_SYSTEM_PROMPT,
+    build_news_stance_prompt,
 )
 from fed_speaker_monitor_v2.llm.macro_background import (
     analyze_macro_background,
@@ -877,3 +879,415 @@ def analyze_segments(
     )
 
     return results
+
+# ============================================================
+# News Macro Calibration
+# ============================================================
+
+NEWS_MACRO_SCORE_THRESHOLD = 0.40
+
+MACRO_SUPPORTED_DRIVERS = {
+    "INFLATION",
+    "LABOR",
+    "GROWTH",
+    "FINANCIAL_CONDITIONS",
+}
+
+
+# ============================================================
+# News Final Event - Single
+# ============================================================
+
+def _news_response_to_segment_stance(
+    segment: Segment,
+    result: StanceResponse,
+    *,
+    macro_calibrated: bool = False,
+    macro_background: str = "",
+) -> SegmentStance:
+    """
+    News StanceResponse -> SegmentStance 변환.
+    """
+
+    return SegmentStance(
+        segment_id=segment.segment_id,
+
+        policy_relevant=result.policy_relevant,
+        stance=result.stance,
+        score=result.score,
+
+        content_type=result.content_type,
+        directness=result.directness,
+        temporal=result.temporal,
+        uncertainty=result.uncertainty,
+
+        evidence=result.evidence,
+        reasoning=result.reasoning,
+
+        policy_action=result.policy_action,
+        signal_strength=result.signal_strength,
+
+        policy_relevance_score=(
+            result.policy_relevance_score
+        ),
+
+        speaker_evidence_type=(
+            result.speaker_evidence_type
+        ),
+
+        policy_bearing_phrase=(
+            result.policy_bearing_phrase
+        ),
+
+        stance_driver=(
+            result.stance_driver
+        ),
+
+        bis_stance=(
+            result.bis_stance
+        ),
+
+        evidence_confidence=(
+            result.evidence_confidence
+        ),
+
+        text_sufficiency=(
+            result.text_sufficiency
+        ),
+
+        macro_calibrated=macro_calibrated,
+        macro_background=macro_background,
+    )
+
+
+def analyze_news_event(
+    segment: Segment,
+    as_of: str | None = None,
+) -> SegmentStance:
+    """
+    News Final Event 전용 stance.
+
+    1차:
+        target_text만으로 News Stance 판정.
+
+    2차:
+        abs(score) < 0.40 이고
+        macro 지원 driver이며
+        as_of가 있는 경우에만
+        당시 macro background를 추가해 재판정한다.
+
+    Macro는 새로운 Hawk/Dove 방향을 경제지표만으로
+    만들어내는 근거가 아니라, 약한 1차 방향성을
+    calibration하기 위한 background context다.
+    """
+
+    client = _get_client()
+
+    # --------------------------------------------------------
+    # 1. FIRST-PASS NEWS STANCE
+    # --------------------------------------------------------
+
+    user_prompt = build_news_stance_prompt(
+        speaker=segment.speaker,
+        text=segment.text,
+    )
+
+    response = client.responses.parse(
+        model=LLM_MODEL,
+        input=[
+            {
+                "role": "system",
+                "content":
+                    NEWS_STANCE_SYSTEM_PROMPT,
+            },
+            {
+                "role": "user",
+                "content":
+                    user_prompt,
+            },
+        ],
+        text_format=StanceResponse,
+    )
+
+    result = response.output_parsed
+
+    if result is None:
+        raise RuntimeError(
+            f"Could not parse News stance result: "
+            f"{segment.segment_id}"
+        )
+
+    result = _normalize_result(
+        result
+    )
+
+    # --------------------------------------------------------
+    # 2. MACRO CALIBRATION GATE
+    # --------------------------------------------------------
+
+    should_calibrate = (
+        abs(result.score)
+        < NEWS_MACRO_SCORE_THRESHOLD
+        and result.stance_driver
+        in MACRO_SUPPORTED_DRIVERS
+        and bool(as_of)
+    )
+
+    if not should_calibrate:
+        return _news_response_to_segment_stance(
+            segment,
+            result,
+        )
+
+    macro_prompt = _build_macro_background_prompt(
+        as_of=as_of,
+        macro_driver=result.stance_driver,
+    )
+
+    # 관련 macro data가 없으면 1차 결과 유지.
+    if not macro_prompt:
+        return _news_response_to_segment_stance(
+            segment,
+            result,
+        )
+
+    # --------------------------------------------------------
+    # 3. SECOND-PASS WITH MACRO BACKGROUND
+    # --------------------------------------------------------
+
+    calibrated_user_prompt = (
+        build_news_stance_prompt(
+            speaker=segment.speaker,
+            text=segment.text,
+        )
+        + macro_prompt
+        + """
+
+============================================================
+MACRO CALIBRATION INSTRUCTION
+============================================================
+
+The first-pass stance direction was weak.
+
+Use the macroeconomic background only to calibrate how the TARGET
+SPEAKER'S own language should be interpreted relative to the economic
+conditions available at the time.
+
+The macroeconomic background is NOT independent evidence of a
+HAWKISH or DOVISH stance.
+
+Do not create a directional stance from the macro data alone.
+
+The TARGET SPEAKER'S attributed language must still support the final
+direction.
+
+If the speaker's own language remains non-directional after considering
+the background, return NEUTRAL.
+
+Do not cite macroeconomic data as the policy-bearing phrase or as
+speaker evidence.
+
+Return JSON only.
+"""
+    )
+
+    calibrated_response = (
+        client.responses.parse(
+            model=LLM_MODEL,
+            input=[
+                {
+                    "role": "system",
+                    "content":
+                        NEWS_STANCE_SYSTEM_PROMPT,
+                },
+                {
+                    "role": "user",
+                    "content":
+                        calibrated_user_prompt,
+                },
+            ],
+            text_format=StanceResponse,
+        )
+    )
+
+    calibrated_result = (
+        calibrated_response.output_parsed
+    )
+
+    if calibrated_result is None:
+        raise RuntimeError(
+            f"Could not parse calibrated News stance result: "
+            f"{segment.segment_id}"
+        )
+
+    calibrated_result = _normalize_result(
+        calibrated_result
+    )
+
+    # 화면에서는 macro_calibrated=True인 HAWK/DOVE를
+    # "(예상) HAWKISH / (예상) DOVISH"로 표시할 수 있다.
+    return _news_response_to_segment_stance(
+        segment,
+        calibrated_result,
+        macro_calibrated=True,
+        macro_background=macro_prompt,
+    )
+
+
+# ============================================================
+# News Final Events + Cache
+# ============================================================
+
+def analyze_news_events(
+    segments: list[Segment],
+    cache_path: Path | None = None,
+    as_of_by_id: dict[str, str] | None = None,
+) -> list[SegmentStance]:
+    """
+    News Final Event 전용 batch stance.
+
+    기존 analyze_segments()와 동일하게:
+        - segment_id 기준 cache 재사용
+        - 신규 event만 LLM 호출
+        - 현재 event 순서대로 반환
+        - 신규 결과 직후 cache 저장
+
+    차이:
+        - analyze_news_event() 사용
+        - News 전용 prompt 사용
+        - upstream Relevance gate를 다시 수행하지 않음
+    """
+
+    cached = _load_cache(
+        cache_path
+    )
+
+    current_ids = {
+        segment.segment_id
+        for segment in segments
+    }
+
+    cached = {
+        segment_id: result
+        for segment_id, result
+        in cached.items()
+        if segment_id in current_ids
+    }
+
+    total = len(
+        segments
+    )
+
+    cached_count = sum(
+        1
+        for segment in segments
+        if segment.segment_id in cached
+    )
+
+    new_count = (
+        total
+        - cached_count
+    )
+
+    print(
+        f"[NEWS STANCE CACHE] "
+        f"cached={cached_count} | "
+        f"new={new_count} | "
+        f"total={total}"
+    )
+
+    results_by_id = dict(
+        cached
+    )
+
+    new_done = 0
+
+    for index, segment in enumerate(
+        segments,
+        start=1,
+    ):
+
+        cached_result = (
+            results_by_id.get(
+                segment.segment_id
+            )
+        )
+
+        if cached_result is not None:
+            print(
+                f"[NEWS STANCE {index}/{total}] "
+                f"{segment.speaker or 'Unknown'} | "
+                f"{segment.segment_id} "
+                f"-> CACHE"
+            )
+            continue
+
+        print(
+            f"[NEWS STANCE {index}/{total}] "
+            f"{segment.speaker or 'Unknown'} | "
+            f"{segment.segment_id}"
+        )
+
+        as_of = None
+
+        if as_of_by_id is not None:
+            as_of = as_of_by_id.get(
+                segment.segment_id
+            )
+
+        result = analyze_news_event(
+            segment,
+            as_of=as_of,
+        )
+
+        results_by_id[
+            segment.segment_id
+        ] = result
+
+        new_done += 1
+
+        print(
+            f"          -> "
+            f"{result.bis_stance} | "
+            f"{result.stance} "
+            f"{result.score:+.2f} | "
+            f"action={result.policy_action} | "
+            f"strength={result.signal_strength} | "
+            f"confidence="
+            f"{result.evidence_confidence}"
+        )
+
+        partial_results = [
+            results_by_id[
+                current_segment.segment_id
+            ]
+            for current_segment in segments
+            if current_segment.segment_id
+            in results_by_id
+        ]
+
+        _save_cache(
+            cache_path,
+            partial_results,
+        )
+
+    results = [
+        results_by_id[
+            segment.segment_id
+        ]
+        for segment in segments
+    ]
+
+    _save_cache(
+        cache_path,
+        results,
+    )
+
+    print(
+        f"[NEWS STANCE CACHE] "
+        f"reused={cached_count} | "
+        f"analyzed={new_done}"
+    )
+
+    return results
+

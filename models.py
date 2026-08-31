@@ -136,6 +136,19 @@ class SegmentStance:
     # SUFFICIENT / PARTIAL / INSUFFICIENT
     text_sufficiency: str = "INSUFFICIENT"
 
+    # ========================================================
+    # News macro calibration
+    # ========================================================
+
+    # 방향성이 약한 News stance에 대해
+    # 발언 당시 macro background를 사용해
+    # 추가 calibration을 수행했는지 여부
+    macro_calibrated: bool = False
+
+    # macro calibration에 사용한 당시 경제상황 요약.
+    # calibration을 하지 않은 경우 빈 문자열.
+    macro_background: str = ""
+
 
 # ============================================================
 # Member Stance

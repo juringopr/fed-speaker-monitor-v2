@@ -19,8 +19,15 @@ from fed_speaker_monitor_v2.collectors.incremental import collect_regional_incre
 from fed_speaker_monitor_v2.collectors.reuters_stance import update_reuters_stance
 from fed_speaker_monitor_v2.collectors.fed_speeches import enrich_fed_documents
 from fed_speaker_monitor_v2.config import FED_MEMBERS, RESULTS_DIR
-from fed_speaker_monitor_v2.llm.stance import analyze_segments
+from fed_speaker_monitor_v2.llm.stance import (
+    analyze_segments,
+    analyze_news_events,
+)
+from fed_speaker_monitor_v2.llm.news_relevance import analyze_news_relevance_segments
 from fed_speaker_monitor_v2.processors.dedup import deduplicate_documents
+from fed_speaker_monitor_v2.processors.pre_llm_dedup import deduplicate_raw_anchor
+from fed_speaker_monitor_v2.llm.relevance_embedding import validate_relevance_cluster
+from fed_speaker_monitor_v2.processors.final_event_embedding import build_final_events
 from fed_speaker_monitor_v2.processors.document import process_documents
 from fed_speaker_monitor_v2.processors.segments import segment_documents
 from fed_speaker_monitor_v2.models import Segment
@@ -517,176 +524,86 @@ def _news_member_coverage(
     }
 
 
-def _merge_news_history(
-    documents,
-    segments,
-    stance_results,
-):
-    """
-    매 실행 때 최근 14일만 새로 수집하되,
-    이미 scoring한 event는 news_history.json에 누적 보관한다.
+def _build_news_event_segments(events):
+    """Final Event target_text -> News Stance Segment."""
+    results = []
+    for event in events:
+        event_id = str(event.get("event_id", "") or "").strip()
+        speaker = str(event.get("speaker", "") or "").strip()
+        target_text = str(event.get("target_text", "") or "").strip()
+        if event_id and speaker and target_text:
+            results.append(Segment(segment_id=event_id, document_url="", text=target_text, speaker=speaker))
+    return results
 
-    Tab 2에서 기간별 speaker trend를 만들기 위한 history다.
-    """
-    path = (
-        RESULTS_DIR
-        / "news_history.json"
-    )
 
+def _build_news_event_dates(events, documents, segments):
+    """Final Event representative article date -> Macro as_of."""
+    segment_to_url = {s.segment_id: s.document_url for s in segments}
+    document_by_url = {d.url: d for d in documents}
+    as_of_by_id = {}
+    for event in events:
+        event_id = event.get("event_id")
+        representative_id = event.get("representative_segment_id")
+        if not event_id or not representative_id:
+            continue
+        document = document_by_url.get(segment_to_url.get(representative_id))
+        if document is not None and document.published_at:
+            as_of_by_id[event_id] = document.published_at
+    return as_of_by_id
+
+
+def _merge_news_history(events, documents, segments, stance_results):
+    """Preserve backfilled event history and merge current Final Events by event_id."""
+    path = RESULTS_DIR / "news_history.json"
     existing = []
-
     if path.exists():
         try:
-            value = json.loads(
-                path.read_text(
-                    encoding="utf-8"
-                )
-            )
-
-            if isinstance(
-                value,
-                list,
-            ):
+            value = json.loads(path.read_text(encoding="utf-8"))
+            if isinstance(value, list):
                 existing = value
-
-        except (
-            OSError,
-            json.JSONDecodeError,
-        ):
+        except (OSError, json.JSONDecodeError):
             existing = []
 
-    document_by_url = {
-        document.url:
-            document
-        for document in documents
-    }
-
-    stance_by_id = {
-        result.segment_id:
-            result
-        for result in stance_results
-    }
-
+    stance_by_id = {r.segment_id: r for r in stance_results}
+    segment_to_url = {s.segment_id: s.document_url for s in segments}
+    document_by_url = {d.url: d for d in documents}
     current_rows = []
 
-    for segment in segments:
-        result = stance_by_id.get(
-            segment.segment_id
-        )
-
-        document = document_by_url.get(
-            segment.document_url
-        )
-
-        if (
-            result is None
-            or document is None
-        ):
+    for event in events:
+        event_id = event.get("event_id")
+        stance = stance_by_id.get(event_id)
+        if not event_id or stance is None:
             continue
+        document = document_by_url.get(segment_to_url.get(event.get("representative_segment_id")))
+        if document is None:
+            continue
+        current_rows.append({
+            "segment_id": event_id, "event_id": event_id, "speaker": event.get("speaker"),
+            "published_at": document.published_at, "title": document.title, "summary": document.text,
+            "target_text": event.get("target_text", ""), "url": document.url, "source": document.source,
+            "article_count": event.get("article_count", 1), "segment_ids": event.get("segment_ids", []),
+            "policy_relevant": stance.policy_relevant, "stance": stance.stance, "score": stance.score,
+            "bis_stance": stance.bis_stance, "policy_action": stance.policy_action,
+            "signal_strength": stance.signal_strength, "stance_driver": stance.stance_driver,
+            "policy_bearing_phrase": stance.policy_bearing_phrase,
+            "speaker_evidence_type": stance.speaker_evidence_type, "directness": stance.directness,
+            "content_type": stance.content_type, "temporal": stance.temporal, "uncertainty": stance.uncertainty,
+            "evidence_confidence": stance.evidence_confidence, "text_sufficiency": stance.text_sufficiency,
+            "evidence": stance.evidence, "reasoning": stance.reasoning,
+            "macro_calibrated": stance.macro_calibrated, "macro_background": stance.macro_background,
+        })
 
-        current_rows.append(
-            {
-                "segment_id":
-                    segment.segment_id,
-
-                "speaker":
-                    segment.speaker,
-
-                "published_at":
-                    document.published_at,
-
-                "title":
-                    document.title,
-
-                "summary":
-                    document.text,
-
-                "url":
-                    document.url,
-
-                "source":
-                    document.source,
-
-                "policy_relevant":
-                    result.policy_relevant,
-
-                "stance":
-                    result.stance,
-
-                "score":
-                    result.score,
-
-                "evidence":
-                    result.evidence,
-
-                "reasoning":
-                    result.reasoning,
-
-                "speaker_evidence_type":
-                    result.speaker_evidence_type,
-
-                "directness":
-                    result.directness,
-
-                "signal_strength":
-                    result.signal_strength,
-
-                "evidence_confidence":
-                    result.evidence_confidence,
-
-                "text_sufficiency":
-                    result.text_sufficiency,
-
-                "policy_action":
-                    result.policy_action,
-
-                "stance_driver":
-                    result.stance_driver,
-            }
-        )
-
-    by_id = {
-        str(
-            row.get(
-                "segment_id",
-                "",
-            )
-        ):
-            row
-        for row in existing
-        if isinstance(
-            row,
-            dict,
-        )
-        and row.get(
-            "segment_id"
-        )
-    }
-
+    by_id = {}
+    for row in existing:
+        if isinstance(row, dict):
+            row_id = row.get("event_id") or row.get("segment_id")
+            if row_id:
+                by_id[str(row_id)] = row
     for row in current_rows:
-        by_id[
-            row["segment_id"]
-        ] = row
-
-    merged = list(
-        by_id.values()
-    )
-
-    merged.sort(
-        key=lambda row:
-            str(
-                row.get(
-                    "published_at",
-                    "",
-                )
-            )
-    )
-
-    _write_json(
-        path,
-        merged,
-    )
-
+        by_id[row["event_id"]] = row
+    merged = list(by_id.values())
+    merged.sort(key=lambda row: str(row.get("published_at", "")))
+    _write_json(path, merged)
     return merged
 
 
@@ -709,23 +626,8 @@ def _get_news_collection_lookback_days():
     today = datetime.now().date()
 
     # --------------------------------------------------------
-    # 최초 YTD backfill
-    # --------------------------------------------------------
-
-    if not backfill_marker.exists():
-        start_date = datetime(
-            2026,
-            1,
-            1,
-        ).date()
-
-        return (
-            today
-            - start_date
-        ).days + 1
-
-    # --------------------------------------------------------
-    # 이후 incremental
+    # Backfill된 event history가 있으면 바로 incremental.
+    # marker가 없어도 history의 마지막 날짜부터 2일 overlap 수집.
     # --------------------------------------------------------
 
     history_path = (
@@ -734,6 +636,9 @@ def _get_news_collection_lookback_days():
     )
 
     if not history_path.exists():
+        if not backfill_marker.exists():
+            start_date = datetime(2026, 1, 1).date()
+            return (today - start_date).days + 1
         return 14
 
     try:
@@ -808,12 +713,28 @@ def _run_news_layer(
     FALLBACK:
         Google News RSS only for members with no Finlight result
 
+    순서:
+        collect
+        -> process
+        -> ① Raw Anchor dedup (.78 / 4D)
+        -> representative documents
+        -> segment
+        -> ② Relevance LLM
+        -> ② Relevance embedding validation
+        -> ③ speaker-level full-text Final Event
+        -> ④ News Stance + conditional Macro calibration
+        -> event-based history merge
+
     저장:
+    - news_documents_before_dedup.json
     - news_documents.json
     - news_segments.json
+    - news_relevance.json
+    - news_events.json
     - news_segment_stance.json
-    - news_member_stance.json
     - news_history.json
+
+    News는 Final Event 이후 전용 Stance와 event-based history까지 실행한다.
     """
 
     print()
@@ -830,7 +751,7 @@ def _run_news_layer(
     )
 
     print(
-        f"[NEWS 1/5] Collecting Finlight "
+        f"[NEWS 1/7] Collecting Finlight "
         f"(lookback={collection_lookback_days}d)..."
     )
 
@@ -870,7 +791,7 @@ def _run_news_layer(
 
     if fallback_members:
         print(
-            f"[NEWS 2/5] Google fallback "
+            f"[NEWS 2/7] Google fallback "
             f"for {len(fallback_members)} "
             f"member(s)..."
         )
@@ -888,26 +809,30 @@ def _run_news_layer(
 
     else:
         print(
-            "[NEWS 2/5] Google fallback: "
+            "[NEWS 2/7] Google fallback: "
             "not needed"
         )
 
     # --------------------------------------------------------
-    # 3. EVENT DEDUP
+    # RAW SNAPSHOT
+    # --------------------------------------------------------
+
+    _write_json(
+        RESULTS_DIR
+        / "news_documents_before_dedup.json",
+        [
+            _document_to_dict(document)
+            for document in news_documents
+        ],
+    )
+
+    # --------------------------------------------------------
+    # 3. PROCESS + ① RAW ANCHOR DEDUP
     # --------------------------------------------------------
 
     print(
-        "[NEWS 3/5] Semantic event dedup..."
-    )
-
-    # Finlight exact-name 검색은 넓게 유지한다.
-    # policy relevance와 attribution은 LLM에서 판정한다.
-    news_documents = (
-        deduplicate_documents(
-            news_documents,
-            semantic_news=True,
-            apply_news_relevance=False,
-        )
+        "[NEWS 3/7] Processing + "
+        "Raw Anchor dedup..."
     )
 
     news_documents = (
@@ -926,14 +851,25 @@ def _run_news_layer(
         )
     ]
 
-    print(
-        f"      News events: "
-        f"{len(news_documents)}"
+    before_raw_anchor = len(
+        news_documents
     )
 
-    # --------------------------------------------------------
-    # 4. ONE EVENT = ONE SEGMENT
-    # --------------------------------------------------------
+    news_documents = (
+        deduplicate_raw_anchor(
+            news_documents
+        )
+    )
+
+    print(
+        f"      Before Raw Anchor: "
+        f"{before_raw_anchor}"
+    )
+
+    print(
+        f"      Representatives : "
+        f"{len(news_documents)}"
+    )
 
     news_segments = (
         _build_news_segments(
@@ -942,7 +878,7 @@ def _run_news_layer(
     )
 
     print(
-        f"[NEWS 4/5] News segments: "
+        f"      News segments   : "
         f"{len(news_segments)}"
     )
 
@@ -972,7 +908,7 @@ def _run_news_layer(
 
     if not run_llm:
         print(
-            "[NEWS 5/5] LLM: SKIPPED "
+            "[NEWS 4/7] Relevance LLM: SKIPPED "
             "(run_llm=False)"
         )
 
@@ -981,6 +917,8 @@ def _run_news_layer(
                 news_documents,
             "segments":
                 news_segments,
+            "events":
+                [],
             "segment_stance":
                 [],
             "members":
@@ -988,94 +926,199 @@ def _run_news_layer(
         }
 
     # --------------------------------------------------------
-    # 5. LLM + AGGREGATION
+    # 4. ② RELEVANCE LLM
     # --------------------------------------------------------
 
     print(
-        "[NEWS 5/5] LLM attribution "
-        "+ policy stance..."
+        "[NEWS 4/7] Relevance LLM..."
     )
 
-    news_stance = (
-        analyze_segments(
+    relevance_rows = (
+        analyze_news_relevance_segments(
             news_segments,
             cache_path=(
                 RESULTS_DIR
-                / "news_segment_stance.json"
+                / "news_relevance.json"
             ),
         )
     )
 
+    # Relevance cache 재사용은 유지하되,
+    # downstream에는 이번 실행의 News segment만 전달한다.
+    current_segment_ids = {
+        segment.segment_id
+        for segment in news_segments
+    }
+
+    relevance_rows = [
+        row
+        for row in relevance_rows
+        if (
+            isinstance(row, dict)
+            and row.get("segment_id")
+            in current_segment_ids
+        )
+    ]
+
     _write_json(
         RESULTS_DIR
-        / "news_segment_stance.json",
-        [
-            asdict(
-                result
-            )
-            for result
-            in news_stance
-        ],
+        / "news_relevance.json",
+        relevance_rows,
     )
 
-    news_members = (
-        aggregate_member_stances(
-            news_documents,
-            news_segments,
-            news_stance,
+    passed_rows = [
+        row
+        for row in relevance_rows
+        if (
+            isinstance(row, dict)
+            and row.get("passed") is True
+        )
+    ]
+
+    print(
+        f"      Relevance PASS: "
+        f"{len(passed_rows)}/"
+        f"{len(relevance_rows)}"
+    )
+
+    # --------------------------------------------------------
+    # 5. ② RELEVANCE EMBEDDING VALIDATION
+    # --------------------------------------------------------
+
+    print(
+        "[NEWS 5/7] Relevance embedding "
+        "validation..."
+    )
+
+    speaker_rows = defaultdict(
+        list
+    )
+
+    for row in passed_rows:
+        speaker = str(
+            row.get(
+                "speaker",
+                "",
+            )
+            or ""
+        ).strip()
+
+        if not speaker:
+            continue
+
+        speaker_rows[
+            speaker
+        ].append(
+            row
+        )
+
+    validated_rows = []
+
+    for speaker, rows in (
+        speaker_rows.items()
+    ):
+
+        validated_clusters = (
+            validate_relevance_cluster(
+                rows
+            )
+        )
+
+        print(
+            f"      {speaker}: "
+            f"PASS={len(rows)} "
+            f"validated_clusters="
+            f"{len(validated_clusters)}"
+        )
+
+        for cluster in validated_clusters:
+            for index in cluster:
+                validated_rows.append(
+                    rows[index]
+                )
+
+    print(
+        f"      Validated rows: "
+        f"{len(validated_rows)}"
+    )
+
+    # --------------------------------------------------------
+    # 6. ③ FINAL EVENT FULL-TEXT CHECK
+    # --------------------------------------------------------
+
+    print(
+        "[NEWS 6/7] Speaker-level "
+        "Final Event full-text check..."
+    )
+
+    news_events = (
+        build_final_events(
+            validated_rows
         )
     )
 
     _write_json(
         RESULTS_DIR
-        / "news_member_stance.json",
-        [
-            asdict(
-                result
-            )
-            for result
-            in news_members
-        ],
+        / "news_events.json",
+        news_events,
     )
 
+    print(
+        f"      Final events: "
+        f"{len(news_events)}"
+    )
+
+
+    # --------------------------------------------------------
+    # 7. ④ NEWS STANCE + MACRO
+    # --------------------------------------------------------
+
+    print("[NEWS 7/7] News Stance + Macro calibration...")
+
+    event_segments = _build_news_event_segments(news_events)
+    as_of_by_id = _build_news_event_dates(news_events, news_documents, news_segments)
+
+    news_stance_results = analyze_news_events(
+        event_segments,
+        cache_path=(RESULTS_DIR / "news_segment_stance.json"),
+        as_of_by_id=as_of_by_id,
+    )
+
+    _write_json(
+        RESULTS_DIR / "news_segment_stance.json",
+        [asdict(result) for result in news_stance_results],
+    )
+
+    macro_count = sum(1 for result in news_stance_results if result.macro_calibrated)
     history = _merge_news_history(
-        news_documents,
-        news_segments,
-        news_stance,
+        news_events, news_documents, news_segments, news_stance_results
     )
 
-    backfill_marker = (
-        RESULTS_DIR
-        / "news_backfill_2026.done"
-    )
+    print(f"      News stance      : {len(news_stance_results)}")
+    print(f"      Macro calibrated : {macro_count}")
+    print(f"      News history     : {len(history)}")
 
-    if not backfill_marker.exists():
-        backfill_marker.write_text(
-            "2026 YTD backfill completed",
-            encoding="utf-8",
-        )
-
+    print()
+    print("=" * 90)
+    print("NEWS ①→②→③→④ COMPLETE")
+    print("=" * 90)
     print(
-        f"      News members: "
-        f"{len(news_members)}"
+        f"Raw processed={before_raw_anchor} | "
+        f"Representatives={len(news_documents)} | "
+        f"Relevance PASS={len(passed_rows)} | "
+        f"Validated={len(validated_rows)} | "
+        f"Final Events={len(news_events)} | "
+        f"Stance={len(news_stance_results)} | "
+        f"History={len(history)}"
     )
-
-    print(
-        f"      History events: "
-        f"{len(history)}"
-    )
+    print("=" * 90)
 
     return {
-        "documents":
-            news_documents,
-        "segments":
-            news_segments,
-        "segment_stance":
-            news_stance,
-        "members":
-            news_members,
-        "history":
-            history,
+        "documents": news_documents,
+        "segments": news_segments,
+        "events": news_events,
+        "segment_stance": news_stance_results,
+        "members": [],
     }
 
 

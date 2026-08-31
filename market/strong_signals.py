@@ -610,8 +610,19 @@ def build_news_signals():
                 "url":
                     row.get("url"),
 
+                # 새 News pipeline의 stable Final Event ID.
+                # legacy 호환을 위해 segment_id도 같은 ID를 유지한다.
+                "event_id":
+                    (
+                        row.get("event_id")
+                        or row.get("segment_id")
+                    ),
+
                 "segment_id":
-                    row.get("segment_id"),
+                    (
+                        row.get("event_id")
+                        or row.get("segment_id")
+                    ),
 
                 "speaker_evidence_type":
                     row.get(

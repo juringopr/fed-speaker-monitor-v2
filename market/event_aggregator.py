@@ -242,135 +242,36 @@ def is_same_event(
 
 
 # ============================================================
-# NEWS CLUSTERING
+# NEWS EVENT WRAPPER
 # ============================================================
 
 def cluster_news_signals(
     news_rows,
 ):
     """
-    News를 실제 발언 Event 단위로 묶는다.
+    News는 upstream ①→②→③에서 이미 Final Event 단위로 확정된다.
 
-    같은 speaker/date/stance라도
-    LLM이 DIFFERENT_EVENT라고 판단하면
-    별도 Event로 유지한다.
+    따라서 여기서는 News ↔ News SAME_EVENT 재판정을 하지 않는다.
+    strong_signals.json의 News row 1개를 그대로 Event 1개로 유지한다.
+
+    Official ↔ News matching은 downstream의
+    find_matching_news_cluster()에서 계속 수행한다.
     """
 
-    clusters = []
-
-    llm_checks = 0
-    cache_checks = 0
-    same_matches = 0
-
-
-    for news in news_rows:
-
-        matched_cluster = None
-        matched_result = None
-
-
-        for cluster in clusters:
-
-            representative = (
-                cluster[
-                    "representative"
-                ]
-            )
-
-
-            if not same_basic_event(
-                representative,
-                news,
-            ):
-                continue
-
-
-            same_event, result = (
-                is_same_event(
-                    representative,
-                    news,
-                )
-            )
-
-
-            if result:
-
-                source = result.get(
-                    "source"
-                )
-
-                if source == "LLM":
-                    llm_checks += 1
-
-                elif source == "CACHE":
-                    cache_checks += 1
-
-
-            if same_event:
-
-                matched_cluster = (
-                    cluster
-                )
-
-                matched_result = (
-                    result
-                )
-
-                same_matches += 1
-
-                break
-
-
-        # ----------------------------------------------------
-        # Existing Event
-        # ----------------------------------------------------
-
-        if matched_cluster:
-
-            matched_cluster[
-                "rows"
-            ].append(
-                news
-            )
-
-            matched_cluster[
-                "match_results"
-            ].append(
-                matched_result
-            )
-
-
-        # ----------------------------------------------------
-        # New Event
-        # ----------------------------------------------------
-
-        else:
-
-            clusters.append(
-                {
-                    "representative":
-                        news,
-
-                    "rows":
-                        [news],
-
-                    "match_results":
-                        [],
-                }
-            )
-
+    clusters = [
+        {
+            "representative": news,
+            "rows": [news],
+            "match_results": [],
+        }
+        for news in news_rows
+    ]
 
     stats = {
-        "llm_checks":
-            llm_checks,
-
-        "cache_checks":
-            cache_checks,
-
-        "same_matches":
-            same_matches,
+        "llm_checks": 0,
+        "cache_checks": 0,
+        "same_matches": 0,
     }
-
 
     return (
         clusters,
@@ -879,18 +780,42 @@ def build_event(
 
 
     # --------------------------------------------------------
+    # EVENT ID
+    #
+    # News가 포함된 Event는 upstream Final Event의 stable
+    # event_id를 그대로 보존한다.
+    #
+    # Official Only만 기존 방식으로 ID를 생성한다.
+    # --------------------------------------------------------
+
+    news_event_id = (
+        (
+            news_row.get("event_id")
+            or news_row.get("segment_id")
+        )
+        if news_row
+        else None
+    )
+
+    event_id = (
+        news_event_id
+        if news_event_id
+        else make_event_id(
+            speaker,
+            event_date,
+            stance,
+            index,
+        )
+    )
+
+    # --------------------------------------------------------
     # EVENT
     # --------------------------------------------------------
 
     event = {
 
         "event_id":
-            make_event_id(
-                speaker,
-                event_date,
-                stance,
-                index,
-            ),
+            event_id,
 
         "date":
             event_date,

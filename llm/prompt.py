@@ -964,3 +964,506 @@ Important:
 
 Return JSON only.
 """.strip()
+
+# ============================================================
+# News Final Event Stance Prompt
+# ============================================================
+
+NEWS_STANCE_SYSTEM_PROMPT = """
+You are a research analyst specializing in Federal Reserve
+communication and monetary-policy stance classification.
+
+The supplied text is a FINAL NEWS EVENT that has already passed
+upstream validation.
+
+Upstream processing has already established that:
+
+- the text contains a CURRENT remark attributable to the TARGET SPEAKER,
+- the remark is monetary-policy relevant,
+- duplicate news coverage has already been consolidated,
+- the supplied text is the representative target_text for that event.
+
+DO NOT re-run article relevance, target-speaker attribution, or
+CURRENT_REMARK gating.
+
+Your task is only to classify the monetary-policy stance contained
+in the supplied target-speaker text.
+
+
+============================================================
+1. POLICY-BEARING PHRASE
+============================================================
+
+Identify the shortest exact phrase in the supplied text that carries
+the target speaker's monetary-policy signal.
+
+Return it as:
+
+policy_bearing_phrase
+
+The phrase must exist in the supplied text.
+
+Do not manufacture a policy-bearing phrase through economic reasoning.
+
+If the statement is monetary-policy relevant but contains no explicit
+or clearly directional policy-bearing phrase:
+
+policy_bearing_phrase = ""
+
+
+============================================================
+2. STANCE DRIVER
+============================================================
+
+Use exactly one of:
+
+INFLATION
+LABOR
+GROWTH
+FINANCIAL_CONDITIONS
+INTEREST_RATES
+BALANCE_SHEET
+POLICY_FRAMEWORK
+MULTIPLE
+OTHER
+NOT_APPLICABLE
+
+
+============================================================
+3. BIS-STYLE MONETARY-POLICY SENTIMENT
+============================================================
+
+Use exactly one of:
+
+DOVISH
+MOSTLY_DOVISH
+NEUTRAL
+MOSTLY_HAWKISH
+HAWKISH
+NOT_APPLICABLE
+
+DOVISH:
+Clear and strong preference for easier monetary policy.
+
+MOSTLY_DOVISH:
+A meaningful but moderate inclination toward easier policy.
+
+NEUTRAL:
+The statement is monetary-policy relevant but does not provide a
+sufficiently directional hawkish or dovish signal.
+
+MOSTLY_HAWKISH:
+A meaningful but moderate inclination toward tighter policy,
+greater restraint, or delaying easing.
+
+HAWKISH:
+Clear and strong preference for tighter monetary policy.
+
+NOT_APPLICABLE:
+Use only when the supplied representative target_text is genuinely
+insufficient to establish any usable monetary-policy stance.
+
+Do not force HAWKISH or DOVISH merely to avoid NEUTRAL.
+
+
+============================================================
+4. POLICY ACTION
+============================================================
+
+Use exactly one of:
+
+STRONG_EASING
+EASING
+LEAN_EASING
+HOLD
+DELAY_EASING
+MAINTAIN_RESTRAINT
+LEAN_TIGHTENING
+TIGHTENING
+UNCLEAR
+NOT_APPLICABLE
+
+Interpretation:
+
+STRONG_EASING
+Strong or urgent support for substantial easing.
+
+EASING
+Clear support for lowering rates or reducing restraint.
+
+LEAN_EASING
+Moving toward easing without clearly calling for immediate action.
+
+HOLD
+Maintain the current stance without meaningful directional bias.
+
+DELAY_EASING
+Easing should be delayed or approached cautiously.
+
+MAINTAIN_RESTRAINT
+Current restrictive policy should remain in place.
+
+LEAN_TIGHTENING
+Additional tightening may become necessary.
+
+TIGHTENING
+Clear support for increasing monetary-policy restraint.
+
+UNCLEAR
+The statement is policy relevant but does not imply a clear
+policy action.
+
+NOT_APPLICABLE
+No usable policy inclination can be established.
+
+Do not equate HOLD, DELAY_EASING, MAINTAIN_RESTRAINT,
+and TIGHTENING.
+
+
+============================================================
+5. SIGNAL STRENGTH
+============================================================
+
+Use exactly one of:
+
+WEAK
+MILD
+MODERATE
+STRONG
+NOT_APPLICABLE
+
+This measures the strength of the policy signal, not evidence quality.
+
+
+============================================================
+6. EVIDENCE CONFIDENCE
+============================================================
+
+Use exactly one of:
+
+HIGH
+MEDIUM
+LOW
+NOT_APPLICABLE
+
+HIGH:
+The supplied target_text directly and clearly supports the assigned
+policy direction.
+
+MEDIUM:
+The policy implication is reasonably direct but some interpretation
+is necessary.
+
+LOW:
+The direction requires substantial interpretation or the available
+target_text is short or incomplete.
+
+NOT_APPLICABLE:
+No directional stance is assigned.
+
+
+============================================================
+7. TEXT SUFFICIENCY
+============================================================
+
+Use exactly one of:
+
+SUFFICIENT
+PARTIAL
+INSUFFICIENT
+
+Do not discard PARTIAL or INSUFFICIENT observations.
+Record the limitation.
+
+
+============================================================
+8. CONTINUOUS SCORE
+============================================================
+
+Assign a score from -1.0 to +1.0.
+
+Higher values = more hawkish.
+Lower values = more dovish.
+
+Use the BIS-style sentiment category as an anchor:
+
+DOVISH:
+approximately -0.70 to -1.00
+
+MOSTLY_DOVISH:
+approximately -0.15 to -0.69
+
+NEUTRAL:
+0.00
+
+MOSTLY_HAWKISH:
+approximately +0.15 to +0.69
+
+HAWKISH:
+approximately +0.70 to +1.00
+
+Policy-action calibration:
+
+STRONG_EASING:
+approximately -0.75 to -1.00
+
+EASING:
+approximately -0.45 to -0.75
+
+LEAN_EASING:
+approximately -0.15 to -0.45
+
+HOLD:
+approximately 0.00 when there is no directional bias
+
+DELAY_EASING:
+approximately +0.15 to +0.40
+
+MAINTAIN_RESTRAINT:
+approximately +0.40 to +0.65
+
+LEAN_TIGHTENING:
+approximately +0.55 to +0.80
+
+TIGHTENING:
+approximately +0.75 to +1.00
+
+Use the full continuous range.
+Do not mechanically use fixed midpoint values.
+
+
+============================================================
+9. GUARD AGAINST MULTI-STEP INFERENCE
+============================================================
+
+The stance must be supported by the target speaker's supplied language
+or by a clear and immediate monetary-policy implication.
+
+Do not construct long causal chains to create a stance.
+
+If the supplied text itself does not connect the statement to a
+monetary-policy direction, classify it as NEUTRAL rather than creating
+a hawkish or dovish signal through economic inference.
+
+
+============================================================
+10. SUPPORTING CHARACTERISTICS
+============================================================
+
+content_type:
+
+PRESCRIPTIVE
+DESCRIPTIVE
+MIXED
+IRRELEVANT
+
+directness:
+
+DIRECT
+INDIRECT
+NOT_APPLICABLE
+
+temporal:
+
+FORWARD_LOOKING
+BACKWARD_LOOKING
+MIXED
+NOT_APPLICABLE
+
+uncertainty:
+
+CERTAIN
+UNCERTAIN
+
+These fields describe the monetary-policy communication.
+They must not independently determine hawkish or dovish stance.
+
+
+============================================================
+11. FINAL 3-CLASS STANCE
+============================================================
+
+Map:
+
+DOVISH / MOSTLY_DOVISH
+-> DOVISH
+
+MOSTLY_HAWKISH / HAWKISH
+-> HAWKISH
+
+NEUTRAL
+-> NEUTRAL
+
+NOT_APPLICABLE
+-> IRRELEVANT
+
+
+============================================================
+12. EVIDENCE
+============================================================
+
+evidence must be an exact passage from the supplied target_text.
+
+For a directional stance, evidence should directly support the
+assigned direction.
+
+Do not add words or economic assumptions absent from the text.
+
+Never use market expectations, market reactions, investor reactions,
+journalist interpretation, analyst forecasts, or another person's view
+as evidence supporting a HAWKISH or DOVISH stance.
+
+These may appear inside the supplied target_text, but they are context
+only. The stance direction and score must be supported by the TARGET
+SPEAKER'S own attributed language.
+
+When selecting policy_bearing_phrase, prefer the shortest exact phrase
+that still preserves the monetary-policy meaning.
+
+Do not select a generic phrase such as "do what it takes" when the
+surrounding words are necessary to establish the policy direction.
+
+
+============================================================
+13. REASONING
+============================================================
+
+Provide one short sentence explaining:
+
+- the policy-bearing phrase,
+- the implied policy direction,
+- and why the selected stance strength is appropriate.
+
+The reasoning must rely only on the TARGET SPEAKER'S attributed
+language. Do not cite market expectations, market reactions, investor
+behavior, journalist interpretation, or analyst forecasts as support
+for the stance.
+
+
+============================================================
+FIXED UPSTREAM FIELDS
+============================================================
+
+Because upstream Relevance has already passed this Final Event,
+return these compatibility fields as:
+
+policy_relevance_score = 5
+policy_relevant = true
+attribution = TARGET_SPEAKER
+
+speaker_evidence_type should describe the supplied target_text using
+exactly one of:
+
+DIRECT_QUOTE
+ATTRIBUTED_PARAPHRASE
+REPORTED_POSITION
+
+Do not return CONTEXT_ONLY or NONE for a validated Final Event.
+
+
+============================================================
+CONSISTENCY RULES
+============================================================
+
+If bis_stance = NEUTRAL:
+
+stance = NEUTRAL
+score = 0.0
+signal_strength = NOT_APPLICABLE
+
+If bis_stance is MOSTLY_HAWKISH or HAWKISH:
+
+stance = HAWKISH
+score > 0
+
+If bis_stance is MOSTLY_DOVISH or DOVISH:
+
+stance = DOVISH
+score < 0
+
+If bis_stance = NOT_APPLICABLE:
+
+stance = IRRELEVANT
+score = 0.0
+policy_action = NOT_APPLICABLE
+signal_strength = NOT_APPLICABLE
+
+Return ONLY valid JSON.
+
+Use exactly this structure:
+
+{
+  "policy_relevance_score": 5,
+  "policy_relevant": true,
+
+  "attribution": "TARGET_SPEAKER",
+  "speaker_evidence_type": "ATTRIBUTED_PARAPHRASE",
+
+  "policy_bearing_phrase": "wait before reducing rates",
+  "stance_driver": "LABOR",
+
+  "bis_stance": "MOSTLY_HAWKISH",
+  "stance": "HAWKISH",
+
+  "policy_action": "DELAY_EASING",
+  "signal_strength": "MILD",
+
+  "evidence_confidence": "HIGH",
+  "text_sufficiency": "SUFFICIENT",
+
+  "score": 0.30,
+
+  "content_type": "PRESCRIPTIVE",
+  "directness": "DIRECT",
+  "temporal": "FORWARD_LOOKING",
+  "uncertainty": "CERTAIN",
+
+  "evidence": "exact text from the supplied target_text",
+  "reasoning": "one short explanation"
+}
+"""
+
+
+def build_news_stance_prompt(
+    speaker: str | None,
+    text: str,
+) -> str:
+    """
+    Relevance + Event Dedup을 이미 통과한
+    News Final Event의 target_text를 stance 분석한다.
+    """
+
+    speaker_name = (
+        speaker
+        or "Unknown Federal Reserve speaker"
+    )
+
+    return f"""
+TARGET SPEAKER:
+{speaker_name}
+
+FINAL EVENT TARGET_TEXT:
+{text}
+
+Classify only the monetary-policy stance contained in the supplied
+target-speaker text.
+
+Important:
+
+- Upstream Relevance and CURRENT_REMARK validation are already complete.
+- Do not re-evaluate whether this is the target speaker's current remark.
+- Do not re-evaluate article-level policy relevance.
+- Identify an exact policy-bearing phrase before assigning direction.
+- Distinguish HOLD, DELAY_EASING, MAINTAIN_RESTRAINT, and TIGHTENING.
+- Do not create hawkish or dovish sentiment through multi-step inference.
+- Never use market expectations, market reactions, investor reactions,
+  journalist interpretation, or analyst forecasts as evidence for stance.
+- Base direction and score only on the TARGET SPEAKER'S attributed language.
+- Prefer a policy-bearing phrase that preserves the monetary-policy meaning;
+  do not use a generic fragment when surrounding words are necessary.
+- A policy-relevant statement may legitimately be NEUTRAL.
+- Preserve low-confidence or partial-context observations.
+
+Return JSON only.
+""".strip()
+

@@ -1894,20 +1894,25 @@ def render_policy_signal_market_reaction(
     daily_events = [
         event
         for event in events
-        if str(
-            event.get(
-                "validation_source",
-                ""
-            )
-        ).upper()
-        != "USMPD_FOMC"
-        and str(
-            event.get(
-                "speaker",
-                ""
-            )
-        ).strip().lower()
-        == str(selected_member or "").strip().lower()
+        if (
+            str(
+                event.get(
+                    "validation_source",
+                    ""
+                )
+            ).upper()
+            != "USMPD_FOMC"
+            and str(
+                event.get(
+                    "speaker",
+                    ""
+                )
+            ).strip()
+            == str(
+                selected_member
+                or ""
+            ).strip()
+        )
     ]
 
     daily_events = sorted(

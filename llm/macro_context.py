@@ -386,6 +386,11 @@ def get_macro_context(
 
     as_of = pd.Timestamp(as_of)
 
+        # Excel release_datetime은 timezone-naive이므로
+    # 뉴스 ISO timestamp의 timezone도 제거해서 비교 기준을 맞춘다.
+    if as_of.tzinfo is not None:
+        as_of = as_of.tz_localize(None)
+
     start = as_of - pd.Timedelta(
         days=lookback_days
     )
