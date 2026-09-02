@@ -91,7 +91,7 @@ def _cosine_similarity(
 
 
 # ============================================================
-# FINAL COMPLETE-LINK
+# FINAL BEST-MATCH
 # ============================================================
 
 def _build_final_event_clusters(
@@ -101,11 +101,12 @@ def _build_final_event_clusters(
     """
     같은 speaker의 ② 검증 통과 표본을 전문 전수 비교한다.
 
-    현재 article이 기존 Final Event cluster에 들어가려면
-    cluster 안의 모든 article과 normalized 전문 similarity가
-    FINAL_EVENT_THRESHOLD 이상이어야 한다.
+    현재 article과 기존 Final Event cluster 안의 article 중
+    하나라도 normalized 전문 similarity가
+    FINAL_EVENT_THRESHOLD 이상이면 같은 Final Event로 묶는다.
 
-    Complete-link이므로 chain clustering을 허용하지 않는다.
+    여러 cluster와 매칭될 경우
+    가장 높은 similarity를 가진 cluster를 선택한다.
     """
 
     clusters = []
@@ -115,7 +116,7 @@ def _build_final_event_clusters(
     ):
 
         best_cluster = None
-        best_min_similarity = -1.0
+        best_similarity = -1.0
 
         for cluster_id, cluster in enumerate(
             clusters
@@ -129,22 +130,22 @@ def _build_final_event_clusters(
                 for existing in cluster
             ]
 
-            min_similarity = min(
+            max_similarity = max(
                 similarities
             )
 
             if (
-                min_similarity
+                max_similarity
                 < FINAL_EVENT_THRESHOLD
             ):
                 continue
 
             if (
-                min_similarity
-                > best_min_similarity
+                max_similarity
+                > best_similarity
             ):
-                best_min_similarity = (
-                    min_similarity
+                best_similarity = (
+                    max_similarity
                 )
                 best_cluster = cluster_id
 
@@ -323,7 +324,7 @@ def build_final_events(
     순서:
         1. speaker별 재집합
         2. normalized_target_text 전문 embedding
-        3. 같은 speaker 내 complete-link 전수 비교
+        3. 같은 speaker 내 best-match 전문 전수 비교
         4. Final Event 생성
         5. 가장 긴 target_text를 stance용 대표문장으로 선택
 

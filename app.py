@@ -1786,9 +1786,9 @@ def render_member_table(
             <td>{html.escape(str(row["Member"]))}</td>
             <td>{html.escape(str(row["Role"]))}</td>
             <td>{voter_html(bool(row["Voter"]))}</td>
-            <td>{reuters_stance_badge(row.get("Reuters Stance", ""))}</td>
             <td>{score_html(row["Score"])}</td>
             <td>{official_remark_link(row.get("Latest"), row.get("Latest URL"))}</td>
+            <td>{reuters_stance_badge(row.get("Reuters Stance", ""))}</td>
         </tr>
         """
 
@@ -1806,9 +1806,9 @@ def render_member_table(
                     <th>Name</th>
                     <th>Role</th>
                     <th>Voter</th>
-                    <th>Reuters Stance</th>
                     <th>Score (-1 to +1)</th>
                     <th>Last Official Remark</th>
+                    <th>Reuters Stance</th>
                 </tr>
             </thead>
             <tbody>
@@ -1869,11 +1869,11 @@ if st.sidebar.button(
 # 3 TABS
 # ============================================================
 
-tab1, tab2, tab3 = st.tabs(
+tab_method, tab_intel, tab_member = st.tabs(
     [
-        "1. Fed Member Dashboard",
+        "1. Methodology",
         "2. Speaker Intelligence",
-        "3. Methodology",
+        "3. Fed Member Dashboard",
     ]
 )
 
@@ -1882,7 +1882,7 @@ tab1, tab2, tab3 = st.tabs(
 # TAB 1
 # ============================================================
 
-with tab1:
+with tab_member:
     summary = get_member_summary_df()
 
     summary = summary[
@@ -1997,7 +1997,7 @@ with tab1:
 # TAB 2
 # ============================================================
 
-with tab2:
+with tab_intel:
     st.markdown(
         """
         <div class="fed-topline">
@@ -2327,35 +2327,20 @@ with tab2:
 # TAB 3
 # ============================================================
 
-with tab3:
+with tab_method:
     st.markdown(
         """
         <div class="fed-topline">
             <div>
-                <h1 class="fed-title" style="font-size:22px;">Methodology</h1>
+                <h1 class="fed-title" style="font-size:22px;">Methodology &amp; Dashboard Guide</h1>
                 <div style="color:#7b8794;font-size:0.92rem;margin-top:4px;">
-                    How Fed Speaker Monitor V2 collects, filters and scores Fed communication
+                    Fed Speaker Monitor V2의 분석 구조와 각 화면을 읽는 방법
                 </div>
             </div>
         </div>
         """,
         unsafe_allow_html=True,
     )
-
-    official_count = len(get_official_df())
-    news_count = len(news_history) if not news_history.empty else len(news_documents)
-
-    relevant_count = 0
-    if not segment_stance.empty and "policy_relevant" in segment_stance.columns:
-        relevant_count += int((segment_stance["policy_relevant"] == True).sum())
-    if not news_history.empty and "policy_relevant" in news_history.columns:
-        relevant_count += int((news_history["policy_relevant"] == True).sum())
-
-    scored_count = 0
-    if not segment_stance.empty and "score" in segment_stance.columns:
-        scored_count += int(pd.to_numeric(segment_stance["score"], errors="coerce").notna().sum())
-    if not news_history.empty and "score" in news_history.columns:
-        scored_count += int(pd.to_numeric(news_history["score"], errors="coerce").notna().sum())
 
     st.markdown(
         """
@@ -2365,7 +2350,10 @@ with tab3:
             border-radius: 12px;
             background: #ffffff;
             padding: 18px 18px 16px 18px;
-            min-height: 315px;
+            min-height: 245px;
+            height: auto;
+            box-sizing: border-box;
+            overflow: visible;
             box-shadow: 0 1px 2px rgba(15,23,42,0.03);
         }
         .method-card-title {
@@ -2377,14 +2365,14 @@ with tab3:
         .method-step {
             color: #475569;
             font-size: 0.84rem;
-            line-height: 1.55;
+            line-height: 1.60;
         }
         .method-arrow {
             color: #a0a9b4;
             text-align: center;
             font-size: 0.78rem;
             line-height: 1.15;
-            margin: 2px 0;
+            margin: 3px 0;
         }
         .method-pill {
             display: inline-block;
@@ -2397,17 +2385,33 @@ with tab3:
             padding: 3px 8px;
             margin: 2px 2px 2px 0;
         }
-        .method-metric {
-            display:flex;
-            justify-content:space-between;
-            align-items:center;
-            padding: 10px 0;
-            border-bottom:1px solid #eef1f4;
-            color:#667382;
-            font-size:0.82rem;
+        .guide-card {
+            border: 1px solid #e5e7eb;
+            border-radius: 12px;
+            background: #ffffff;
+            padding: 17px 18px;
+            min-height: 245px;
+            box-sizing: border-box;
+            box-shadow: 0 1px 2px rgba(15,23,42,0.03);
         }
-        .method-metric:last-child { border-bottom:none; }
-        .method-metric b { color:#263746; font-size:1.03rem; }
+        .guide-number {
+            color:#2563eb;
+            font-size:0.72rem;
+            font-weight:800;
+            letter-spacing:0.06em;
+            margin-bottom:5px;
+        }
+        .guide-title {
+            color:#1f2937;
+            font-size:0.98rem;
+            font-weight:800;
+            margin-bottom:8px;
+        }
+        .guide-text {
+            color:#5f6b78;
+            font-size:0.82rem;
+            line-height:1.60;
+        }
         .reference-board {
             margin-top: 18px;
             border: 1px solid #e5e7eb;
@@ -2454,24 +2458,128 @@ with tab3:
         unsafe_allow_html=True,
     )
 
-    c1, c2, c3, c4 = st.columns([1.05, 0.90, 1.05, 0.82], gap="medium")
+    st.markdown("### Dashboard Manual")
 
-    with c1:
+    g1, g2, g3 = st.columns(3, gap="medium")
+
+    with g1:
+        st.markdown(
+            """
+            <div class="guide-card">
+                <div class="guide-number">01 · BASE STANCE</div>
+                <div class="guide-title">Fed Member Dashboard</div>
+                <div class="guide-text">
+                    연준 및 각 지역 연은 <b>공식 홈페이지 remark</b>를 기반으로
+                    각 위원이 기본적으로 어떤 통화정책 성향을 가지고 있는지 계산합니다.<br><br>
+                    <b>Reuters Stance</b>는 Reuters가 발표한 Doves / Hawks 분류를
+                    외부 benchmark로 보여주는 값입니다. Reuters의 분류 방식과
+                    본 AI 모델의 score 산정 방식은 다르므로 두 결과가 반드시 일치할 필요는 없으며,
+                    Reuters 값은 AI score 계산에 사용하지 않습니다.
+                </div>
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
+
+    with g2:
+        st.markdown(
+            """
+            <div class="guide-card">
+                <div class="guide-number">02 · RECENT STANCE</div>
+                <div class="guide-title">Speaker Intelligence</div>
+                <div class="guide-text">
+                    <b>News 30D Score</b>는 최근 뉴스에서 확인된 실제 위원 발언을 기반으로
+                    최근 성향이 어느 방향으로 움직였는지 보여줍니다.<br><br>
+                    Official이 비교적 안정적인 <b>기본 성향</b>이라면,
+                    News Score는 최근 발언에서 나타난 Hawkish / Dovish 변화를 보기 위한 지표입니다.
+                    월별 차트에서는 Official · News · Combined의 변화를 함께 확인할 수 있습니다.
+                </div>
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
+
+    with g3:
+        st.markdown(
+            """
+            <div class="guide-card">
+                <div class="guide-number">03 · COMBINED SCORE</div>
+                <div class="guide-title">Base + Recent</div>
+                <div class="guide-text">
+                    <b>Combined Score = Official Base 50% + Recent 30D News 50%</b>입니다.<br><br>
+                    즉 위원의 기존 정책 성향과 최근 뉴스에서 관찰된 성향 변화를 함께 반영합니다.
+                    두 score 중 하나만 존재하면 존재하는 score를 그대로 사용하며,
+                    데이터가 없는 기간을 0점으로 간주하지 않습니다.
+                </div>
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
+
+
+    st.markdown(
+        "<div style='height:24px;'></div>",
+        unsafe_allow_html=True,
+    )
+
+    g4, g5 = st.columns(2, gap="medium")
+
+    with g4:
+        st.markdown(
+            """
+            <div class="guide-card">
+                <div class="guide-number">04 · STRONG SIGNAL × MARKET</div>
+                <div class="guide-title">강한 정책 신호의 시장 검증</div>
+                <div class="guide-text">
+                    2026년 News Final Event 중 LLM score가 강하게 잡히고
+                    발언 귀속과 evidence 신뢰도가 충분한 이벤트만 별도로 추출합니다.
+                    이후 발언일과 실제 거래일을 연결해 미국 2년·10년 금리, 달러,
+                    주식, USD/KRW가 LLM이 해석한 정책 방향과 같은 방향으로 움직였는지 비교합니다.<br><br>
+                    <b>Aligned는 인과관계를 의미하지 않습니다.</b>
+                    LLM이 읽은 정책 방향과 해당 시점의 시장 움직임이 같은 방향이었는지를 보여주는 검증 지표입니다.
+                </div>
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
+
+    with g5:
+        st.markdown(
+            """
+            <div class="guide-card">
+                <div class="guide-number">05 · FOMC VALIDATION</div>
+                <div class="guide-title">FOMC는 별도 검증</div>
+                <div class="guide-text">
+                    FOMC는 일반 위원 발언과 분리해 봅니다.
+                    FOMC 정책 결정 및 LLM signal과 회의 직후 시장 반응을 비교하며,
+                    일반 Daily Market 데이터가 아니라 <b>연준 관련 intraday market 자료</b>를 사용합니다.<br><br>
+                    이를 통해 정례 정책결정에서 모델이 읽은 정책 방향과
+                    시장의 즉각적인 해석이 일치했는지를 별도로 확인합니다.
+                </div>
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
+    st.markdown("<div style='height:32px;'></div>", unsafe_allow_html=True)
+
+    st.subheader("Fed Speaker Monitor V2 Pipeline")
+
+    p1, p2 = st.columns(2, gap="medium")
+
+    with p1:
         st.markdown(
             """
             <div class="method-card">
-                <div class="method-card-title">Fed Speaker Monitor V2 Pipeline</div>
-                <div class="method-step"><b>Official</b> · Fed Board RSS + Regional Fed pages</div>
+                <div class="method-card-title">Official Layer · Base Stance</div>
+                <div class="method-step"><b>Fed Board / Regional Fed Official Remarks</b></div>
                 <div class="method-arrow">↓</div>
-                <div class="method-step">Incremental collection → junk / URL / title dedup</div>
+                <div class="method-step"><b>① Collection &amp; Cleaning</b><br>공식 홈페이지의 speech · testimony · remark 수집 및 중복/불필요 문서 정리</div>
                 <div class="method-arrow">↓</div>
-                <div class="method-step">Segmentation → LLM policy relevance → stance score</div>
+                <div class="method-step"><b>② Segmentation</b><br>정책 판단이 가능한 발언 단위로 분리</div>
                 <div class="method-arrow">↓</div>
-                <div class="method-step"><b>News</b> · Finlight primary + Google fallback</div>
+                <div class="method-step"><b>③ LLM Policy Relevance &amp; Stance</b><br>통화정책 관련 발언만 Hawkish / Neutral / Dovish score로 판정</div>
                 <div class="method-arrow">↓</div>
-                <div class="method-step">Event clustering → attribution / relevance → history</div>
-                <div class="method-arrow">↓</div>
-                <div class="method-step"><b>Official + recent 30D News → Combined Score</b></div>
+                <div class="method-step"><b>④ Member Aggregation → Base Stance</b></div>
                 <div style="margin-top:12px">
                     <span class="method-pill">-1 Dovish</span>
                     <span class="method-pill">0 Neutral</span>
@@ -2482,59 +2590,22 @@ with tab3:
             unsafe_allow_html=True,
         )
 
-    with c2:
+    with p2:
         st.markdown(
             """
             <div class="method-card">
-                <div class="method-card-title">Content Type</div>
-                <div class="method-step"><b>PRESCRIPTIVE</b><br>향후 정책 방향이나 바람직한 조치를 직접 시사</div>
-                <div style="height:10px"></div>
-                <div class="method-step"><b>DESCRIPTIVE</b><br>경제·물가·고용 상황을 설명</div>
-                <div style="height:10px"></div>
-                <div class="method-step"><b>MIXED</b><br>설명과 정책적 시사가 함께 존재</div>
-                <div style="height:10px"></div>
-                <div class="method-step"><b>IRRELEVANT</b><br>통화정책 stance 판단과 관련성이 낮음</div>
-                <div style="margin-top:14px" class="method-step">
-                    <b>policy_relevant=False</b>는 최종 stance aggregation에서 제외
-                </div>
-            </div>
-            """,
-            unsafe_allow_html=True,
-        )
-
-    with c3:
-        st.markdown(
-            """
-            <div class="method-card">
-                <div class="method-card-title">News Event Dedup</div>
-                <div class="method-step">동일 Fed 발언의 반복·재배포 기사를 하나의 event로 묶습니다.</div>
-                <div style="height:10px"></div>
-                <div class="method-step">① Same speaker</div>
-                <div class="method-step">② Nearby publication date</div>
-                <div class="method-step">③ title + article lead similarity</div>
-                <div class="method-step">④ Semantic event cluster</div>
-                <div class="method-step">⑤ Representative article</div>
-                <div class="method-step">⑥ Relevance filter</div>
-                <div style="margin-top:14px">
-                    <span class="method-pill">±4 days</span>
-                    <span class="method-pill">similarity ≥ 0.78</span>
-                </div>
-            </div>
-            """,
-            unsafe_allow_html=True,
-        )
-
-    with c4:
-        st.markdown(
-            f"""
-            <div class="method-card">
-                <div class="method-card-title">Data Coverage</div>
-                <div class="method-metric"><span>Fed Members</span><b>{len(MEMBER_INFO):,}</b></div>
-                <div class="method-metric"><span>Official Docs</span><b>{official_count:,}</b></div>
-                <div class="method-metric"><span>News History</span><b>{news_count:,}</b></div>
-                <div class="method-metric"><span>Policy Relevant</span><b>{relevant_count:,}</b></div>
-                <div class="method-metric"><span>Scored Items</span><b>{scored_count:,}</b></div>
-                <div style="margin-top:12px" class="method-step">Counts reflect the currently loaded result files.</div>
+                <div class="method-card-title">News Layer · Recent Stance</div>
+                <div class="method-step"><b>2026 News Collection</b></div>
+                <div class="method-arrow">↓</div>
+                <div class="method-step"><b>① Raw Anchor</b><br>대량 뉴스에서 반복·유사 보도를 1차 정리</div>
+                <div class="method-arrow">↓</div>
+                <div class="method-step"><b>② Relevance LLM</b><br>실제 해당 위원의 현재 통화정책 발언인지 확인</div>
+                <div class="method-arrow">↓</div>
+                <div class="method-step"><b>③ Embedding Validation → Final Event</b><br>전문 비교를 통해 동일 실제 발언을 Event 단위로 확정</div>
+                <div class="method-arrow">↓</div>
+                <div class="method-step"><b>④ News Stance LLM</b><br>Final Event의 Hawkish / Neutral / Dovish score 산정</div>
+                <div class="method-arrow">↓</div>
+                <div class="method-step"><b>⑤ Low-direction Signal → Macro Calibration</b><br>방향성이 약한 발언만 당시 경제상황을 보조적으로 확인</div>
             </div>
             """,
             unsafe_allow_html=True,
@@ -2546,12 +2617,11 @@ with tab3:
 <div class="reference-section">RESEARCH</div>
 <div class="reference-row"><div><a href="https://www.bis.org/publ/work1215.htm" target="_blank">BIS · CB-LMs</a></div><div class="reference-desc">Central-bank-domain language models; reference for domain-specific monetary-policy text classification.</div></div>
 <div class="reference-row"><div><a href="https://www.bis.org/publ/work1253.htm" target="_blank">BIS · Word2Prices</a></div><div class="reference-desc">Reference for extracting structured economic information and signals from text.</div></div>
-<div class="reference-row"><div><a href="https://www.bis.org/" target="_blank">BIS Research</a></div><div class="reference-desc">Additional central-bank communication and monetary-policy NLP research used for methodology review.</div></div>
 <div class="reference-section">OPEN SOURCE</div>
 <div class="reference-row"><div><a href="https://github.com/usydnlp/FedNLP" target="_blank">FedNLP</a></div><div class="reference-desc">Federal Reserve communication NLP datasets and modeling reference.</div></div>
 <div class="reference-row"><div><a href="https://github.com/gtfintechlab/FOMC-NLP" target="_blank">FOMC-NLP</a></div><div class="reference-desc">FOMC text analysis and hawkish / dovish classification reference.</div></div>
 <div class="reference-section">PROJECT DESIGN</div>
-<div class="reference-row"><div>Official + News separation</div><div class="reference-desc">Official remarks remain the primary stance source; news is retained as a separate event layer and recent signal.</div></div>
-<div class="reference-row"><div>Reuters Stance</div><div class="reference-desc">Displayed as an external benchmark only. It is not used in LLM score or Combined Score calculation.</div></div>
+<div class="reference-row"><div>Official + News separation</div><div class="reference-desc">Official remarks are used as the Base Stance; news is maintained as a separate recent-event layer.</div></div>
+<div class="reference-row"><div>Reuters Stance</div><div class="reference-desc">External benchmark only. It is not used in LLM score or Combined Score calculation.</div></div>
 </div>"""
     st.markdown(reference_html, unsafe_allow_html=True)

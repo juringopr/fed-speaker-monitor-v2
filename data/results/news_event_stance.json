@@ -1,0 +1,180 @@
+[
+  {
+    "event_id": "news_event_alberto_musalem_20260731_0",
+    "speaker": "Alberto Musalem",
+    "event_cluster": 0,
+    "published_at": "2026-07-31T23:10:23+00:00",
+    "last_published_at": "2026-07-31T23:10:23+00:00",
+    "article_count": 1,
+    "titles": [
+      "Bond sell-off sent warning on Fed’s credibility, says top central bank official"
+    ],
+    "urls": [
+      "https://www.ft.com/content/2735a2b5-db87-4a7f-9484-20c1e429267d"
+    ],
+    "sources": [
+      "news_rss_finlight|www.ft.com"
+    ],
+    "policy_relevant": true,
+    "stance": "HAWKISH",
+    "score": 0.8,
+    "policy_action": "TIGHTENING",
+    "reasoning": "The article attributes to Alberto Musalem explicit support for a 25bp rate increase (the policy-bearing phrase), which is a clear, moderately strong hawkish/tightening signal in favor of higher interest rates."
+  },
+  {
+    "event_id": "news_event_alberto_musalem_20260801_1",
+    "speaker": "Alberto Musalem",
+    "event_cluster": 1,
+    "published_at": "2026-08-01T02:12:37.739000+00:00",
+    "last_published_at": "2026-08-01T04:35:55+00:00",
+    "article_count": 2,
+    "titles": [
+      "Treasury selloff signals need to bolster Fed's inflation credibility, Musalem tells FT",
+      "Treasury sell-off shows Fed must reinforce inflation credibility, Musalem says"
+    ],
+    "urls": [
+      "https://www.reuters.com/business/finance/treasury-selloff-signals-need-bolster-feds-inflation-credibility-musalem-tells-2026-08-01/",
+      "https://finance.yahoo.com/economy/policy/articles/treasury-sell-off-shows-fed-043555168.html"
+    ],
+    "sources": [
+      "news_rss_finlight|www.reuters.com",
+      "news_rss_finlight|finance.yahoo.com"
+    ],
+    "policy_relevant": true,
+    "stance": "HAWKISH",
+    "score": 0.8,
+    "policy_action": "TIGHTENING",
+    "reasoning": "Musalem explicitly told the FT the Fed must 'reinforce its inflation-fighting credibility by raising interest rates,' a direct call for tighter policy, warranting a strong hawkish/tightening assessment."
+  },
+  {
+    "event_id": "news_event_alberto_musalem_20260806_2",
+    "speaker": "Alberto Musalem",
+    "event_cluster": 2,
+    "published_at": "2026-08-06T22:52:00+00:00",
+    "last_published_at": "2026-08-06T23:11:44+00:00",
+    "article_count": 2,
+    "titles": [
+      "The Fed Can’t Bank on Higher Productivity Lowering Inflation, Musalem Says",
+      "Fed's Musalem Expresses Preference to Raise Rates"
+    ],
+    "urls": [
+      "https://www.barrons.com/articles/fed-inflation-productivity-ai-musalem-df22f907",
+      "https://www.bloomberg.com/news/videos/2026-08-06/fed-s-musalem-expresses-preference-to-raise-rates-video"
+    ],
+    "sources": [
+      "news_rss_finlight|www.barrons.com",
+      "news_rss_finlight|www.bloomberg.com"
+    ],
+    "policy_relevant": true,
+    "stance": "HAWKISH",
+    "score": 0.8,
+    "policy_action": "TIGHTENING",
+    "reasoning": "Musalem is explicitly quoted/paraphrased as opposing tolerance of elevated inflation and as having a 'preference to raise rates', which is a clear directional call for tighter policy, warranting a hawkish, strong tightening signal."
+  },
+  {
+    "event_id": "news_event_alberto_musalem_20260807_3",
+    "speaker": "Alberto Musalem",
+    "event_cluster": 3,
+    "published_at": "2026-08-07T00:52:18+00:00",
+    "last_published_at": "2026-08-07T00:52:18+00:00",
+    "article_count": 1,
+    "titles": [
+      "Gold steady as Hormuz tensions cloud Fed outlook; traders eye payrolls"
+    ],
+    "urls": [
+      "https://www.investing.com/news/commodities-news/gold-steady-as-hormuz-tensions-cloud-fed-outlook-traders-eye-payrolls-4844993"
+    ],
+    "sources": [
+      "news_rss_finlight|www.investing.com"
+    ],
+    "policy_relevant": true,
+    "stance": "IRRELEVANT",
+    "score": 0.0,
+    "policy_action": "NOT_APPLICABLE",
+    "reasoning": "The article references the Fed outlook but contains no statement or attribution to Alberto Musalem, so there is no policy-bearing phrase or attributable stance to evaluate."
+  },
+  {
+    "event_id": "news_event_alberto_musalem_20260820_4",
+    "speaker": "Alberto Musalem",
+    "event_cluster": 4,
+    "published_at": "2026-08-20T15:48:07.887000+00:00",
+    "last_published_at": "2026-08-20T18:21:00+00:00",
+    "article_count": 5,
+    "titles": [
+      "Fed's Musalem says won't prejudge rate call view for September FOMC - CNBC",
+      "St. Louis Fed's Musalem would have favored a rate hike in July",
+      "Fed’s Musalem keeps options open for September meeting",
+      "St. Louis Fed's Musalem says on CNBC he won't prejudge rate call view for September FOMC - The Economic Times",
+      "St. Louis Fed's Musalem Keeps September Rate Decision Open, Signals Inflation Still Too High - finance.biggo.com"
+    ],
+    "urls": [
+      "https://www.reuters.com/markets/us/feds-musalem-says-wont-prejudge-rate-call-view-september-fomc-cnbc-2026-08-20/",
+      "https://seekingalpha.com/news/4635515-st-louis-feds-musalem-would-have-favored-a-rate-hike-in-july",
+      "https://finance.yahoo.com/economy/policy/articles/fed-musalem-keeps-options-open-161902502.html",
+      "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNd3NRZzVYbW56Q3F6V0x0ek9tQXpVSEQzajI1Y0p4M0g1SWJpTjB3YUg1SW9RdUUxcXpTY0pSSExUeTFUbk1kWWVkN1l6dFVNQmhvZnhiZGhtSUVmbWdTcDJXclBQdE5VSUxuU0pwd1Fqemc1MHVOSUZxTEFLWkNDZEVKZXVtZU1WclRWWU9KcVpXUG1xMlQxMWhKVDlVeUluajZuUDI4UjM1MXB6Q1Y3OGoxZzFaNFAzOHhPeXpxUHdTMjd6OWxUOXctbTA4THZnemptbXhrTjQ1OUNoaUo3TWxyb0FycXE2em15MnZxNEt6Mm8x0gH6AUFVX3lxTFBFSzJfNHVzZk9UMWpsc3pRanV6OE55clF6NjNNVVFES29fd3JxRjhya3dIZXhCX1FONkhfYTlQdEJqbERZMFRPVFBETlh2Tm40V2czUXJZT1RFMGZLcndDZ255UHlyYjhiXzRWaUZzU1l4aVFscWxmT3B3LTJ1UFhPOEVzWWt4VUNkOTlTOWJNZmJVcTVvcWt4aTRLdVFTX2NIbHVnRTh3TXBpalNpMGlTdGhicExNOUEyR09mY0VwWFQzR3RiaFAyd1hLelNxcjFJcWZudHdXVThpWUltYXJuQXNyNW5uVi1MZmxNUWx2YXNVSHdfa2Jlcmc?oc=5",
+      "https://news.google.com/rss/articles/CBMidkFVX3lxTE14WURkUVBaY0NpdEdnaGdjNkkteU9wVTAxaEFKNUViZ3c5eXN5U2FZOFJQa18wek12VmRnWFNfZkZzdHFCR1lkRFFxTmVYbXNTNnhaX2RuSlVrWFp6OE9Wa1pNWVZFdnNieVNYb3JUOGYwX01CS2c?oc=5"
+    ],
+    "sources": [
+      "news_rss_finlight|www.reuters.com",
+      "news_rss_finlight|seekingalpha.com",
+      "news_rss_finlight|finance.yahoo.com",
+      "google_news",
+      "google_news"
+    ],
+    "policy_relevant": true,
+    "stance": "NEUTRAL",
+    "score": 0.0,
+    "policy_action": "UNCLEAR",
+    "reasoning": "Musalem is directly quoted saying his decision \"depends on incoming data,\" which indicates a data-dependent, non-directional stance for the September meeting, so I classify it as neutral with no clear policy action."
+  },
+  {
+    "event_id": "news_event_alberto_musalem_20260820_5",
+    "speaker": "Alberto Musalem",
+    "event_cluster": 5,
+    "published_at": "2026-08-20T15:54:00+00:00",
+    "last_published_at": "2026-08-20T15:58:51+00:00",
+    "article_count": 3,
+    "titles": [
+      "St. Louis Fed President Alberto Musalem: We monitor the bond market all the time - CNBC",
+      "Musalem Says Bond Market Pain Not Due to Fed Credibility Concern - Bloomberg.com",
+      "Musalem Says Bond Market Pain Not Due to Fed Credibility Concern"
+    ],
+    "urls": [
+      "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNWmwtVDhoRlc5THRDeVJ4Qkwxa2VIQ3ZYWkFSd01lOGo5cGtYZFhoSk5wRFlWeHR1WDFGdHh6WkJOZDBnN0o3eDJWLTBnaHJCM1RKMHZISElKTHhhZ2Y4TXJQZEtJOXM4ODJPaGpNWXBiZ2hzLTRpY3QxWW1QNk02Wi1CSlFIczV6eXlFd05jc2JROXhvLUhldHZWdm1acUlyYl9VZHZNTmo?oc=5",
+      "https://news.google.com/rss/articles/CBMitgFBVV95cUxQLUlaUUtPTDZ1STBKYmVnNXRUQ0ZJMndfZXNMa215bWNxSDRSbmFzeXhndFdVTFk3UzhNOU9ZYmFxOUNoYm10LVJISXpSWXh4QWdBeUxkTEpjUUVjb0d4UmRMRVFvV0lGZjJqdnJzMnB2QTMzdHlKYm5CeFpSMmlFQjZVMGx0S2hQbEp0UUNiWG9mVk12Q3RNSHlSSnJXelNfQzY2LWVPQzlaakpLU3hmVFg3QnI5dw?oc=5",
+      "https://www.bloomberg.com/news/articles/2026-08-20/musalem-says-bond-market-pain-not-due-to-fed-credibility-concern"
+    ],
+    "sources": [
+      "google_news",
+      "google_news",
+      "news_rss_finlight|www.bloomberg.com"
+    ],
+    "policy_relevant": true,
+    "stance": "NEUTRAL",
+    "score": 0.0,
+    "policy_action": "UNCLEAR",
+    "reasoning": "Musalem (the St. Louis Fed president) says bond-market moves are driven by government borrowing and AI-related financing and states \"We monitor the bond market all the time,\" which describes attention to financial conditions without recommending tighter or easier policy, so a neutral stance with no signal strength is appropriate."
+  },
+  {
+    "event_id": "news_event_anna_paulson_20260804_0",
+    "speaker": "Anna Paulson",
+    "event_cluster": 0,
+    "published_at": "2026-08-04T00:15:00+00:00",
+    "last_published_at": "2026-08-04T00:15:00+00:00",
+    "article_count": 1,
+    "titles": [
+      "Treasury Yields Fall on Hopes for Iran Deal"
+    ],
+    "urls": [
+      "https://www.wsj.com/finance/investing/jgbs-edge-higher-tracking-gains-in-u-s-treasurys-89af7200"
+    ],
+    "sources": [
+      "news_rss_finlight|www.wsj.com"
+    ],
+    "policy_relevant": true,
+    "stance": "IRRELEVANT",
+    "score": 0.0,
+    "policy_action": "NOT_APPLICABLE",
+    "reasoning": "The article contains no quote or attributed view from Anna Paulson, so no monetary-policy phrase or stance can be identified and no score is assignable."
+  }
+]

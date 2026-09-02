@@ -1,0 +1,743 @@
+[
+  {
+    "event_id": "kevin_warsh_event_4f7876a4b9d8",
+    "speaker": "Kevin Warsh",
+    "article_count": 1,
+    "segment_ids": [
+      "news_kevin_warsh_9c1c4200b6b9"
+    ],
+    "representative_segment_id": "news_kevin_warsh_9c1c4200b6b9",
+    "target_text": "At his Jackson Hole debut, Warsh warned that inflation remains too high, and his remarks reset investors' 2026 rate-hike bets.",
+    "normalized_target_text": "Warsh warns inflation remains too high and his Jackson Hole remarks reset 2026 rate-hike expectations.",
+    "policy_relevance_score": 5,
+    "attribution": "TARGET_SPEAKER",
+    "remark_type": "CURRENT_REMARK",
+    "gate_confidence": "HIGH"
+  },
+  {
+    "event_id": "kevin_warsh_event_a368bd3bace2",
+    "speaker": "Kevin Warsh",
+    "article_count": 1,
+    "segment_ids": [
+      "news_kevin_warsh_b7935c03b91c"
+    ],
+    "representative_segment_id": "news_kevin_warsh_b7935c03b91c",
+    "target_text": "Federal Reserve Chair Kevin Warsh, in his first Jackson Hole speech, gave central bankers and investors greater clarity on how he views the economy and the Fed’s path ahead, while leaving questions about the timing and number of potential rate hikes.",
+    "normalized_target_text": "Warsh says in his Jackson Hole speech that he views the economy and the Fed’s policy path with greater clarity, but the timing and number of potential rate hikes remain uncertain.",
+    "policy_relevance_score": 5,
+    "attribution": "TARGET_SPEAKER",
+    "remark_type": "CURRENT_REMARK",
+    "gate_confidence": "HIGH"
+  },
+  {
+    "event_id": "kevin_warsh_event_f4e2d2bcdfe8",
+    "speaker": "Kevin Warsh",
+    "article_count": 1,
+    "segment_ids": [
+      "news_kevin_warsh_d080bac1d888"
+    ],
+    "representative_segment_id": "news_kevin_warsh_d080bac1d888",
+    "target_text": "At Jackson Hole yesterday morning, Federal Reserve chairman Kevin Warsh affirmed that the Fed is determined to get inflation down and said it may have to raise interest rates to accomplish that goal, according to Axios reporter Neil Irwin.",
+    "normalized_target_text": "Warsh says the Fed is determined to reduce inflation and may need to raise interest rates to do so.",
+    "policy_relevance_score": 5,
+    "attribution": "TARGET_SPEAKER",
+    "remark_type": "CURRENT_REMARK",
+    "gate_confidence": "HIGH"
+  },
+  {
+    "event_id": "kevin_warsh_event_b398f6417da5",
+    "speaker": "Kevin Warsh",
+    "article_count": 1,
+    "segment_ids": [
+      "news_kevin_warsh_02e7b4cca8f2"
+    ],
+    "representative_segment_id": "news_kevin_warsh_02e7b4cca8f2",
+    "target_text": "Federal Reserve Chair Kevin Warsh signaled the central bank is prepared to act if inflation fails to move clearly and quickly toward its 2% target, while describing the broader US economy as strong.",
+    "normalized_target_text": "Warsh says the Fed is prepared to act if inflation does not move clearly and quickly toward its 2% target.",
+    "policy_relevance_score": 5,
+    "attribution": "TARGET_SPEAKER",
+    "remark_type": "CURRENT_REMARK",
+    "gate_confidence": "HIGH"
+  },
+  {
+    "event_id": "kevin_warsh_event_7d9359ed5210",
+    "speaker": "Kevin Warsh",
+    "article_count": 1,
+    "segment_ids": [
+      "news_kevin_warsh_6e1e6943417d"
+    ],
+    "representative_segment_id": "news_kevin_warsh_6e1e6943417d",
+    "target_text": "The article states that Kevin Warsh is putting a September rate hike in play.",
+    "normalized_target_text": "Warsh says a September interest-rate hike is possible.",
+    "policy_relevance_score": 5,
+    "attribution": "TARGET_SPEAKER",
+    "remark_type": "CURRENT_REMARK",
+    "gate_confidence": "MEDIUM"
+  },
+  {
+    "event_id": "kevin_warsh_event_d7490accb57b",
+    "speaker": "Kevin Warsh",
+    "article_count": 1,
+    "segment_ids": [
+      "news_kevin_warsh_d0c0c8f8ad73"
+    ],
+    "representative_segment_id": "news_kevin_warsh_d0c0c8f8ad73",
+    "target_text": "Federal Reserve Chairman Kevin Warsh made clear he wants to see underlying inflation clearly heading lower at an annual Federal Reserve gathering in Wyoming. Government figures this week didn’t help much.",
+    "normalized_target_text": "Warsh says he wants to see underlying inflation clearly heading lower, stated at an annual Federal Reserve gathering in Wyoming.",
+    "policy_relevance_score": 5,
+    "attribution": "TARGET_SPEAKER",
+    "remark_type": "CURRENT_REMARK",
+    "gate_confidence": "HIGH"
+  },
+  {
+    "event_id": "kevin_warsh_event_8c8c364a96a8",
+    "speaker": "Kevin Warsh",
+    "article_count": 1,
+    "segment_ids": [
+      "news_kevin_warsh_d0b5405d26c3"
+    ],
+    "representative_segment_id": "news_kevin_warsh_d0b5405d26c3",
+    "target_text": "US Federal Reserve Chairman Kevin Warsh pledged to fight inflation, a statement that lifted bets the US central bank will raise interest rates and helped gold steady after a sharp decline.",
+    "normalized_target_text": "Warsh pledged to fight inflation, prompting markets to price in higher Fed interest rates.",
+    "policy_relevance_score": 5,
+    "attribution": "TARGET_SPEAKER",
+    "remark_type": "CURRENT_REMARK",
+    "gate_confidence": "HIGH"
+  },
+  {
+    "event_id": "kevin_warsh_event_ab1ea93c8016",
+    "speaker": "Kevin Warsh",
+    "article_count": 1,
+    "segment_ids": [
+      "news_kevin_warsh_78d7cd91afd5"
+    ],
+    "representative_segment_id": "news_kevin_warsh_78d7cd91afd5",
+    "target_text": "U.S. Federal Reserve Chair Kevin Warsh reiterated the central bank's commitment to bringing inflation back to target, boosting expectations of another interest-rate increase.",
+    "normalized_target_text": "Warsh reiterated the Fed's commitment to bring inflation back to target, boosting expectations of another interest-rate increase.",
+    "policy_relevance_score": 5,
+    "attribution": "TARGET_SPEAKER",
+    "remark_type": "CURRENT_REMARK",
+    "gate_confidence": "HIGH"
+  },
+  {
+    "event_id": "kevin_warsh_event_c4dc8d58025e",
+    "speaker": "Kevin Warsh",
+    "article_count": 1,
+    "segment_ids": [
+      "news_kevin_warsh_4b7591b6ef12"
+    ],
+    "representative_segment_id": "news_kevin_warsh_4b7591b6ef12",
+    "target_text": "In a highly anticipated speech on Friday, Federal Reserve Chairman Kevin Warsh reiterated his commitment to bringing down inflation.",
+    "normalized_target_text": "Warsh reiterated in a Friday speech that he is committed to bringing down inflation.",
+    "policy_relevance_score": 5,
+    "attribution": "TARGET_SPEAKER",
+    "remark_type": "CURRENT_REMARK",
+    "gate_confidence": "HIGH"
+  },
+  {
+    "event_id": "kevin_warsh_event_4fe7e51d5675",
+    "speaker": "Kevin Warsh",
+    "article_count": 2,
+    "segment_ids": [
+      "news_kevin_warsh_84d6524c0790",
+      "news_kevin_warsh_4da3857b4b28"
+    ],
+    "representative_segment_id": "news_kevin_warsh_84d6524c0790",
+    "target_text": "The dollar held gains after hawkish comments from Federal Reserve Chair Kevin Warsh fueled bets on a rate hike next month.",
+    "normalized_target_text": "Warsh's hawkish comments raised expectations of a rate hike next month.",
+    "policy_relevance_score": 5,
+    "attribution": "TARGET_SPEAKER",
+    "remark_type": "CURRENT_REMARK",
+    "gate_confidence": "HIGH"
+  },
+  {
+    "event_id": "kevin_warsh_event_4b4b49e57421",
+    "speaker": "Kevin Warsh",
+    "article_count": 1,
+    "segment_ids": [
+      "news_kevin_warsh_46d8594c8533"
+    ],
+    "representative_segment_id": "news_kevin_warsh_46d8594c8533",
+    "target_text": "At Jackson Hole, Kevin Warsh made hawkish comments suggesting potential future interest rate hikes, prompting sharp market reactions.",
+    "normalized_target_text": "Warsh said at Jackson Hole that future interest rate hikes are possible.",
+    "policy_relevance_score": 5,
+    "attribution": "TARGET_SPEAKER",
+    "remark_type": "CURRENT_REMARK",
+    "gate_confidence": "HIGH"
+  },
+  {
+    "event_id": "kevin_warsh_event_0d6f95147b03",
+    "speaker": "Kevin Warsh",
+    "article_count": 1,
+    "segment_ids": [
+      "news_kevin_warsh_b22d9a117886"
+    ],
+    "representative_segment_id": "news_kevin_warsh_b22d9a117886",
+    "target_text": "Markets were also digesting Federal Reserve Chair Kevin Warsh’s hawkish message at Jackson Hole, which has sharply increased bets on a September interest-rate move.",
+    "normalized_target_text": "Warsh's hawkish Jackson Hole message has increased market expectations of a September interest-rate move.",
+    "policy_relevance_score": 5,
+    "attribution": "TARGET_SPEAKER",
+    "remark_type": "CURRENT_REMARK",
+    "gate_confidence": "HIGH"
+  },
+  {
+    "event_id": "kevin_warsh_event_032f982cd6f3",
+    "speaker": "Kevin Warsh",
+    "article_count": 1,
+    "segment_ids": [
+      "news_kevin_warsh_9e1f89381957"
+    ],
+    "representative_segment_id": "news_kevin_warsh_9e1f89381957",
+    "target_text": "Kevin Warsh's speech at Jackson Hole signaled a hawkish stance that reinforced expectations of a relatively tighter Federal Reserve policy and raised the chances of rate hikes at the FOMC meeting in September.",
+    "normalized_target_text": "Warsh's speech signals a hawkish stance that increases the likelihood of tighter Fed policy and rate hikes at the September FOMC.",
+    "policy_relevance_score": 5,
+    "attribution": "TARGET_SPEAKER",
+    "remark_type": "CURRENT_REMARK",
+    "gate_confidence": "HIGH"
+  },
+  {
+    "event_id": "kevin_warsh_event_1db8f2dbb1bf",
+    "speaker": "Kevin Warsh",
+    "article_count": 1,
+    "segment_ids": [
+      "news_kevin_warsh_a19a508bc0a1"
+    ],
+    "representative_segment_id": "news_kevin_warsh_a19a508bc0a1",
+    "target_text": "Kevin Warsh, in a speech, made the case for higher interest rates and said he had raised the bar for keeping policy unchanged. He said the decision now rests on incoming economic data, including an inflation report due days before officials’ next meeting.",
+    "normalized_target_text": "Warsh says rates may need to be raised and that holding rates steady now requires stronger incoming data, including an upcoming inflation report.",
+    "policy_relevance_score": 5,
+    "attribution": "TARGET_SPEAKER",
+    "remark_type": "CURRENT_REMARK",
+    "gate_confidence": "HIGH"
+  },
+  {
+    "event_id": "kevin_warsh_event_9b957deb8927",
+    "speaker": "Kevin Warsh",
+    "article_count": 1,
+    "segment_ids": [
+      "news_kevin_warsh_da32200b3534"
+    ],
+    "representative_segment_id": "news_kevin_warsh_da32200b3534",
+    "target_text": "Kevin Warsh says the central bank will track three questions as the $700 billion AI buildout reshapes the economy, and he has argued that the technology will calm inflation and unlock productivity.",
+    "normalized_target_text": "Warsh says the Fed will track three questions as a $700B AI buildout reshapes the economy and that AI could calm inflation and boost productivity.",
+    "policy_relevance_score": 5,
+    "attribution": "TARGET_SPEAKER",
+    "remark_type": "CURRENT_REMARK",
+    "gate_confidence": "HIGH"
+  },
+  {
+    "event_id": "kevin_warsh_event_ce8401c2e46d",
+    "speaker": "Kevin Warsh",
+    "article_count": 2,
+    "segment_ids": [
+      "news_kevin_warsh_bfebd9c968fa",
+      "news_kevin_warsh_d57600134f86"
+    ],
+    "representative_segment_id": "news_kevin_warsh_bfebd9c968fa",
+    "target_text": "Kevin Warsh told G20 finance leaders that the world is seeing a global investment surge that is helping to power growth, reversing a past 'global savings glut' that had kept capital in low-yielding instruments amid a shortage of investment opportunities.",
+    "normalized_target_text": "Warsh says the past global savings glut is reversing into a global investment surge that is helping to power growth by reallocating capital away from low-yielding instruments.",
+    "policy_relevance_score": 4,
+    "attribution": "TARGET_SPEAKER",
+    "remark_type": "CURRENT_REMARK",
+    "gate_confidence": "HIGH"
+  },
+  {
+    "event_id": "kevin_warsh_event_87fc7e09c5f8",
+    "speaker": "Kevin Warsh",
+    "article_count": 1,
+    "segment_ids": [
+      "news_kevin_warsh_5b6f8df5e6ef"
+    ],
+    "representative_segment_id": "news_kevin_warsh_5b6f8df5e6ef",
+    "target_text": "Federal Reserve Chairman Kevin Warsh told a G-20 meeting that the global economy faces a new period of “secular growth” and that the economic assumptions of the past two decades no longer hold.",
+    "normalized_target_text": "Warsh says the global economy is entering a new period of secular growth and that the economic assumptions of the past two decades no longer apply.",
+    "policy_relevance_score": 5,
+    "attribution": "TARGET_SPEAKER",
+    "remark_type": "CURRENT_REMARK",
+    "gate_confidence": "HIGH"
+  },
+  {
+    "event_id": "kevin_warsh_event_6fa173ca2d8c",
+    "speaker": "Kevin Warsh",
+    "article_count": 3,
+    "segment_ids": [
+      "news_kevin_warsh_f950c2ea522f",
+      "news_kevin_warsh_96130870b6f4",
+      "news_kevin_warsh_cfd27a8a7c6b"
+    ],
+    "representative_segment_id": "news_kevin_warsh_f950c2ea522f",
+    "target_text": "The article reports that Kevin Warsh made hawkish remarks in a speech that led markets to boost bets on interest-rate hikes this year, prompting JPMorgan's trading desk to shift to a \"tactically cautious\" view on U.S. stocks for the next few weeks.",
+    "normalized_target_text": "Warsh made hawkish remarks in a recent speech that led markets to increase expectations of interest-rate hikes this year.",
+    "policy_relevance_score": 5,
+    "attribution": "TARGET_SPEAKER",
+    "remark_type": "CURRENT_REMARK",
+    "gate_confidence": "HIGH"
+  },
+  {
+    "event_id": "kevin_warsh_event_1588e1579782",
+    "speaker": "Kevin Warsh",
+    "article_count": 2,
+    "segment_ids": [
+      "news_kevin_warsh_8d2f24257160",
+      "news_kevin_warsh_bab2071f8e67"
+    ],
+    "representative_segment_id": "news_kevin_warsh_bab2071f8e67",
+    "target_text": "The article reports that investors stepped up bets on a Federal Reserve rate hike at the next policy meeting following “hawkish comments” by Kevin Warsh, linking his recent remarks to increased expectations of tighter monetary policy.",
+    "normalized_target_text": "Warsh made hawkish comments that prompted investors to increase expectations of a Fed rate hike at the next policy meeting.",
+    "policy_relevance_score": 5,
+    "attribution": "TARGET_SPEAKER",
+    "remark_type": "CURRENT_REMARK",
+    "gate_confidence": "MEDIUM"
+  },
+  {
+    "event_id": "kevin_warsh_event_d20c752d1579",
+    "speaker": "Kevin Warsh",
+    "article_count": 1,
+    "segment_ids": [
+      "news_kevin_warsh_7033336d6142"
+    ],
+    "representative_segment_id": "news_kevin_warsh_7033336d6142",
+    "target_text": "Kevin Warsh said the U.S. will stay 'reform-oriented' in banking regulation. At the G20, Warsh and Bessent pushed bank-regulation reform, fueling debate over tailoring rules and the impacts on bank stocks.",
+    "normalized_target_text": "Warsh says the U.S. will remain reform-oriented in banking regulation and urged reform at the G20, highlighting tailored rules and their effects on bank stocks.",
+    "policy_relevance_score": 5,
+    "attribution": "TARGET_SPEAKER",
+    "remark_type": "CURRENT_REMARK",
+    "gate_confidence": "HIGH"
+  },
+  {
+    "event_id": "kevin_warsh_event_5117aea44ef8",
+    "speaker": "Kevin Warsh",
+    "article_count": 1,
+    "segment_ids": [
+      "news_kevin_warsh_6a788144276e"
+    ],
+    "representative_segment_id": "news_kevin_warsh_6a788144276e",
+    "target_text": "Kevin Warsh said the era of cheap money is over, commenting on market bets that helped bitcoin gain 26% in August.",
+    "normalized_target_text": "Kevin Warsh says the era of cheap money is over.",
+    "policy_relevance_score": 5,
+    "attribution": "TARGET_SPEAKER",
+    "remark_type": "CURRENT_REMARK",
+    "gate_confidence": "HIGH"
+  },
+  {
+    "event_id": "kevin_warsh_event_a08698c3866c",
+    "speaker": "Kevin Warsh",
+    "article_count": 1,
+    "segment_ids": [
+      "news_kevin_warsh_b6f8ebf06c8d"
+    ],
+    "representative_segment_id": "news_kevin_warsh_b6f8ebf06c8d",
+    "target_text": "Kevin Warsh said “growth is a choice,” urging G20 leaders to focus on U.S. productivity and the Congressional Budget Office’s 1.8% growth outlook as a way to nail down the underlying potential for U.S. economic growth.",
+    "normalized_target_text": "Warsh says \"growth is a choice\" and urges G20 leaders to focus on U.S. productivity and the CBO's 1.8% growth outlook to pin down underlying U.S. growth potential.",
+    "policy_relevance_score": 4,
+    "attribution": "TARGET_SPEAKER",
+    "remark_type": "CURRENT_REMARK",
+    "gate_confidence": "HIGH"
+  },
+  {
+    "event_id": "kevin_warsh_event_c4526458e1c4",
+    "speaker": "Kevin Warsh",
+    "article_count": 1,
+    "segment_ids": [
+      "news_kevin_warsh_d40a960f33e1"
+    ],
+    "representative_segment_id": "news_kevin_warsh_d40a960f33e1",
+    "target_text": "The article states that markets now price roughly a 57%–58% chance of a Federal Reserve rate hike in September, a rise that occurred \"after Fed Chair Kevin Warsh’s hawkish Jackson Hole\" remarks (i.e., it attributes recent market repricing to Warsh's Jackson Hole comments).",
+    "normalized_target_text": "Warsh's hawkish Jackson Hole remarks led markets to raise the implied odds of a September Fed rate hike to about 57%–58%.",
+    "policy_relevance_score": 4,
+    "attribution": "TARGET_SPEAKER",
+    "remark_type": "CURRENT_REMARK",
+    "gate_confidence": "MEDIUM"
+  },
+  {
+    "event_id": "kevin_warsh_event_0365fef965e2",
+    "speaker": "Kevin Warsh",
+    "article_count": 1,
+    "segment_ids": [
+      "news_kevin_warsh_45d2ba9514ec"
+    ],
+    "representative_segment_id": "news_kevin_warsh_45d2ba9514ec",
+    "target_text": "The summary reports that Kevin Warsh made \"hawkish Jackson Hole remarks,\" i.e., he was characterized as taking a hawkish policy stance at the Jackson Hole symposium, as discussed by George Goncalves on Bloomberg.",
+    "normalized_target_text": "Warsh made hawkish policy remarks at the Jackson Hole symposium.",
+    "policy_relevance_score": 3,
+    "attribution": "TARGET_SPEAKER",
+    "remark_type": "CURRENT_REMARK",
+    "gate_confidence": "MEDIUM"
+  },
+  {
+    "event_id": "kevin_warsh_event_4aa9cecac000",
+    "speaker": "Kevin Warsh",
+    "article_count": 1,
+    "segment_ids": [
+      "news_kevin_warsh_8c339cbb346f"
+    ],
+    "representative_segment_id": "news_kevin_warsh_8c339cbb346f",
+    "target_text": "A more hawkish shift in interest-rate expectations following Federal Reserve Chair Kevin Warsh’s Jackson Hole address kept investors cautious.",
+    "normalized_target_text": "Warsh's Jackson Hole address prompted a more hawkish shift in interest-rate expectations, keeping investors cautious.",
+    "policy_relevance_score": 4,
+    "attribution": "TARGET_SPEAKER",
+    "remark_type": "CURRENT_REMARK",
+    "gate_confidence": "MEDIUM"
+  },
+  {
+    "event_id": "kevin_warsh_event_fd9b3c9b4ff8",
+    "speaker": "Kevin Warsh",
+    "article_count": 1,
+    "segment_ids": [
+      "news_kevin_warsh_66fa3fe90d44"
+    ],
+    "representative_segment_id": "news_kevin_warsh_66fa3fe90d44",
+    "target_text": "Investors turned cautious after Federal Reserve Chair Kevin Warsh's hawkish comments revived expectations for a U.S. interest-rate hike.",
+    "normalized_target_text": "Kevin Warsh's hawkish comments revived expectations of a U.S. interest-rate hike.",
+    "policy_relevance_score": 5,
+    "attribution": "TARGET_SPEAKER",
+    "remark_type": "CURRENT_REMARK",
+    "gate_confidence": "HIGH"
+  },
+  {
+    "event_id": "kevin_warsh_event_42dda0e7012a",
+    "speaker": "Kevin Warsh",
+    "article_count": 1,
+    "segment_ids": [
+      "news_kevin_warsh_f086cee14ae5"
+    ],
+    "representative_segment_id": "news_kevin_warsh_f086cee14ae5",
+    "target_text": "Federal Reserve Chairman Kevin Warsh signaled unease about inflation trends.",
+    "normalized_target_text": "Warsh says he is uneasy about current inflation trends.",
+    "policy_relevance_score": 4,
+    "attribution": "TARGET_SPEAKER",
+    "remark_type": "CURRENT_REMARK",
+    "gate_confidence": "HIGH"
+  },
+  {
+    "event_id": "kevin_warsh_event_22395b5930a7",
+    "speaker": "Kevin Warsh",
+    "article_count": 1,
+    "segment_ids": [
+      "news_kevin_warsh_fd97396623c5"
+    ],
+    "representative_segment_id": "news_kevin_warsh_fd97396623c5",
+    "target_text": "The article reports that Kevin Warsh issued a warning about inflation, a development cited as increasing the prospect of higher interest rates and threatening the technology-stock rally.",
+    "normalized_target_text": "Warsh warns that inflation risks could increase the odds of higher interest-rate hikes.",
+    "policy_relevance_score": 4,
+    "attribution": "TARGET_SPEAKER",
+    "remark_type": "CURRENT_REMARK",
+    "gate_confidence": "MEDIUM"
+  },
+  {
+    "event_id": "kevin_warsh_event_09de9a2ad649",
+    "speaker": "Kevin Warsh",
+    "article_count": 2,
+    "segment_ids": [
+      "news_kevin_warsh_38ab7db92688",
+      "news_kevin_warsh_c8334de56453"
+    ],
+    "representative_segment_id": "news_kevin_warsh_38ab7db92688",
+    "target_text": "The article reports comments from U.S. Federal Reserve Chair Kevin Warsh that \"further rate hikes may be needed to contain inflation.\"",
+    "normalized_target_text": "Warsh says further rate hikes may be needed to contain inflation.",
+    "policy_relevance_score": 5,
+    "attribution": "TARGET_SPEAKER",
+    "remark_type": "CURRENT_REMARK",
+    "gate_confidence": "HIGH"
+  },
+  {
+    "event_id": "kevin_warsh_event_bb86f3b0f03d",
+    "speaker": "Kevin Warsh",
+    "article_count": 1,
+    "segment_ids": [
+      "news_kevin_warsh_ad51b7183620"
+    ],
+    "representative_segment_id": "news_kevin_warsh_ad51b7183620",
+    "target_text": "Federal Reserve Chairman Kevin Warsh doubled down on his vow to finally tame inflation that’s outpaced the central bank’s target for five straight years, prompting traders to pile into bets that a quarter-point Fed rate hike next month is more likely than not.",
+    "normalized_target_text": "Warsh says he doubled down on his vow to tame inflation that has outpaced the Fed's target for five years, making a quarter-point rate hike next month more likely.",
+    "policy_relevance_score": 5,
+    "attribution": "TARGET_SPEAKER",
+    "remark_type": "CURRENT_REMARK",
+    "gate_confidence": "HIGH"
+  },
+  {
+    "event_id": "kevin_warsh_event_18909d62b2ab",
+    "speaker": "Kevin Warsh",
+    "article_count": 1,
+    "segment_ids": [
+      "news_kevin_warsh_bf1e3533aa4c"
+    ],
+    "representative_segment_id": "news_kevin_warsh_bf1e3533aa4c",
+    "target_text": "The implications of Fed Chair Kevin Warsh's Jackson Hole speech are that traders expect a rate hike given the hints in his address largely focused on inflation. Warsh's lack of forward guidance does not lend clarity to how the Fed will act in the coming months.",
+    "normalized_target_text": "Warsh's Jackson Hole speech emphasized inflation, lacked forward guidance, and led traders to expect a possible rate hike.",
+    "policy_relevance_score": 5,
+    "attribution": "TARGET_SPEAKER",
+    "remark_type": "CURRENT_REMARK",
+    "gate_confidence": "HIGH"
+  },
+  {
+    "event_id": "kevin_warsh_event_eae768bea253",
+    "speaker": "Kevin Warsh",
+    "article_count": 1,
+    "segment_ids": [
+      "news_kevin_warsh_0974784fafbc"
+    ],
+    "representative_segment_id": "news_kevin_warsh_0974784fafbc",
+    "target_text": "At Jackson Hole, Federal Reserve Chairman Kevin Warsh delivered a speech that Barclays described as \"quite hawkish,\" and Barclays said this reframing led it to expect a 25-basis-point rate hike in September followed by another in December.",
+    "normalized_target_text": "Warsh's Jackson Hole speech was characterized as hawkish, leading Barclays to expect 25-basis-point rate hikes in September and December.",
+    "policy_relevance_score": 5,
+    "attribution": "TARGET_SPEAKER",
+    "remark_type": "CURRENT_REMARK",
+    "gate_confidence": "HIGH"
+  },
+  {
+    "event_id": "kevin_warsh_event_8d9164f36d4c",
+    "speaker": "Kevin Warsh",
+    "article_count": 1,
+    "segment_ids": [
+      "news_kevin_warsh_d748e321e5ec"
+    ],
+    "representative_segment_id": "news_kevin_warsh_d748e321e5ec",
+    "target_text": "The article reports that Federal Reserve Chair Kevin Warsh signaled that central bankers still have work to do to curb persistent inflation, a comment that coincided with a sharp selloff in U.S. Treasuries and a rise in euro zone government bond yields.",
+    "normalized_target_text": "Warsh says central bankers still have work to do to curb persistent inflation.",
+    "policy_relevance_score": 5,
+    "attribution": "TARGET_SPEAKER",
+    "remark_type": "CURRENT_REMARK",
+    "gate_confidence": "HIGH"
+  },
+  {
+    "event_id": "kevin_warsh_event_1587aba2ae5a",
+    "speaker": "Kevin Warsh",
+    "article_count": 1,
+    "segment_ids": [
+      "news_kevin_warsh_d9abad168638"
+    ],
+    "representative_segment_id": "news_kevin_warsh_d9abad168638",
+    "target_text": "U.S. Federal Reserve Chair Kevin Warsh signalled that interest rate hikes may be needed to ease price pressures.",
+    "normalized_target_text": "Warsh says interest rate hikes may be needed to ease price pressures.",
+    "policy_relevance_score": 5,
+    "attribution": "TARGET_SPEAKER",
+    "remark_type": "CURRENT_REMARK",
+    "gate_confidence": "HIGH"
+  },
+  {
+    "event_id": "kevin_warsh_event_bc0b66f3eb77",
+    "speaker": "Kevin Warsh",
+    "article_count": 1,
+    "segment_ids": [
+      "news_kevin_warsh_1f21189c4d6e"
+    ],
+    "representative_segment_id": "news_kevin_warsh_1f21189c4d6e",
+    "target_text": "In his latest remarks, Chair Kevin Warsh signalled a more hawkish stance on interest rates.",
+    "normalized_target_text": "Warsh's latest remarks signalled a more hawkish stance on interest rates.",
+    "policy_relevance_score": 5,
+    "attribution": "TARGET_SPEAKER",
+    "remark_type": "CURRENT_REMARK",
+    "gate_confidence": "MEDIUM"
+  },
+  {
+    "event_id": "kevin_warsh_event_ca7f25263c04",
+    "speaker": "Kevin Warsh",
+    "article_count": 1,
+    "segment_ids": [
+      "news_kevin_warsh_01f21b346452"
+    ],
+    "representative_segment_id": "news_kevin_warsh_01f21b346452",
+    "target_text": "In a speech on Friday, Fed Chair Kevin Warsh’s remarks increased prospects for U.S. rate increases.",
+    "normalized_target_text": "Warsh's Friday speech raised prospects for U.S. interest-rate increases.",
+    "policy_relevance_score": 5,
+    "attribution": "TARGET_SPEAKER",
+    "remark_type": "CURRENT_REMARK",
+    "gate_confidence": "HIGH"
+  },
+  {
+    "event_id": "kevin_warsh_event_4305451bb719",
+    "speaker": "Kevin Warsh",
+    "article_count": 1,
+    "segment_ids": [
+      "news_kevin_warsh_1fcaf86f0e8f"
+    ],
+    "representative_segment_id": "news_kevin_warsh_1fcaf86f0e8f",
+    "target_text": "The article reports that Kevin Warsh made 'hawkish' remarks that pushed up bond yields, triggering a global bond selloff and contributing to a tech-stock decline.",
+    "normalized_target_text": "Warsh made hawkish remarks that pushed up bond yields.",
+    "policy_relevance_score": 4,
+    "attribution": "TARGET_SPEAKER",
+    "remark_type": "CURRENT_REMARK",
+    "gate_confidence": "MEDIUM"
+  },
+  {
+    "event_id": "kevin_warsh_event_a54059406f46",
+    "speaker": "Kevin Warsh",
+    "article_count": 1,
+    "segment_ids": [
+      "news_kevin_warsh_2a08f1f0fce6"
+    ],
+    "representative_segment_id": "news_kevin_warsh_2a08f1f0fce6",
+    "target_text": "The article states that \"Rising oil prices and Fed Chair Kevin Warsh's hawkish Jackson Hole remarks drove a broad Treasury selloff on Monday,\" which helped push the U.S. 10-year Treasury yield to 4.75%, a 19-month high.",
+    "normalized_target_text": "Warsh's hawkish Jackson Hole remarks drove a Treasury selloff that pushed the 10-year yield to 4.75%.",
+    "policy_relevance_score": 5,
+    "attribution": "TARGET_SPEAKER",
+    "remark_type": "CURRENT_REMARK",
+    "gate_confidence": "HIGH"
+  },
+  {
+    "event_id": "kevin_warsh_event_0b7f757b0be0",
+    "speaker": "Kevin Warsh",
+    "article_count": 1,
+    "segment_ids": [
+      "news_kevin_warsh_3ea60de7a432"
+    ],
+    "representative_segment_id": "news_kevin_warsh_3ea60de7a432",
+    "target_text": "Kevin Warsh signaled a stronger inclination toward rate increases at Jackson Hole on Friday; traders subsequently pushed up the odds to more than 66% that the Fed will raise rates by a quarter point later this month.",
+    "normalized_target_text": "Warsh signaled a stronger inclination toward rate increases at Jackson Hole, leading traders to raise the odds of a quarter-point Fed hike later this month.",
+    "policy_relevance_score": 4,
+    "attribution": "TARGET_SPEAKER",
+    "remark_type": "CURRENT_REMARK",
+    "gate_confidence": "HIGH"
+  },
+  {
+    "event_id": "kevin_warsh_event_6835c01e7206",
+    "speaker": "Kevin Warsh",
+    "article_count": 1,
+    "segment_ids": [
+      "news_kevin_warsh_f19741e6b383"
+    ],
+    "representative_segment_id": "news_kevin_warsh_f19741e6b383",
+    "target_text": "Kevin Warsh gave a hawkish speech at this year's annual Kansas City Fed Symposium in Jackson Hole. The piece notes Warsh said he wants the FOMC to have a \"good family fight.\"",
+    "normalized_target_text": "Warsh said after a hawkish speech at the Jackson Hole symposium that he wants the FOMC to have a \"good family fight.\"",
+    "policy_relevance_score": 5,
+    "attribution": "TARGET_SPEAKER",
+    "remark_type": "CURRENT_REMARK",
+    "gate_confidence": "HIGH"
+  },
+  {
+    "event_id": "kevin_warsh_event_3535eec7ae3a",
+    "speaker": "Kevin Warsh",
+    "article_count": 1,
+    "segment_ids": [
+      "news_kevin_warsh_2da4e6a713e4"
+    ],
+    "representative_segment_id": "news_kevin_warsh_2da4e6a713e4",
+    "target_text": "Federal Reserve official Kevin Warsh said inflation has not slowed meaningfully.",
+    "normalized_target_text": "Kevin Warsh says inflation has not slowed meaningfully.",
+    "policy_relevance_score": 5,
+    "attribution": "TARGET_SPEAKER",
+    "remark_type": "CURRENT_REMARK",
+    "gate_confidence": "HIGH"
+  },
+  {
+    "event_id": "kevin_warsh_event_dab88686a0d2",
+    "speaker": "Kevin Warsh",
+    "article_count": 1,
+    "segment_ids": [
+      "news_kevin_warsh_8d77acaf3cc6"
+    ],
+    "representative_segment_id": "news_kevin_warsh_8d77acaf3cc6",
+    "target_text": "Kevin Warsh has \"finally provides some views on policy outlook,\" with coverage noting his previously 'quieter Fed' approach now includes a small amount of guidance on the policy outlook.",
+    "normalized_target_text": "Warsh says his 'quieter Fed' now includes a small amount of guidance on the policy outlook.",
+    "policy_relevance_score": 3,
+    "attribution": "TARGET_SPEAKER",
+    "remark_type": "CURRENT_REMARK",
+    "gate_confidence": "MEDIUM"
+  },
+  {
+    "event_id": "kevin_warsh_event_49e9909d3b05",
+    "speaker": "Kevin Warsh",
+    "article_count": 1,
+    "segment_ids": [
+      "news_kevin_warsh_d6cc906b71e5"
+    ],
+    "representative_segment_id": "news_kevin_warsh_d6cc906b71e5",
+    "target_text": "The dollar edged lower on Monday as traders waited on key U.S. jobs data due later this week, after hawkish remarks from Federal Reserve Chairman Kevin Warsh on Friday renewed bets on a September interest rate hike.",
+    "normalized_target_text": "Warsh's Friday remarks renewed market expectations of a September interest rate hike.",
+    "policy_relevance_score": 5,
+    "attribution": "TARGET_SPEAKER",
+    "remark_type": "CURRENT_REMARK",
+    "gate_confidence": "HIGH"
+  },
+  {
+    "event_id": "kevin_warsh_event_375d5e340052",
+    "speaker": "Kevin Warsh",
+    "article_count": 1,
+    "segment_ids": [
+      "news_kevin_warsh_1a1d7d34dd6a"
+    ],
+    "representative_segment_id": "news_kevin_warsh_1a1d7d34dd6a",
+    "target_text": "Following his address at the Jackson Hole Economic Policy Symposium, Kevin Warsh kept a potential September interest-rate hike on the table, saying he prioritized persistent inflation over employment concerns; his remarks pushed market-implied odds of near-term tightening sharply higher.",
+    "normalized_target_text": "Warsh says a September rate hike remains on the table, prioritizing persistent inflation over employment and raising market odds of near-term tightening.",
+    "policy_relevance_score": 5,
+    "attribution": "TARGET_SPEAKER",
+    "remark_type": "CURRENT_REMARK",
+    "gate_confidence": "HIGH"
+  },
+  {
+    "event_id": "jerome_powell_event_6a3cfc840baf",
+    "speaker": "Jerome Powell",
+    "article_count": 1,
+    "segment_ids": [
+      "news_jerome_powell_f6d1cdafeffb"
+    ],
+    "representative_segment_id": "news_jerome_powell_f6d1cdafeffb",
+    "target_text": "The summary states that the Fed Chairman’s Jackson Hole inflation warning has traders pricing in new odds of a rate hike as early as September.",
+    "normalized_target_text": "Powell warned about inflation at Jackson Hole, prompting traders to price in a possible rate hike as soon as September.",
+    "policy_relevance_score": 5,
+    "attribution": "TARGET_SPEAKER",
+    "remark_type": "CURRENT_REMARK",
+    "gate_confidence": "HIGH"
+  },
+  {
+    "event_id": "michael_barr_event_bb3e19e6cd9a",
+    "speaker": "Michael Barr",
+    "article_count": 1,
+    "segment_ids": [
+      "news_michael_barr_7cf0211165fa"
+    ],
+    "representative_segment_id": "news_michael_barr_7cf0211165fa",
+    "target_text": "Federal Reserve Governor Michael Barr said on Tuesday that if inflation does not cool quickly, it will be time for the U.S. central bank to increase interest rates.",
+    "normalized_target_text": "Michael Barr says the Fed should raise interest rates if inflation does not cool quickly.",
+    "policy_relevance_score": 5,
+    "attribution": "TARGET_SPEAKER",
+    "remark_type": "CURRENT_REMARK",
+    "gate_confidence": "HIGH"
+  },
+  {
+    "event_id": "michael_barr_event_013c8df4b9ca",
+    "speaker": "Michael Barr",
+    "article_count": 1,
+    "segment_ids": [
+      "news_michael_barr_08cbe658d7d9"
+    ],
+    "representative_segment_id": "news_michael_barr_08cbe658d7d9",
+    "target_text": "Fed Governor Michael Barr said that if inflation fails to moderate sufficiently, the central bank \"should act decisively to raise rates\" at or after the September 15-16 FOMC meeting.",
+    "normalized_target_text": "Barr says the Fed should act decisively to raise rates at or after the Sept. 15-16 FOMC meeting if inflation does not sufficiently moderate.",
+    "policy_relevance_score": 5,
+    "attribution": "TARGET_SPEAKER",
+    "remark_type": "CURRENT_REMARK",
+    "gate_confidence": "HIGH"
+  },
+  {
+    "event_id": "michael_barr_event_a8f669baca70",
+    "speaker": "Michael Barr",
+    "article_count": 1,
+    "segment_ids": [
+      "news_michael_barr_f3abdb805e19"
+    ],
+    "representative_segment_id": "news_michael_barr_f3abdb805e19",
+    "target_text": "Fed Governor Michael Barr said he \"will support a rate hike if inflation doesn't ease,\" expressing concern that \"broader price pressures [are] taking hold\" as inflation has remained above the Fed's 2% target.",
+    "normalized_target_text": "Barr says he will support a rate hike if inflation does not ease, warning that broader price pressures are taking hold while inflation remains above 2%.",
+    "policy_relevance_score": 5,
+    "attribution": "TARGET_SPEAKER",
+    "remark_type": "CURRENT_REMARK",
+    "gate_confidence": "HIGH"
+  },
+  {
+    "event_id": "michael_barr_event_d985d186891b",
+    "speaker": "Michael Barr",
+    "article_count": 1,
+    "segment_ids": [
+      "news_michael_barr_700033b17df6"
+    ],
+    "representative_segment_id": "news_michael_barr_700033b17df6",
+    "target_text": "Michael Barr was reported as saying he is open to a rate hike if inflation does not moderate.",
+    "normalized_target_text": "Barr says he is open to raising interest rates if inflation does not moderate.",
+    "policy_relevance_score": 5,
+    "attribution": "TARGET_SPEAKER",
+    "remark_type": "CURRENT_REMARK",
+    "gate_confidence": "HIGH"
+  }
+]
