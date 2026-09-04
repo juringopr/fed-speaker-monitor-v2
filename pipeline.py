@@ -768,11 +768,13 @@ def _run_news_layer(
         )
     )
 
-    fallback_members = [
-        member
-        for member in FED_MEMBERS
-        if member not in finlight_covered
-    ]
+    # Finlight에 어떤 기사든 1건 있으면 covered로 판단할 경우,
+    # 정작 중요한 최신 발언을 Finlight가 누락해도 Google fallback이
+    # 차단된다. 모든 위원을 Google로 보완 수집하고, 중복은 이후
+    # Raw Anchor dedup 단계에서 처리한다.
+    fallback_members = list(
+        FED_MEMBERS
+    )
 
     print(
         f"      Finlight raw: "

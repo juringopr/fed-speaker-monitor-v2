@@ -583,6 +583,7 @@ def parse_datetime_column(
 
     df[column] = pd.to_datetime(
         df[column],
+        format="mixed",
         errors="coerce",
         utc=True,
     )
