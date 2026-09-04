@@ -1,6 +1,14 @@
 [
   {
     "member": "Kevin Warsh",
+    "board": 2,
+    "regional": 0,
+    "google": 0,
+    "wire": 0,
+    "total": 2
+  },
+  {
+    "member": "Philip Jefferson",
     "board": 1,
     "regional": 0,
     "google": 0,
@@ -8,28 +16,20 @@
     "total": 1
   },
   {
-    "member": "Philip Jefferson",
-    "board": 2,
-    "regional": 0,
-    "google": 0,
-    "wire": 0,
-    "total": 2
-  },
-  {
     "member": "Michelle Bowman",
-    "board": 6,
+    "board": 5,
     "regional": 0,
     "google": 0,
     "wire": 0,
-    "total": 6
+    "total": 5
   },
   {
     "member": "Michael Barr",
-    "board": 2,
+    "board": 3,
     "regional": 0,
     "google": 0,
     "wire": 0,
-    "total": 2
+    "total": 3
   },
   {
     "member": "Lisa Cook",
@@ -41,27 +41,27 @@
   },
   {
     "member": "Jerome Powell",
-    "board": 1,
+    "board": 0,
     "regional": 0,
     "google": 0,
     "wire": 0,
-    "total": 1
+    "total": 0
   },
   {
     "member": "Christopher Waller",
-    "board": 3,
+    "board": 4,
     "regional": 0,
     "google": 0,
     "wire": 0,
-    "total": 3
+    "total": 4
   },
   {
     "member": "Susan Collins",
     "board": 0,
-    "regional": 4,
+    "regional": 5,
     "google": 0,
     "wire": 0,
-    "total": 4
+    "total": 5
   },
   {
     "member": "John Williams",

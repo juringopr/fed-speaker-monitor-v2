@@ -1,95 +1,5 @@
 [
   {
-    "event_id": "kevin_warsh_event_4f7876a4b9d8",
-    "speaker": "Kevin Warsh",
-    "article_count": 1,
-    "segment_ids": [
-      "news_kevin_warsh_9c1c4200b6b9"
-    ],
-    "representative_segment_id": "news_kevin_warsh_9c1c4200b6b9",
-    "target_text": "At his Jackson Hole debut, Warsh warned that inflation remains too high, and his remarks reset investors' 2026 rate-hike bets.",
-    "normalized_target_text": "Warsh warns inflation remains too high and his Jackson Hole remarks reset 2026 rate-hike expectations.",
-    "policy_relevance_score": 5,
-    "attribution": "TARGET_SPEAKER",
-    "remark_type": "CURRENT_REMARK",
-    "gate_confidence": "HIGH"
-  },
-  {
-    "event_id": "kevin_warsh_event_a368bd3bace2",
-    "speaker": "Kevin Warsh",
-    "article_count": 1,
-    "segment_ids": [
-      "news_kevin_warsh_b7935c03b91c"
-    ],
-    "representative_segment_id": "news_kevin_warsh_b7935c03b91c",
-    "target_text": "Federal Reserve Chair Kevin Warsh, in his first Jackson Hole speech, gave central bankers and investors greater clarity on how he views the economy and the Fed’s path ahead, while leaving questions about the timing and number of potential rate hikes.",
-    "normalized_target_text": "Warsh says in his Jackson Hole speech that he views the economy and the Fed’s policy path with greater clarity, but the timing and number of potential rate hikes remain uncertain.",
-    "policy_relevance_score": 5,
-    "attribution": "TARGET_SPEAKER",
-    "remark_type": "CURRENT_REMARK",
-    "gate_confidence": "HIGH"
-  },
-  {
-    "event_id": "kevin_warsh_event_f4e2d2bcdfe8",
-    "speaker": "Kevin Warsh",
-    "article_count": 1,
-    "segment_ids": [
-      "news_kevin_warsh_d080bac1d888"
-    ],
-    "representative_segment_id": "news_kevin_warsh_d080bac1d888",
-    "target_text": "At Jackson Hole yesterday morning, Federal Reserve chairman Kevin Warsh affirmed that the Fed is determined to get inflation down and said it may have to raise interest rates to accomplish that goal, according to Axios reporter Neil Irwin.",
-    "normalized_target_text": "Warsh says the Fed is determined to reduce inflation and may need to raise interest rates to do so.",
-    "policy_relevance_score": 5,
-    "attribution": "TARGET_SPEAKER",
-    "remark_type": "CURRENT_REMARK",
-    "gate_confidence": "HIGH"
-  },
-  {
-    "event_id": "kevin_warsh_event_b398f6417da5",
-    "speaker": "Kevin Warsh",
-    "article_count": 1,
-    "segment_ids": [
-      "news_kevin_warsh_02e7b4cca8f2"
-    ],
-    "representative_segment_id": "news_kevin_warsh_02e7b4cca8f2",
-    "target_text": "Federal Reserve Chair Kevin Warsh signaled the central bank is prepared to act if inflation fails to move clearly and quickly toward its 2% target, while describing the broader US economy as strong.",
-    "normalized_target_text": "Warsh says the Fed is prepared to act if inflation does not move clearly and quickly toward its 2% target.",
-    "policy_relevance_score": 5,
-    "attribution": "TARGET_SPEAKER",
-    "remark_type": "CURRENT_REMARK",
-    "gate_confidence": "HIGH"
-  },
-  {
-    "event_id": "kevin_warsh_event_7d9359ed5210",
-    "speaker": "Kevin Warsh",
-    "article_count": 1,
-    "segment_ids": [
-      "news_kevin_warsh_6e1e6943417d"
-    ],
-    "representative_segment_id": "news_kevin_warsh_6e1e6943417d",
-    "target_text": "The article states that Kevin Warsh is putting a September rate hike in play.",
-    "normalized_target_text": "Warsh says a September interest-rate hike is possible.",
-    "policy_relevance_score": 5,
-    "attribution": "TARGET_SPEAKER",
-    "remark_type": "CURRENT_REMARK",
-    "gate_confidence": "MEDIUM"
-  },
-  {
-    "event_id": "kevin_warsh_event_d7490accb57b",
-    "speaker": "Kevin Warsh",
-    "article_count": 1,
-    "segment_ids": [
-      "news_kevin_warsh_d0c0c8f8ad73"
-    ],
-    "representative_segment_id": "news_kevin_warsh_d0c0c8f8ad73",
-    "target_text": "Federal Reserve Chairman Kevin Warsh made clear he wants to see underlying inflation clearly heading lower at an annual Federal Reserve gathering in Wyoming. Government figures this week didn’t help much.",
-    "normalized_target_text": "Warsh says he wants to see underlying inflation clearly heading lower, stated at an annual Federal Reserve gathering in Wyoming.",
-    "policy_relevance_score": 5,
-    "attribution": "TARGET_SPEAKER",
-    "remark_type": "CURRENT_REMARK",
-    "gate_confidence": "HIGH"
-  },
-  {
     "event_id": "kevin_warsh_event_8c8c364a96a8",
     "speaker": "Kevin Warsh",
     "article_count": 1,
@@ -196,6 +106,21 @@
     "gate_confidence": "HIGH"
   },
   {
+    "event_id": "kevin_warsh_event_49e9909d3b05",
+    "speaker": "Kevin Warsh",
+    "article_count": 1,
+    "segment_ids": [
+      "news_kevin_warsh_d6cc906b71e5"
+    ],
+    "representative_segment_id": "news_kevin_warsh_d6cc906b71e5",
+    "target_text": "On Friday, Federal Reserve Chairman Kevin Warsh made hawkish remarks that renewed market expectations of a September interest rate hike.",
+    "normalized_target_text": "Warsh's recent remarks renewed market expectations of a September interest rate hike.",
+    "policy_relevance_score": 5,
+    "attribution": "TARGET_SPEAKER",
+    "remark_type": "CURRENT_REMARK",
+    "gate_confidence": "HIGH"
+  },
+  {
     "event_id": "kevin_warsh_event_1db8f2dbb1bf",
     "speaker": "Kevin Warsh",
     "article_count": 1,
@@ -211,27 +136,12 @@
     "gate_confidence": "HIGH"
   },
   {
-    "event_id": "kevin_warsh_event_9b957deb8927",
-    "speaker": "Kevin Warsh",
-    "article_count": 1,
-    "segment_ids": [
-      "news_kevin_warsh_da32200b3534"
-    ],
-    "representative_segment_id": "news_kevin_warsh_da32200b3534",
-    "target_text": "Kevin Warsh says the central bank will track three questions as the $700 billion AI buildout reshapes the economy, and he has argued that the technology will calm inflation and unlock productivity.",
-    "normalized_target_text": "Warsh says the Fed will track three questions as a $700B AI buildout reshapes the economy and that AI could calm inflation and boost productivity.",
-    "policy_relevance_score": 5,
-    "attribution": "TARGET_SPEAKER",
-    "remark_type": "CURRENT_REMARK",
-    "gate_confidence": "HIGH"
-  },
-  {
-    "event_id": "kevin_warsh_event_ce8401c2e46d",
+    "event_id": "kevin_warsh_event_9620dadf2849",
     "speaker": "Kevin Warsh",
     "article_count": 2,
     "segment_ids": [
       "news_kevin_warsh_bfebd9c968fa",
-      "news_kevin_warsh_d57600134f86"
+      "news_kevin_warsh_61a16c5b0ec0"
     ],
     "representative_segment_id": "news_kevin_warsh_bfebd9c968fa",
     "target_text": "Kevin Warsh told G20 finance leaders that the world is seeing a global investment surge that is helping to power growth, reversing a past 'global savings glut' that had kept capital in low-yielding instruments amid a shortage of investment opportunities.",
@@ -257,13 +167,16 @@
     "gate_confidence": "HIGH"
   },
   {
-    "event_id": "kevin_warsh_event_6fa173ca2d8c",
+    "event_id": "kevin_warsh_event_bc0b66f3eb77",
     "speaker": "Kevin Warsh",
-    "article_count": 3,
+    "article_count": 6,
     "segment_ids": [
       "news_kevin_warsh_f950c2ea522f",
       "news_kevin_warsh_96130870b6f4",
-      "news_kevin_warsh_cfd27a8a7c6b"
+      "news_kevin_warsh_8d2f24257160",
+      "news_kevin_warsh_bab2071f8e67",
+      "news_kevin_warsh_cfd27a8a7c6b",
+      "news_kevin_warsh_1f21189c4d6e"
     ],
     "representative_segment_id": "news_kevin_warsh_f950c2ea522f",
     "target_text": "The article reports that Kevin Warsh made hawkish remarks in a speech that led markets to boost bets on interest-rate hikes this year, prompting JPMorgan's trading desk to shift to a \"tactically cautious\" view on U.S. stocks for the next few weeks.",
@@ -272,22 +185,6 @@
     "attribution": "TARGET_SPEAKER",
     "remark_type": "CURRENT_REMARK",
     "gate_confidence": "HIGH"
-  },
-  {
-    "event_id": "kevin_warsh_event_1588e1579782",
-    "speaker": "Kevin Warsh",
-    "article_count": 2,
-    "segment_ids": [
-      "news_kevin_warsh_8d2f24257160",
-      "news_kevin_warsh_bab2071f8e67"
-    ],
-    "representative_segment_id": "news_kevin_warsh_bab2071f8e67",
-    "target_text": "The article reports that investors stepped up bets on a Federal Reserve rate hike at the next policy meeting following “hawkish comments” by Kevin Warsh, linking his recent remarks to increased expectations of tighter monetary policy.",
-    "normalized_target_text": "Warsh made hawkish comments that prompted investors to increase expectations of a Fed rate hike at the next policy meeting.",
-    "policy_relevance_score": 5,
-    "attribution": "TARGET_SPEAKER",
-    "remark_type": "CURRENT_REMARK",
-    "gate_confidence": "MEDIUM"
   },
   {
     "event_id": "kevin_warsh_event_d20c752d1579",
@@ -427,10 +324,9 @@
   {
     "event_id": "kevin_warsh_event_09de9a2ad649",
     "speaker": "Kevin Warsh",
-    "article_count": 2,
+    "article_count": 1,
     "segment_ids": [
-      "news_kevin_warsh_38ab7db92688",
-      "news_kevin_warsh_c8334de56453"
+      "news_kevin_warsh_38ab7db92688"
     ],
     "representative_segment_id": "news_kevin_warsh_38ab7db92688",
     "target_text": "The article reports comments from U.S. Federal Reserve Chair Kevin Warsh that \"further rate hikes may be needed to contain inflation.\"",
@@ -514,21 +410,6 @@
     "attribution": "TARGET_SPEAKER",
     "remark_type": "CURRENT_REMARK",
     "gate_confidence": "HIGH"
-  },
-  {
-    "event_id": "kevin_warsh_event_bc0b66f3eb77",
-    "speaker": "Kevin Warsh",
-    "article_count": 1,
-    "segment_ids": [
-      "news_kevin_warsh_1f21189c4d6e"
-    ],
-    "representative_segment_id": "news_kevin_warsh_1f21189c4d6e",
-    "target_text": "In his latest remarks, Chair Kevin Warsh signalled a more hawkish stance on interest rates.",
-    "normalized_target_text": "Warsh's latest remarks signalled a more hawkish stance on interest rates.",
-    "policy_relevance_score": 5,
-    "attribution": "TARGET_SPEAKER",
-    "remark_type": "CURRENT_REMARK",
-    "gate_confidence": "MEDIUM"
   },
   {
     "event_id": "kevin_warsh_event_ca7f25263c04",
@@ -636,34 +517,259 @@
     "gate_confidence": "MEDIUM"
   },
   {
-    "event_id": "kevin_warsh_event_49e9909d3b05",
+    "event_id": "kevin_warsh_event_f57743a63cf5",
     "speaker": "Kevin Warsh",
     "article_count": 1,
     "segment_ids": [
-      "news_kevin_warsh_d6cc906b71e5"
+      "news_kevin_warsh_c57a1325260a"
     ],
-    "representative_segment_id": "news_kevin_warsh_d6cc906b71e5",
-    "target_text": "The dollar edged lower on Monday as traders waited on key U.S. jobs data due later this week, after hawkish remarks from Federal Reserve Chairman Kevin Warsh on Friday renewed bets on a September interest rate hike.",
-    "normalized_target_text": "Warsh's Friday remarks renewed market expectations of a September interest rate hike.",
+    "representative_segment_id": "news_kevin_warsh_c57a1325260a",
+    "target_text": "Fed watchers say the upcoming jobs report and inflation data are key after seeing signs that Fed Chairman Kevin Warsh would be willing to see interest rates rise.",
+    "normalized_target_text": "Warsh indicated he would be willing to see interest rates rise, increasing the importance of upcoming jobs and inflation data for policy.",
+    "policy_relevance_score": 5,
+    "attribution": "TARGET_SPEAKER",
+    "remark_type": "CURRENT_REMARK",
+    "gate_confidence": "MEDIUM"
+  },
+  {
+    "event_id": "kevin_warsh_event_4011c954d8c8",
+    "speaker": "Kevin Warsh",
+    "article_count": 1,
+    "segment_ids": [
+      "news_kevin_warsh_a4038fdfd8fb"
+    ],
+    "representative_segment_id": "news_kevin_warsh_a4038fdfd8fb",
+    "target_text": "The article reports that Fed Chair Warsh is \"signaling a rate hike\" into a cooling jobs market, noting private payrolls grew just 38,000 in August (the slowest since January), that Fed hike odds for Sept. 16 barely moved, and that \"Warsh is watching inflation.\"",
+    "normalized_target_text": "Warsh is signaling a rate hike and says he is watching inflation despite cooling jobs growth.",
     "policy_relevance_score": 5,
     "attribution": "TARGET_SPEAKER",
     "remark_type": "CURRENT_REMARK",
     "gate_confidence": "HIGH"
   },
   {
-    "event_id": "kevin_warsh_event_375d5e340052",
+    "event_id": "kevin_warsh_event_f81f95c8e281",
     "speaker": "Kevin Warsh",
     "article_count": 1,
     "segment_ids": [
-      "news_kevin_warsh_1a1d7d34dd6a"
+      "news_kevin_warsh_d196daa2dc59"
     ],
-    "representative_segment_id": "news_kevin_warsh_1a1d7d34dd6a",
-    "target_text": "Following his address at the Jackson Hole Economic Policy Symposium, Kevin Warsh kept a potential September interest-rate hike on the table, saying he prioritized persistent inflation over employment concerns; his remarks pushed market-implied odds of near-term tightening sharply higher.",
-    "normalized_target_text": "Warsh says a September rate hike remains on the table, prioritizing persistent inflation over employment and raising market odds of near-term tightening.",
+    "representative_segment_id": "news_kevin_warsh_d196daa2dc59",
+    "target_text": "In a keynote speech in Jackson Hole last week, Federal Reserve Chairman Kevin Warsh mapped out the key data points he leans on to read the U.S. economy and offered new insight into his approach to policymaking.",
+    "normalized_target_text": "Warsh, in a Jackson Hole keynote last week, described the data points he relies on to assess the U.S. economy and inform his policymaking.",
+    "policy_relevance_score": 4,
+    "attribution": "TARGET_SPEAKER",
+    "remark_type": "CURRENT_REMARK",
+    "gate_confidence": "HIGH"
+  },
+  {
+    "event_id": "kevin_warsh_event_a41d24d75e80",
+    "speaker": "Kevin Warsh",
+    "article_count": 1,
+    "segment_ids": [
+      "news_kevin_warsh_865d695d9477"
+    ],
+    "representative_segment_id": "news_kevin_warsh_865d695d9477",
+    "target_text": "Kevin Warsh delivered a speech that left markets guessing on the Federal Reserve’s next move, with his comments making rate-hike odds uncertain even as softer data and inflation trends suggested patience.",
+    "normalized_target_text": "Warsh's recent speech left markets uncertain about the Federal Reserve's next interest-rate decision.",
     "policy_relevance_score": 5,
     "attribution": "TARGET_SPEAKER",
     "remark_type": "CURRENT_REMARK",
     "gate_confidence": "HIGH"
+  },
+  {
+    "event_id": "kevin_warsh_event_07c51dfc0fe6",
+    "speaker": "Kevin Warsh",
+    "article_count": 1,
+    "segment_ids": [
+      "news_kevin_warsh_03950b7c57ac"
+    ],
+    "representative_segment_id": "news_kevin_warsh_03950b7c57ac",
+    "target_text": "After opening the door to higher interest rates last week, U.S. Federal Reserve Chairman Kevin Warsh has to decide how to follow through with actions the public and investors will see as both consistent with his own words and independent of President Donald Trump's wishes.",
+    "normalized_target_text": "Warsh opened the door to higher interest rates last week and now must decide how to follow through in a way that appears consistent with his words and independent of President Trump's wishes.",
+    "policy_relevance_score": 5,
+    "attribution": "TARGET_SPEAKER",
+    "remark_type": "CURRENT_REMARK",
+    "gate_confidence": "HIGH"
+  },
+  {
+    "event_id": "kevin_warsh_event_142d3553fa0f",
+    "speaker": "Kevin Warsh",
+    "article_count": 1,
+    "segment_ids": [
+      "news_kevin_warsh_d826c466fdd1"
+    ],
+    "representative_segment_id": "news_kevin_warsh_d826c466fdd1",
+    "target_text": "Markets priced in a more hawkish Federal Reserve path following Chair Kevin Warsh’s remarks last week, which dented appetite for both the pound and the euro against the dollar.",
+    "normalized_target_text": "Warsh's recent remarks led markets to price a more hawkish Federal Reserve path.",
+    "policy_relevance_score": 3,
+    "attribution": "TARGET_SPEAKER",
+    "remark_type": "CURRENT_REMARK",
+    "gate_confidence": "MEDIUM"
+  },
+  {
+    "event_id": "kevin_warsh_event_26d99267c86a",
+    "speaker": "Kevin Warsh",
+    "article_count": 1,
+    "segment_ids": [
+      "news_kevin_warsh_d73df66e4429"
+    ],
+    "representative_segment_id": "news_kevin_warsh_d73df66e4429",
+    "target_text": "Kevin Warsh says the central bank will track three questions as the $700B AI buildout reshapes the economy.",
+    "normalized_target_text": "Warsh says the central bank will monitor three questions as the $700B AI buildout reshapes the economy.",
+    "policy_relevance_score": 3,
+    "attribution": "TARGET_SPEAKER",
+    "remark_type": "CURRENT_REMARK",
+    "gate_confidence": "MEDIUM"
+  },
+  {
+    "event_id": "kevin_warsh_event_7040c21d8fea",
+    "speaker": "Kevin Warsh",
+    "article_count": 1,
+    "segment_ids": [
+      "news_kevin_warsh_76a83115a4b0"
+    ],
+    "representative_segment_id": "news_kevin_warsh_76a83115a4b0",
+    "target_text": "Headline: 'Kevin Warsh Hawkish Tone at Jackson Hole' — the report attributes a hawkish tone on monetary policy to Kevin Warsh at the Jackson Hole event.",
+    "normalized_target_text": "Kevin Warsh conveyed a hawkish tone on monetary policy at the Jackson Hole symposium.",
+    "policy_relevance_score": 3,
+    "attribution": "TARGET_SPEAKER",
+    "remark_type": "CURRENT_REMARK",
+    "gate_confidence": "MEDIUM"
+  },
+  {
+    "event_id": "kevin_warsh_event_72a363457256",
+    "speaker": "Kevin Warsh",
+    "article_count": 1,
+    "segment_ids": [
+      "news_kevin_warsh_8bd66285fb73"
+    ],
+    "representative_segment_id": "news_kevin_warsh_8bd66285fb73",
+    "target_text": "\"Fed Chair Kevin Warsh pushed September rate-hike odds past 50%.\"",
+    "normalized_target_text": "Warsh pushed September rate-hike odds past 50%.",
+    "policy_relevance_score": 4,
+    "attribution": "TARGET_SPEAKER",
+    "remark_type": "CURRENT_REMARK",
+    "gate_confidence": "MEDIUM"
+  },
+  {
+    "event_id": "kevin_warsh_event_967c5984448c",
+    "speaker": "Kevin Warsh",
+    "article_count": 1,
+    "segment_ids": [
+      "news_kevin_warsh_b47f377c7dbc"
+    ],
+    "representative_segment_id": "news_kevin_warsh_b47f377c7dbc",
+    "target_text": "Kevin Warsh challenged the Fed’s 'artificial speed limit' on U.S. growth, according to the article headline.",
+    "normalized_target_text": "Kevin Warsh says the Federal Reserve's policy is imposing an artificial speed limit on U.S. economic growth.",
+    "policy_relevance_score": 4,
+    "attribution": "TARGET_SPEAKER",
+    "remark_type": "CURRENT_REMARK",
+    "gate_confidence": "MEDIUM"
+  },
+  {
+    "event_id": "kevin_warsh_event_93fac3074010",
+    "speaker": "Kevin Warsh",
+    "article_count": 1,
+    "segment_ids": [
+      "news_kevin_warsh_49218d34b566"
+    ],
+    "representative_segment_id": "news_kevin_warsh_49218d34b566",
+    "target_text": "Headline attribution: Kevin Warsh talks tougher on inflation than the Fed is acting.",
+    "normalized_target_text": "Warsh says he is talking tougher on inflation than the Federal Reserve is acting.",
+    "policy_relevance_score": 4,
+    "attribution": "TARGET_SPEAKER",
+    "remark_type": "CURRENT_REMARK",
+    "gate_confidence": "MEDIUM"
+  },
+  {
+    "event_id": "kevin_warsh_event_ee056a730ba0",
+    "speaker": "Kevin Warsh",
+    "article_count": 1,
+    "segment_ids": [
+      "news_kevin_warsh_c81116451f1f"
+    ],
+    "representative_segment_id": "news_kevin_warsh_c81116451f1f",
+    "target_text": "Kevin Warsh gave an inflation-focused talk that reportedly heartened investors, though market participants remained uncertain about what that implied for future Federal Reserve policy actions.",
+    "normalized_target_text": "Warsh gave inflation remarks that reassured investors but left uncertainty about likely Fed policy actions.",
+    "policy_relevance_score": 3,
+    "attribution": "TARGET_SPEAKER",
+    "remark_type": "CURRENT_REMARK",
+    "gate_confidence": "MEDIUM"
+  },
+  {
+    "event_id": "kevin_warsh_event_966d2a1a5652",
+    "speaker": "Kevin Warsh",
+    "article_count": 1,
+    "segment_ids": [
+      "news_kevin_warsh_160a5274ff05"
+    ],
+    "representative_segment_id": "news_kevin_warsh_160a5274ff05",
+    "target_text": "Headline: 'Fed Chair Kevin Warsh Just Raised New Inflation Concerns.' The article headline attributes a recent statement to Kevin Warsh indicating he has raised new concerns about inflation and links that assessment to potential implications for the 2027 Social Security COLA.",
+    "normalized_target_text": "Warsh recently raised new concerns about inflation, which he and the article say could influence the 2027 Social Security COLA.",
+    "policy_relevance_score": 4,
+    "attribution": "TARGET_SPEAKER",
+    "remark_type": "CURRENT_REMARK",
+    "gate_confidence": "MEDIUM"
+  },
+  {
+    "event_id": "kevin_warsh_event_de389b3146e8",
+    "speaker": "Kevin Warsh",
+    "article_count": 1,
+    "segment_ids": [
+      "news_kevin_warsh_dd76b8dcea81"
+    ],
+    "representative_segment_id": "news_kevin_warsh_dd76b8dcea81",
+    "target_text": "In remarks at Jackson Hole, Kevin Warsh said that inflation is \"elevated\" and \"concerning\".",
+    "normalized_target_text": "Warsh says inflation is elevated and 'concerning' in remarks at Jackson Hole.",
+    "policy_relevance_score": 5,
+    "attribution": "TARGET_SPEAKER",
+    "remark_type": "CURRENT_REMARK",
+    "gate_confidence": "HIGH"
+  },
+  {
+    "event_id": "kevin_warsh_event_5337b71d1a33",
+    "speaker": "Kevin Warsh",
+    "article_count": 1,
+    "segment_ids": [
+      "news_kevin_warsh_e4a293e41fe0"
+    ],
+    "representative_segment_id": "news_kevin_warsh_e4a293e41fe0",
+    "target_text": "The headline states that Bitcoin slipped after 'Kevin Warsh’s inflation vow,' attributing a recent, policy-relevant remark by Warsh concerning inflation as the driver of the market move.",
+    "normalized_target_text": "Warsh made a recent vow regarding inflation that was linked to market reaction.",
+    "policy_relevance_score": 4,
+    "attribution": "TARGET_SPEAKER",
+    "remark_type": "CURRENT_REMARK",
+    "gate_confidence": "MEDIUM"
+  },
+  {
+    "event_id": "kevin_warsh_event_8546d93beec2",
+    "speaker": "Kevin Warsh",
+    "article_count": 1,
+    "segment_ids": [
+      "news_kevin_warsh_2e6aa8d51a60"
+    ],
+    "representative_segment_id": "news_kevin_warsh_2e6aa8d51a60",
+    "target_text": "In his debut Jackson Hole address, Federal Reserve Chair Kevin Warsh signaled tighter monetary policy.",
+    "normalized_target_text": "Warsh signals in his debut Jackson Hole address that monetary policy will be tighter.",
+    "policy_relevance_score": 5,
+    "attribution": "TARGET_SPEAKER",
+    "remark_type": "CURRENT_REMARK",
+    "gate_confidence": "HIGH"
+  },
+  {
+    "event_id": "kevin_warsh_event_ac68e17e73f6",
+    "speaker": "Kevin Warsh",
+    "article_count": 1,
+    "segment_ids": [
+      "news_kevin_warsh_3fd5542e236f"
+    ],
+    "representative_segment_id": "news_kevin_warsh_3fd5542e236f",
+    "target_text": "The article headline reports that Kevin Warsh signaled at the Jackson Hole conference that the Fed would raise interest rates in September.",
+    "normalized_target_text": "Warsh signaled at Jackson Hole that the Fed would raise interest rates in September.",
+    "policy_relevance_score": 4,
+    "attribution": "TARGET_SPEAKER",
+    "remark_type": "CURRENT_REMARK",
+    "gate_confidence": "MEDIUM"
   },
   {
     "event_id": "jerome_powell_event_6a3cfc840baf",
@@ -681,15 +787,17 @@
     "gate_confidence": "HIGH"
   },
   {
-    "event_id": "michael_barr_event_bb3e19e6cd9a",
+    "event_id": "michael_barr_event_38f78f06b206",
     "speaker": "Michael Barr",
-    "article_count": 1,
+    "article_count": 3,
     "segment_ids": [
-      "news_michael_barr_7cf0211165fa"
+      "news_michael_barr_7cf0211165fa",
+      "news_michael_barr_8d2d8c8865ed",
+      "news_michael_barr_1c1b65a2725e"
     ],
-    "representative_segment_id": "news_michael_barr_7cf0211165fa",
-    "target_text": "Federal Reserve Governor Michael Barr said on Tuesday that if inflation does not cool quickly, it will be time for the U.S. central bank to increase interest rates.",
-    "normalized_target_text": "Michael Barr says the Fed should raise interest rates if inflation does not cool quickly.",
+    "representative_segment_id": "news_michael_barr_1c1b65a2725e",
+    "target_text": "Federal Reserve Vice Chair Michael Barr said he is open to raising interest rates if inflation does not moderate, linking potential policy tightening to the path of inflation (Reuters headline paraphrase).",
+    "normalized_target_text": "Michael Barr says he is open to raising interest rates if inflation does not moderate.",
     "policy_relevance_score": 5,
     "attribution": "TARGET_SPEAKER",
     "remark_type": "CURRENT_REMARK",
@@ -726,18 +834,363 @@
     "gate_confidence": "HIGH"
   },
   {
-    "event_id": "michael_barr_event_d985d186891b",
+    "event_id": "michael_barr_event_55531ee8bbd7",
     "speaker": "Michael Barr",
     "article_count": 1,
     "segment_ids": [
-      "news_michael_barr_700033b17df6"
+      "news_michael_barr_4ee450a9232c"
     ],
-    "representative_segment_id": "news_michael_barr_700033b17df6",
-    "target_text": "Michael Barr was reported as saying he is open to a rate hike if inflation does not moderate.",
-    "normalized_target_text": "Barr says he is open to raising interest rates if inflation does not moderate.",
+    "representative_segment_id": "news_michael_barr_4ee450a9232c",
+    "target_text": "Fed Governor Michael Barr drew a line on inflation and said he would back a rate hike if price pressures persist, indicating support for raising interest rates should inflation fail to ease.",
+    "normalized_target_text": "Barr says he would back a rate hike if price pressures persist.",
     "policy_relevance_score": 5,
     "attribution": "TARGET_SPEAKER",
     "remark_type": "CURRENT_REMARK",
     "gate_confidence": "HIGH"
+  },
+  {
+    "event_id": "michael_barr_event_8dad80d9f421",
+    "speaker": "Michael Barr",
+    "article_count": 1,
+    "segment_ids": [
+      "news_michael_barr_461ec83a9e91"
+    ],
+    "representative_segment_id": "news_michael_barr_461ec83a9e91",
+    "target_text": "Michael Barr was reported as being noncommittal about whether the Federal Reserve would raise interest rates in September.",
+    "normalized_target_text": "Barr says he is noncommittal about a September interest-rate hike.",
+    "policy_relevance_score": 4,
+    "attribution": "TARGET_SPEAKER",
+    "remark_type": "CURRENT_REMARK",
+    "gate_confidence": "MEDIUM"
+  },
+  {
+    "event_id": "michael_barr_event_e227b7ac67ee",
+    "speaker": "Michael Barr",
+    "article_count": 1,
+    "segment_ids": [
+      "news_michael_barr_98929b0fff7c"
+    ],
+    "representative_segment_id": "news_michael_barr_98929b0fff7c",
+    "target_text": "Fed's Michael Barr signaled readiness to hike interest rates.",
+    "normalized_target_text": "Michael Barr signals readiness to raise interest rates.",
+    "policy_relevance_score": 5,
+    "attribution": "TARGET_SPEAKER",
+    "remark_type": "CURRENT_REMARK",
+    "gate_confidence": "HIGH"
+  },
+  {
+    "event_id": "john_williams_event_4c418eb98cc4",
+    "speaker": "John Williams",
+    "article_count": 1,
+    "segment_ids": [
+      "news_john_williams_85e573b01f48"
+    ],
+    "representative_segment_id": "news_john_williams_85e573b01f48",
+    "target_text": "Federal Reserve Bank of New York President John Williams said rising long-term bond yields aren’t driven by inflation fears but instead reflect a solid economy, and that he was still collecting information to drive his next monetary policy decision.",
+    "normalized_target_text": "Williams says rising long-term bond yields reflect a solid economy rather than inflation fears, and he is still gathering information to inform his next monetary policy decision.",
+    "policy_relevance_score": 5,
+    "attribution": "TARGET_SPEAKER",
+    "remark_type": "CURRENT_REMARK",
+    "gate_confidence": "HIGH"
+  },
+  {
+    "event_id": "john_williams_event_f0c83437c141",
+    "speaker": "John Williams",
+    "article_count": 1,
+    "segment_ids": [
+      "news_john_williams_5a9014c9ff17"
+    ],
+    "representative_segment_id": "news_john_williams_5a9014c9ff17",
+    "target_text": "New York Fed President John Williams said he does not see clear-cut evidence right now that the Fed must raise interest rates to respond to persistent inflation.",
+    "normalized_target_text": "Williams says there is not yet clear evidence that the Fed must raise interest rates to address persistent inflation.",
+    "policy_relevance_score": 5,
+    "attribution": "TARGET_SPEAKER",
+    "remark_type": "CURRENT_REMARK",
+    "gate_confidence": "HIGH"
+  },
+  {
+    "event_id": "john_williams_event_71addf044e50",
+    "speaker": "John Williams",
+    "article_count": 1,
+    "segment_ids": [
+      "news_john_williams_a9c06453e1f6"
+    ],
+    "representative_segment_id": "news_john_williams_a9c06453e1f6",
+    "target_text": "New York Fed President John Williams said in a CNBC interview that the recent surge in yields is due to strong economic prospects, and he did not commit on whether he thinks an interest rate hike is necessary.",
+    "normalized_target_text": "John Williams says the yield surge reflects strong economic prospects and he declined to commit on whether a rate hike is necessary.",
+    "policy_relevance_score": 4,
+    "attribution": "TARGET_SPEAKER",
+    "remark_type": "CURRENT_REMARK",
+    "gate_confidence": "HIGH"
+  },
+  {
+    "event_id": "john_williams_event_d05f7fd01c5b",
+    "speaker": "John Williams",
+    "article_count": 1,
+    "segment_ids": [
+      "news_john_williams_3ec800daeaf6"
+    ],
+    "representative_segment_id": "news_john_williams_3ec800daeaf6",
+    "target_text": "Federal Reserve Bank of New York President John Williams said there’s evidence inflation continues to ease as the impact of tariffs fades, and that higher energy prices are not spreading to other services.",
+    "normalized_target_text": "Williams says inflation is continuing to trend down as tariff effects fade and higher energy prices are not spreading to other services.",
+    "policy_relevance_score": 5,
+    "attribution": "TARGET_SPEAKER",
+    "remark_type": "CURRENT_REMARK",
+    "gate_confidence": "HIGH"
+  },
+  {
+    "event_id": "john_williams_event_99f8c0130f5e",
+    "speaker": "John Williams",
+    "article_count": 1,
+    "segment_ids": [
+      "news_john_williams_d8d39956508c"
+    ],
+    "representative_segment_id": "news_john_williams_d8d39956508c",
+    "target_text": "According to the American Banker headline, Federal Reserve official John Williams said he is not yet convinced that a rate hike is the answer, indicating he does not currently view raising interest rates as warranted.",
+    "normalized_target_text": "Williams says he is not yet convinced that raising interest rates is the right policy response.",
+    "policy_relevance_score": 5,
+    "attribution": "TARGET_SPEAKER",
+    "remark_type": "CURRENT_REMARK",
+    "gate_confidence": "MEDIUM"
+  },
+  {
+    "event_id": "john_williams_event_0c5dc4d0726f",
+    "speaker": "John Williams",
+    "article_count": 1,
+    "segment_ids": [
+      "news_john_williams_2226ecda2d09"
+    ],
+    "representative_segment_id": "news_john_williams_2226ecda2d09",
+    "target_text": "According to CNBC (reported by Reuters), Fed President John Williams said rising bond yields reflect the strength of the U.S. economy, tying higher yields to a strong economic backdrop.",
+    "normalized_target_text": "Williams says rising bond yields reflect a strong U.S. economy.",
+    "policy_relevance_score": 4,
+    "attribution": "TARGET_SPEAKER",
+    "remark_type": "CURRENT_REMARK",
+    "gate_confidence": "MEDIUM"
+  },
+  {
+    "event_id": "austan_goolsbee_event_1215a200c1ef",
+    "speaker": "Austan Goolsbee",
+    "article_count": 1,
+    "segment_ids": [
+      "news_austan_goolsbee_d44091a57ffb"
+    ],
+    "representative_segment_id": "news_austan_goolsbee_d44091a57ffb",
+    "target_text": "Austan Goolsbee warned that the AI spending boom has a dangerous side and could complicate the Federal Reserve's next policy move.",
+    "normalized_target_text": "Goolsbee says the AI-driven spending boom could complicate the Fed's next policy decision.",
+    "policy_relevance_score": 5,
+    "attribution": "TARGET_SPEAKER",
+    "remark_type": "CURRENT_REMARK",
+    "gate_confidence": "HIGH"
+  },
+  {
+    "event_id": "austan_goolsbee_event_7bfa8b0857c4",
+    "speaker": "Austan Goolsbee",
+    "article_count": 1,
+    "segment_ids": [
+      "news_austan_goolsbee_cd602d485ef0"
+    ],
+    "representative_segment_id": "news_austan_goolsbee_cd602d485ef0",
+    "target_text": "Chicago Fed President Austan Goolsbee says he wants to get back to “old school” economics focused on ordinary Americans, mindful of AI hype, and “sharp on inflation.” He tells Fortune, \"If there were going to be something that shook the consumers, it would shake the economy.\"",
+    "normalized_target_text": "Goolsbee says he wants to return to 'old-school' economics focused on ordinary Americans, be mindful of AI hype, be sharp on inflation, and warns that a shock to consumers would shake the economy.",
+    "policy_relevance_score": 4,
+    "attribution": "TARGET_SPEAKER",
+    "remark_type": "CURRENT_REMARK",
+    "gate_confidence": "HIGH"
+  },
+  {
+    "event_id": "austan_goolsbee_event_dfb38d673c44",
+    "speaker": "Austan Goolsbee",
+    "article_count": 1,
+    "segment_ids": [
+      "news_austan_goolsbee_641fc531a7df"
+    ],
+    "representative_segment_id": "news_austan_goolsbee_641fc531a7df",
+    "target_text": "Austan Goolsbee said AI is 'not far' from overheating the economy, characterizing AI-driven developments as posing a near-term risk of pushing activity toward overheating.",
+    "normalized_target_text": "Goolsbee says AI is not far from overheating the economy.",
+    "policy_relevance_score": 4,
+    "attribution": "TARGET_SPEAKER",
+    "remark_type": "CURRENT_REMARK",
+    "gate_confidence": "HIGH"
+  },
+  {
+    "event_id": "christopher_waller_event_2a054bd49fb8",
+    "speaker": "Christopher Waller",
+    "article_count": 1,
+    "segment_ids": [
+      "news_christopher_waller_a34e2d70c740"
+    ],
+    "representative_segment_id": "news_christopher_waller_a34e2d70c740",
+    "target_text": "Reuters reports that Federal Reserve Governor Christopher Waller urged to 'give disinflation a chance,' a policy-relevant comment about the outlook for inflation and the conduct of monetary policy.",
+    "normalized_target_text": "Waller says to 'give disinflation a chance,' urging patience as disinflation occurs.",
+    "policy_relevance_score": 5,
+    "attribution": "TARGET_SPEAKER",
+    "remark_type": "CURRENT_REMARK",
+    "gate_confidence": "HIGH"
+  },
+  {
+    "event_id": "christopher_waller_event_eabee3e68c38",
+    "speaker": "Christopher Waller",
+    "article_count": 1,
+    "segment_ids": [
+      "news_christopher_waller_3912deb342b5"
+    ],
+    "representative_segment_id": "news_christopher_waller_3912deb342b5",
+    "target_text": "Christopher Waller signaled that the Federal Reserve would hold interest rates at the September meeting (headline attribution from qz.com/Google News aggregation).",
+    "normalized_target_text": "Waller signals the Fed will hold interest rates at the September meeting.",
+    "policy_relevance_score": 5,
+    "attribution": "TARGET_SPEAKER",
+    "remark_type": "CURRENT_REMARK",
+    "gate_confidence": "MEDIUM"
+  },
+  {
+    "event_id": "christopher_waller_event_f455df260d60",
+    "speaker": "Christopher Waller",
+    "article_count": 1,
+    "segment_ids": [
+      "news_christopher_waller_7fae7f5f5f1e"
+    ],
+    "representative_segment_id": "news_christopher_waller_7fae7f5f5f1e",
+    "target_text": "Christopher Waller said the central bank's next rate move depends on the upcoming inflation report.",
+    "normalized_target_text": "Waller says the Fed's next rate move depends on the upcoming inflation report.",
+    "policy_relevance_score": 5,
+    "attribution": "TARGET_SPEAKER",
+    "remark_type": "CURRENT_REMARK",
+    "gate_confidence": "HIGH"
+  },
+  {
+    "event_id": "christopher_waller_event_4b5fcf484377",
+    "speaker": "Christopher Waller",
+    "article_count": 1,
+    "segment_ids": [
+      "news_christopher_waller_892138ffee42"
+    ],
+    "representative_segment_id": "news_christopher_waller_892138ffee42",
+    "target_text": "Christopher Waller said the September Federal Reserve rate decision will depend on incoming inflation data.",
+    "normalized_target_text": "Waller says the September Fed rate decision depends on incoming inflation data.",
+    "policy_relevance_score": 5,
+    "attribution": "TARGET_SPEAKER",
+    "remark_type": "CURRENT_REMARK",
+    "gate_confidence": "HIGH"
+  },
+  {
+    "event_id": "christopher_waller_event_04d48abce0f7",
+    "speaker": "Christopher Waller",
+    "article_count": 1,
+    "segment_ids": [
+      "news_christopher_waller_735dffcad464"
+    ],
+    "representative_segment_id": "news_christopher_waller_735dffcad464",
+    "target_text": "Fed Governor Christopher Waller said he would be 'inclined' to keep interest rates unchanged if incoming inflation data does not surprise, indicating a conditional stance on near-term rate decisions tied to inflation developments.",
+    "normalized_target_text": "Christopher Waller says he would be inclined to keep rates unchanged if inflation data does not surprise.",
+    "policy_relevance_score": 5,
+    "attribution": "TARGET_SPEAKER",
+    "remark_type": "CURRENT_REMARK",
+    "gate_confidence": "HIGH"
+  },
+  {
+    "event_id": "christopher_waller_event_831b37956184",
+    "speaker": "Christopher Waller",
+    "article_count": 1,
+    "segment_ids": [
+      "news_christopher_waller_647dfcb5d9b4"
+    ],
+    "representative_segment_id": "news_christopher_waller_647dfcb5d9b4",
+    "target_text": "Christopher Waller said the safety premium for Treasuries is gone, and that this is pushing the neutral interest rate higher.",
+    "normalized_target_text": "Waller says the safety premium for Treasuries is gone, pushing the neutral interest rate higher.",
+    "policy_relevance_score": 5,
+    "attribution": "TARGET_SPEAKER",
+    "remark_type": "CURRENT_REMARK",
+    "gate_confidence": "HIGH"
+  },
+  {
+    "event_id": "christopher_waller_event_38f3bdbcf718",
+    "speaker": "Christopher Waller",
+    "article_count": 1,
+    "segment_ids": [
+      "news_christopher_waller_615f5693b44f"
+    ],
+    "representative_segment_id": "news_christopher_waller_615f5693b44f",
+    "target_text": "Christopher Waller said he is 'inclined' to hold interest rates steady.",
+    "normalized_target_text": "Waller says he is inclined to hold interest rates steady.",
+    "policy_relevance_score": 5,
+    "attribution": "TARGET_SPEAKER",
+    "remark_type": "CURRENT_REMARK",
+    "gate_confidence": "HIGH"
+  },
+  {
+    "event_id": "christopher_waller_event_69afcb09d7c7",
+    "speaker": "Christopher Waller",
+    "article_count": 1,
+    "segment_ids": [
+      "news_christopher_waller_1baaa01ed71d"
+    ],
+    "representative_segment_id": "news_christopher_waller_1baaa01ed71d",
+    "target_text": "Christopher Waller hinted he might support holding interest rates in September, citing emerging signs of disinflation.",
+    "normalized_target_text": "Waller says he may support holding interest rates in September as disinflation signs emerge.",
+    "policy_relevance_score": 5,
+    "attribution": "TARGET_SPEAKER",
+    "remark_type": "CURRENT_REMARK",
+    "gate_confidence": "MEDIUM"
+  },
+  {
+    "event_id": "christopher_waller_event_6ccb31594635",
+    "speaker": "Christopher Waller",
+    "article_count": 1,
+    "segment_ids": [
+      "news_christopher_waller_eb2a7c3c007e"
+    ],
+    "representative_segment_id": "news_christopher_waller_eb2a7c3c007e",
+    "target_text": "Federal Reserve Governor Christopher Waller urged to 'give disinflation a chance' and said that a rate hike remains on the table, indicating that further tightening is still possible depending on how inflation evolves.",
+    "normalized_target_text": "Waller says to 'give disinflation a chance' while a rate hike remains on the table, indicating further tightening is still possible.",
+    "policy_relevance_score": 5,
+    "attribution": "TARGET_SPEAKER",
+    "remark_type": "CURRENT_REMARK",
+    "gate_confidence": "HIGH"
+  },
+  {
+    "event_id": "christopher_waller_event_a2c4b1f45537",
+    "speaker": "Christopher Waller",
+    "article_count": 1,
+    "segment_ids": [
+      "news_christopher_waller_d42f4170be99"
+    ],
+    "representative_segment_id": "news_christopher_waller_d42f4170be99",
+    "target_text": "Federal Reserve Governor Christopher Waller said he is signaling patience on interest rates but keeps the option of another rate hike on the table if inflation heats up. He framed this as a conditional stance linking future policy moves to incoming inflation developments.",
+    "normalized_target_text": "Waller says he will remain patient on interest rates but keeps the option to raise rates if inflation heats up.",
+    "policy_relevance_score": 5,
+    "attribution": "TARGET_SPEAKER",
+    "remark_type": "CURRENT_REMARK",
+    "gate_confidence": "HIGH"
+  },
+  {
+    "event_id": "christopher_waller_event_8e95d069ea4f",
+    "speaker": "Christopher Waller",
+    "article_count": 1,
+    "segment_ids": [
+      "news_christopher_waller_c4c1e053fee8"
+    ],
+    "representative_segment_id": "news_christopher_waller_c4c1e053fee8",
+    "target_text": "Fed Governor Christopher Waller suggested the Federal Reserve should pause further interest-rate increases.",
+    "normalized_target_text": "Waller suggests the Fed should pause further interest-rate increases.",
+    "policy_relevance_score": 5,
+    "attribution": "TARGET_SPEAKER",
+    "remark_type": "CURRENT_REMARK",
+    "gate_confidence": "MEDIUM"
+  },
+  {
+    "event_id": "lorie_logan_event_2d05c4011a1f",
+    "speaker": "Lorie Logan",
+    "article_count": 1,
+    "segment_ids": [
+      "news_lorie_logan_3aa37577183b"
+    ],
+    "representative_segment_id": "news_lorie_logan_3aa37577183b",
+    "target_text": "Lorie Logan warned that U.S. oil production will not be sufficient to fill the global supply gap, according to the report headline.",
+    "normalized_target_text": "Logan says U.S. oil production will not be sufficient to fill the global supply gap.",
+    "policy_relevance_score": 3,
+    "attribution": "TARGET_SPEAKER",
+    "remark_type": "CURRENT_REMARK",
+    "gate_confidence": "MEDIUM"
   }
 ]

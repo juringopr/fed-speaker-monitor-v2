@@ -27,7 +27,9 @@
         "stance_driver": "INFLATION",
         "bis_stance": "MOSTLY_HAWKISH",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "alberto_musalem_fb147e61f5_002",
@@ -48,7 +50,9 @@
         "stance_driver": "POLICY_FRAMEWORK",
         "bis_stance": "NEUTRAL",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "alberto_musalem_fb147e61f5_003",
@@ -69,7 +73,9 @@
         "stance_driver": "NOT_APPLICABLE",
         "bis_stance": "NOT_APPLICABLE",
         "evidence_confidence": "NOT_APPLICABLE",
-        "text_sufficiency": "INSUFFICIENT"
+        "text_sufficiency": "INSUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "alberto_musalem_fb147e61f5_004",
@@ -90,7 +96,9 @@
         "stance_driver": "NOT_APPLICABLE",
         "bis_stance": "NOT_APPLICABLE",
         "evidence_confidence": "NOT_APPLICABLE",
-        "text_sufficiency": "INSUFFICIENT"
+        "text_sufficiency": "INSUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "alberto_musalem_fb147e61f5_005",
@@ -111,7 +119,9 @@
         "stance_driver": "INFLATION",
         "bis_stance": "MOSTLY_HAWKISH",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "alberto_musalem_fb147e61f5_006",
@@ -132,7 +142,9 @@
         "stance_driver": "GROWTH",
         "bis_stance": "NEUTRAL",
         "evidence_confidence": "MEDIUM",
-        "text_sufficiency": "PARTIAL"
+        "text_sufficiency": "PARTIAL",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "alberto_musalem_8d21eae17b_001",
@@ -153,7 +165,9 @@
         "stance_driver": "NOT_APPLICABLE",
         "bis_stance": "NOT_APPLICABLE",
         "evidence_confidence": "NOT_APPLICABLE",
-        "text_sufficiency": "PARTIAL"
+        "text_sufficiency": "PARTIAL",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "alberto_musalem_edcd922b24_001",
@@ -174,7 +188,9 @@
         "stance_driver": "INFLATION",
         "bis_stance": "MOSTLY_HAWKISH",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "alberto_musalem_edcd922b24_002",
@@ -195,7 +211,9 @@
         "stance_driver": "INFLATION",
         "bis_stance": "MOSTLY_HAWKISH",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "alberto_musalem_edcd922b24_003",
@@ -216,7 +234,9 @@
         "stance_driver": "INTEREST_RATES",
         "bis_stance": "HAWKISH",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "alberto_musalem_edcd922b24_004",
@@ -237,7 +257,9 @@
         "stance_driver": "INFLATION",
         "bis_stance": "MOSTLY_HAWKISH",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "alberto_musalem_edcd922b24_005",
@@ -258,7 +280,9 @@
         "stance_driver": "INFLATION",
         "bis_stance": "MOSTLY_HAWKISH",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "alberto_musalem_edcd922b24_006",
@@ -279,7 +303,9 @@
         "stance_driver": "POLICY_FRAMEWORK",
         "bis_stance": "NEUTRAL",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "alberto_musalem_edcd922b24_007",
@@ -300,7 +326,9 @@
         "stance_driver": "NOT_APPLICABLE",
         "bis_stance": "NOT_APPLICABLE",
         "evidence_confidence": "NOT_APPLICABLE",
-        "text_sufficiency": "INSUFFICIENT"
+        "text_sufficiency": "INSUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "alberto_musalem_53b78a79b0_001",
@@ -321,7 +349,9 @@
         "stance_driver": "INTEREST_RATES",
         "bis_stance": "NEUTRAL",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "alberto_musalem_53b78a79b0_002",
@@ -342,7 +372,9 @@
         "stance_driver": "INFLATION",
         "bis_stance": "MOSTLY_HAWKISH",
         "evidence_confidence": "MEDIUM",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "alberto_musalem_53b78a79b0_003",
@@ -363,7 +395,9 @@
         "stance_driver": "INFLATION",
         "bis_stance": "MOSTLY_HAWKISH",
         "evidence_confidence": "MEDIUM",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "alberto_musalem_53b78a79b0_004",
@@ -384,7 +418,9 @@
         "stance_driver": "INFLATION",
         "bis_stance": "MOSTLY_HAWKISH",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "alberto_musalem_53b78a79b0_005",
@@ -405,7 +441,9 @@
         "stance_driver": "NOT_APPLICABLE",
         "bis_stance": "NOT_APPLICABLE",
         "evidence_confidence": "NOT_APPLICABLE",
-        "text_sufficiency": "INSUFFICIENT"
+        "text_sufficiency": "INSUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "alberto_musalem_dee9703cb4_001",
@@ -426,7 +464,9 @@
         "stance_driver": "NOT_APPLICABLE",
         "bis_stance": "NOT_APPLICABLE",
         "evidence_confidence": "NOT_APPLICABLE",
-        "text_sufficiency": "PARTIAL"
+        "text_sufficiency": "PARTIAL",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "alberto_musalem_aeb5470d23_001",
@@ -447,7 +487,9 @@
         "stance_driver": "NOT_APPLICABLE",
         "bis_stance": "NOT_APPLICABLE",
         "evidence_confidence": "NOT_APPLICABLE",
-        "text_sufficiency": "INSUFFICIENT"
+        "text_sufficiency": "INSUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "alberto_musalem_887d21b75c_001",
@@ -468,7 +510,9 @@
         "stance_driver": "INFLATION",
         "bis_stance": "MOSTLY_HAWKISH",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "alberto_musalem_887d21b75c_002",
@@ -489,7 +533,9 @@
         "stance_driver": "INFLATION",
         "bis_stance": "MOSTLY_DOVISH",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "alberto_musalem_887d21b75c_003",
@@ -510,7 +556,9 @@
         "stance_driver": "INFLATION",
         "bis_stance": "MOSTLY_HAWKISH",
         "evidence_confidence": "MEDIUM",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "alberto_musalem_887d21b75c_004",
@@ -531,7 +579,9 @@
         "stance_driver": "INFLATION",
         "bis_stance": "MOSTLY_HAWKISH",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "alberto_musalem_887d21b75c_005",
@@ -552,7 +602,9 @@
         "stance_driver": "NOT_APPLICABLE",
         "bis_stance": "NOT_APPLICABLE",
         "evidence_confidence": "NOT_APPLICABLE",
-        "text_sufficiency": "INSUFFICIENT"
+        "text_sufficiency": "INSUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "alberto_musalem_506f1a5afc_001",
@@ -573,7 +625,9 @@
         "stance_driver": "NOT_APPLICABLE",
         "bis_stance": "NOT_APPLICABLE",
         "evidence_confidence": "NOT_APPLICABLE",
-        "text_sufficiency": "INSUFFICIENT"
+        "text_sufficiency": "INSUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "alberto_musalem_a1bb0e0b4f_001",
@@ -594,7 +648,9 @@
         "stance_driver": "INFLATION",
         "bis_stance": "MOSTLY_HAWKISH",
         "evidence_confidence": "MEDIUM",
-        "text_sufficiency": "PARTIAL"
+        "text_sufficiency": "PARTIAL",
+        "macro_calibrated": false,
+        "macro_background": ""
       }
     ]
   },
@@ -626,7 +682,9 @@
         "stance_driver": "NOT_APPLICABLE",
         "bis_stance": "NOT_APPLICABLE",
         "evidence_confidence": "NOT_APPLICABLE",
-        "text_sufficiency": "INSUFFICIENT"
+        "text_sufficiency": "INSUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "austan_goolsbee_f9052cda91_001",
@@ -647,7 +705,9 @@
         "stance_driver": "GROWTH",
         "bis_stance": "MOSTLY_HAWKISH",
         "evidence_confidence": "MEDIUM",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "austan_goolsbee_c04947a0f1_001",
@@ -668,7 +728,9 @@
         "stance_driver": "NOT_APPLICABLE",
         "bis_stance": "NOT_APPLICABLE",
         "evidence_confidence": "NOT_APPLICABLE",
-        "text_sufficiency": "INSUFFICIENT"
+        "text_sufficiency": "INSUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "austan_goolsbee_9feaf48e42_001",
@@ -689,7 +751,9 @@
         "stance_driver": "INTEREST_RATES",
         "bis_stance": "NEUTRAL",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "austan_goolsbee_9feaf48e42_002",
@@ -710,7 +774,9 @@
         "stance_driver": "GROWTH",
         "bis_stance": "NEUTRAL",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "austan_goolsbee_9feaf48e42_003",
@@ -731,7 +797,9 @@
         "stance_driver": "INFLATION",
         "bis_stance": "MOSTLY_HAWKISH",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "austan_goolsbee_5e3146103b_001",
@@ -752,7 +820,9 @@
         "stance_driver": "NOT_APPLICABLE",
         "bis_stance": "NOT_APPLICABLE",
         "evidence_confidence": "NOT_APPLICABLE",
-        "text_sufficiency": "INSUFFICIENT"
+        "text_sufficiency": "INSUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       }
     ]
   },
@@ -784,7 +854,9 @@
         "stance_driver": "INFLATION",
         "bis_stance": "HAWKISH",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "beth_hammack_b9a8dedb3f_001",
@@ -805,7 +877,9 @@
         "stance_driver": "INFLATION",
         "bis_stance": "MOSTLY_HAWKISH",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "beth_hammack_b9a8dedb3f_002",
@@ -826,7 +900,9 @@
         "stance_driver": "INFLATION",
         "bis_stance": "NEUTRAL",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "beth_hammack_b9a8dedb3f_003",
@@ -847,7 +923,9 @@
         "stance_driver": "MULTIPLE",
         "bis_stance": "MOSTLY_HAWKISH",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "beth_hammack_b9a8dedb3f_004",
@@ -868,7 +946,9 @@
         "stance_driver": "FINANCIAL_CONDITIONS",
         "bis_stance": "MOSTLY_HAWKISH",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "beth_hammack_b9a8dedb3f_005",
@@ -889,7 +969,9 @@
         "stance_driver": "INFLATION",
         "bis_stance": "MOSTLY_HAWKISH",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "beth_hammack_b9a8dedb3f_006",
@@ -910,7 +992,9 @@
         "stance_driver": "NOT_APPLICABLE",
         "bis_stance": "NOT_APPLICABLE",
         "evidence_confidence": "NOT_APPLICABLE",
-        "text_sufficiency": "INSUFFICIENT"
+        "text_sufficiency": "INSUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "beth_hammack_553fc37cdd_001",
@@ -931,7 +1015,9 @@
         "stance_driver": "INFLATION",
         "bis_stance": "MOSTLY_HAWKISH",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "beth_hammack_51a58bd36a_001",
@@ -952,7 +1038,9 @@
         "stance_driver": "NOT_APPLICABLE",
         "bis_stance": "NOT_APPLICABLE",
         "evidence_confidence": "NOT_APPLICABLE",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "beth_hammack_51a58bd36a_002",
@@ -973,7 +1061,9 @@
         "stance_driver": "MULTIPLE",
         "bis_stance": "MOSTLY_HAWKISH",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "beth_hammack_51a58bd36a_003",
@@ -994,7 +1084,9 @@
         "stance_driver": "POLICY_FRAMEWORK",
         "bis_stance": "NEUTRAL",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "beth_hammack_51a58bd36a_004",
@@ -1015,7 +1107,9 @@
         "stance_driver": "MULTIPLE",
         "bis_stance": "NEUTRAL",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "beth_hammack_a8b954b22b_001",
@@ -1036,7 +1130,9 @@
         "stance_driver": "POLICY_FRAMEWORK",
         "bis_stance": "NEUTRAL",
         "evidence_confidence": "MEDIUM",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "beth_hammack_a8b954b22b_002",
@@ -1057,7 +1153,9 @@
         "stance_driver": "NOT_APPLICABLE",
         "bis_stance": "NOT_APPLICABLE",
         "evidence_confidence": "NOT_APPLICABLE",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "beth_hammack_a8b954b22b_003",
@@ -1078,7 +1176,9 @@
         "stance_driver": "NOT_APPLICABLE",
         "bis_stance": "NOT_APPLICABLE",
         "evidence_confidence": "NOT_APPLICABLE",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "beth_hammack_a8b954b22b_004",
@@ -1099,7 +1199,9 @@
         "stance_driver": "INFLATION",
         "bis_stance": "NEUTRAL",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "beth_hammack_a8b954b22b_005",
@@ -1120,7 +1222,9 @@
         "stance_driver": "INTEREST_RATES",
         "bis_stance": "MOSTLY_HAWKISH",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "beth_hammack_a8b954b22b_006",
@@ -1141,7 +1245,9 @@
         "stance_driver": "POLICY_FRAMEWORK",
         "bis_stance": "NEUTRAL",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "beth_hammack_a8b954b22b_007",
@@ -1162,19 +1268,136 @@
         "stance_driver": "POLICY_FRAMEWORK",
         "bis_stance": "NEUTRAL",
         "evidence_confidence": "MEDIUM",
-        "text_sufficiency": "PARTIAL"
+        "text_sufficiency": "PARTIAL",
+        "macro_calibrated": false,
+        "macro_background": ""
       }
     ]
   },
   {
     "member": "Christopher Waller",
-    "score": 0.275,
+    "score": 0.2767,
     "stance": "HAWKISH",
-    "policy_segment_count": 10,
+    "policy_segment_count": 15,
     "irrelevant_segment_count": 0,
-    "evidence_count": 7,
-    "latest_date": "2026-07-13T16:30:00+00:00",
+    "evidence_count": 12,
+    "latest_date": "2026-09-03T12:30:00+00:00",
     "segment_results": [
+      {
+        "segment_id": "christopher_waller_a89335cf04_001",
+        "policy_relevant": true,
+        "stance": "HAWKISH",
+        "score": 0.3,
+        "content_type": "PRESCRIPTIVE",
+        "directness": "DIRECT",
+        "temporal": "FORWARD_LOOKING",
+        "uncertainty": "UNCERTAIN",
+        "evidence": "If this continues in the data due over the next two weeks, I would be inclined to support holding the target for the federal funds rate at its current setting. But there continues to be considerable uncertainty about how military conflicts, trade policy, and artificial intelligence (AI) will affect prices and economic activity. If the incoming data for August show this improvement has been fleeting, then it may be appropriate to raise the policy rate when the FOMC meets on September 15 and 16.",
+        "reasoning": "Waller states he would support holding rates if disinflation continues but would consider raising them if improvement is fleeting, indicating a modest hawkish tilt to delay easing.",
+        "policy_action": "DELAY_EASING",
+        "signal_strength": "MILD",
+        "policy_relevance_score": 5,
+        "speaker_evidence_type": "DIRECT_QUOTE",
+        "policy_bearing_phrase": "I would be inclined to support holding the target for the federal funds rate at its current setting.",
+        "stance_driver": "INFLATION",
+        "bis_stance": "MOSTLY_HAWKISH",
+        "evidence_confidence": "HIGH",
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
+      },
+      {
+        "segment_id": "christopher_waller_a89335cf04_002",
+        "policy_relevant": true,
+        "stance": "NEUTRAL",
+        "score": 0.0,
+        "content_type": "DESCRIPTIVE",
+        "directness": "DIRECT",
+        "temporal": "MIXED",
+        "uncertainty": "UNCERTAIN",
+        "evidence": "With economic activity and the labor market in good shape, they are not a large factor in my determination of the appropriate setting of monetary policy. But they are an important backdrop for the part of the outlook that is my focus right now, inflation, and my judgment about how much the current stance of policy is working to return inflation to 2 percent.",
+        "reasoning": "Waller states that the labor market 'are not a large factor in my determination of the appropriate setting of monetary policy,' indicating his policy focus is on inflation rather than labor and he gives no clear directional call to tighten or ease, so a neutral stance with no signal strength is appropriate.",
+        "policy_action": "NOT_APPLICABLE",
+        "signal_strength": "NOT_APPLICABLE",
+        "policy_relevance_score": 5,
+        "speaker_evidence_type": "DIRECT_QUOTE",
+        "policy_bearing_phrase": "they are not a large factor in my determination of the appropriate setting of monetary policy.",
+        "stance_driver": "INFLATION",
+        "bis_stance": "NEUTRAL",
+        "evidence_confidence": "HIGH",
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
+      },
+      {
+        "segment_id": "christopher_waller_a89335cf04_003",
+        "policy_relevant": true,
+        "stance": "HAWKISH",
+        "score": 0.3,
+        "content_type": "PRESCRIPTIVE",
+        "directness": "DIRECT",
+        "temporal": "FORWARD_LOOKING",
+        "uncertainty": "UNCERTAIN",
+        "evidence": "So my decision on the appropriate stance of policy will be heavily influenced by what we learn about August inflation. If there is continued progress toward our 2 percent goal, then I am willing to support holding the policy rate at its current level.\n\nBut if inflation comes in hot, I would consider a rate hike. I judge that policy is currently only slightly restricting aggregate demand, and it may not take much acceleration in inflation to nudge me into supporting tighter policy. If there is evidence that progress toward 2 percent inflation reversed in August, a small adjustment in our stance would help ensure that it resumes.",
+        "reasoning": "Waller states he would consider a rate hike 'if inflation comes in hot,' a conditional but clear inclination to tighten if inflation accelerates, warranting a mostly-hawkish classification with a mild signal strength.",
+        "policy_action": "DELAY_EASING",
+        "signal_strength": "MILD",
+        "policy_relevance_score": 5,
+        "speaker_evidence_type": "DIRECT_QUOTE",
+        "policy_bearing_phrase": "if inflation comes in hot, I would consider a rate hike",
+        "stance_driver": "INFLATION",
+        "bis_stance": "MOSTLY_HAWKISH",
+        "evidence_confidence": "HIGH",
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
+      },
+      {
+        "segment_id": "christopher_waller_a89335cf04_004",
+        "policy_relevant": true,
+        "stance": "HAWKISH",
+        "score": 0.8,
+        "content_type": "PRESCRIPTIVE",
+        "directness": "DIRECT",
+        "temporal": "BACKWARD_LOOKING",
+        "uncertainty": "CERTAIN",
+        "evidence": "For example, by September 2021 it was clear to me that we needed to raise the policy rate to deal with accelerating inflation.",
+        "reasoning": "Waller explicitly states he believed rates needed to be raised to address accelerating inflation, which is a direct and clear preference for tightening and thus a strong hawkish signal.",
+        "policy_action": "TIGHTENING",
+        "signal_strength": "STRONG",
+        "policy_relevance_score": 5,
+        "speaker_evidence_type": "DIRECT_QUOTE",
+        "policy_bearing_phrase": "we needed to raise the policy rate to deal with accelerating inflation",
+        "stance_driver": "INFLATION",
+        "bis_stance": "HAWKISH",
+        "evidence_confidence": "HIGH",
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
+      },
+      {
+        "segment_id": "christopher_waller_a89335cf04_005",
+        "policy_relevant": true,
+        "stance": "NEUTRAL",
+        "score": 0.0,
+        "content_type": "DESCRIPTIVE",
+        "directness": "INDIRECT",
+        "temporal": "MIXED",
+        "uncertainty": "UNCERTAIN",
+        "evidence": "See my July 6, 2026 remarks on where I discuss how forward guidance can be a valuable tool that has, at times, significantly strengthened policymaking and will continue to be useful and yet is more art than science and there have been times when it has hindered, rather than helped, policymaking. Christopher J. Waller (2026), \"Two Thoughts on the Transmission of Monetary Policy,\" speech delivered at \"Challenges for Monetary Policy Transmission in a Changing World,\" a conference sponsored by the Bank of Italy for the research network initiated by the European System of Central Banks, Rome, Italy, July 6.)",
+        "reasoning": "Christopher Waller is clearly the speaker and he describes imputed prices as less reliable and forward guidance as useful but imperfect, which conveys policy-framework caution rather than a directional hawkish or dovish recommendation.",
+        "policy_action": "NOT_APPLICABLE",
+        "signal_strength": "NOT_APPLICABLE",
+        "policy_relevance_score": 4,
+        "speaker_evidence_type": "ATTRIBUTED_PARAPHRASE",
+        "policy_bearing_phrase": "forward guidance can be a valuable tool that has, at times, significantly strengthened policymaking and will continue to be useful and yet is more art than science and there have been times when it has hindered, rather than helped, policymaking.",
+        "stance_driver": "POLICY_FRAMEWORK",
+        "bis_stance": "NEUTRAL",
+        "evidence_confidence": "MEDIUM",
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
+      },
       {
         "segment_id": "christopher_waller_3474815a3e_001",
         "policy_relevant": true,
@@ -1194,7 +1417,9 @@
         "stance_driver": "INFLATION",
         "bis_stance": "MOSTLY_HAWKISH",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "christopher_waller_3474815a3e_002",
@@ -1215,7 +1440,9 @@
         "stance_driver": "INFLATION",
         "bis_stance": "MOSTLY_HAWKISH",
         "evidence_confidence": "MEDIUM",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "christopher_waller_3474815a3e_003",
@@ -1236,7 +1463,9 @@
         "stance_driver": "INFLATION",
         "bis_stance": "MOSTLY_HAWKISH",
         "evidence_confidence": "MEDIUM",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "christopher_waller_3474815a3e_004",
@@ -1257,7 +1486,9 @@
         "stance_driver": "INFLATION",
         "bis_stance": "MOSTLY_HAWKISH",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "christopher_waller_3474815a3e_005",
@@ -1278,7 +1509,9 @@
         "stance_driver": "INFLATION",
         "bis_stance": "MOSTLY_HAWKISH",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "christopher_waller_daff0dec71_001",
@@ -1299,7 +1532,9 @@
         "stance_driver": "POLICY_FRAMEWORK",
         "bis_stance": "NEUTRAL",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "christopher_waller_daff0dec71_002",
@@ -1320,7 +1555,9 @@
         "stance_driver": "POLICY_FRAMEWORK",
         "bis_stance": "MOSTLY_HAWKISH",
         "evidence_confidence": "MEDIUM",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "christopher_waller_daff0dec71_003",
@@ -1341,7 +1578,9 @@
         "stance_driver": "NOT_APPLICABLE",
         "bis_stance": "NOT_APPLICABLE",
         "evidence_confidence": "NOT_APPLICABLE",
-        "text_sufficiency": "PARTIAL"
+        "text_sufficiency": "PARTIAL",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "christopher_waller_dfc9b20d61_001",
@@ -1362,7 +1601,9 @@
         "stance_driver": "NOT_APPLICABLE",
         "bis_stance": "NOT_APPLICABLE",
         "evidence_confidence": "NOT_APPLICABLE",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "christopher_waller_dfc9b20d61_002",
@@ -1383,7 +1624,9 @@
         "stance_driver": "NOT_APPLICABLE",
         "bis_stance": "NOT_APPLICABLE",
         "evidence_confidence": "NOT_APPLICABLE",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       }
     ]
   },
@@ -1415,7 +1658,9 @@
         "stance_driver": "NOT_APPLICABLE",
         "bis_stance": "NOT_APPLICABLE",
         "evidence_confidence": "NOT_APPLICABLE",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "jeffrey_schmid_43d3106501_002",
@@ -1436,7 +1681,9 @@
         "stance_driver": "INFLATION",
         "bis_stance": "MOSTLY_HAWKISH",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "jeffrey_schmid_43d3106501_003",
@@ -1457,7 +1704,9 @@
         "stance_driver": "INFLATION",
         "bis_stance": "MOSTLY_HAWKISH",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "jeffrey_schmid_43d3106501_004",
@@ -1478,7 +1727,9 @@
         "stance_driver": "INFLATION",
         "bis_stance": "HAWKISH",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "jeffrey_schmid_2eb022479c_001",
@@ -1499,7 +1750,9 @@
         "stance_driver": "NOT_APPLICABLE",
         "bis_stance": "NOT_APPLICABLE",
         "evidence_confidence": "NOT_APPLICABLE",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "jeffrey_schmid_2eb022479c_002",
@@ -1520,7 +1773,9 @@
         "stance_driver": "NOT_APPLICABLE",
         "bis_stance": "NEUTRAL",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "jeffrey_schmid_2eb022479c_003",
@@ -1541,7 +1796,9 @@
         "stance_driver": "INFLATION",
         "bis_stance": "MOSTLY_HAWKISH",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "jeffrey_schmid_2eb022479c_004",
@@ -1562,7 +1819,9 @@
         "stance_driver": "INFLATION",
         "bis_stance": "NEUTRAL",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "jeffrey_schmid_2eb022479c_005",
@@ -1583,60 +1842,9 @@
         "stance_driver": "INFLATION",
         "bis_stance": "MOSTLY_HAWKISH",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
-      }
-    ]
-  },
-  {
-    "member": "Jerome Powell",
-    "score": 0.0,
-    "stance": "NEUTRAL",
-    "policy_segment_count": 2,
-    "irrelevant_segment_count": 0,
-    "evidence_count": 2,
-    "latest_date": "2026-06-01T00:30:00+00:00",
-    "segment_results": [
-      {
-        "segment_id": "jerome_powell_c54d7ea9a0_001",
-        "policy_relevant": true,
-        "stance": "NEUTRAL",
-        "score": 0.0,
-        "content_type": "DESCRIPTIVE",
-        "directness": "DIRECT",
-        "temporal": "MIXED",
-        "uncertainty": "CERTAIN",
-        "evidence": "We use our monetary policy tools to promote maximum employment and stable prices. We do not take into account the fortunes of any political party or politician in making those decisions.",
-        "reasoning": "Powell (the speaker) states the Fed's objectives and affirms independence ('promote maximum employment and stable prices' and 'We do not take into account...'), which is policy-relevant but non-directional, so a NEUTRAL stance with no signal strength is appropriate.",
-        "policy_action": "UNCLEAR",
-        "signal_strength": "NOT_APPLICABLE",
-        "policy_relevance_score": 4,
-        "speaker_evidence_type": "DIRECT_QUOTE",
-        "policy_bearing_phrase": "We use our monetary policy tools to promote maximum employment and stable prices.",
-        "stance_driver": "POLICY_FRAMEWORK",
-        "bis_stance": "NEUTRAL",
-        "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
-      },
-      {
-        "segment_id": "jerome_powell_c54d7ea9a0_002",
-        "policy_relevant": true,
-        "stance": "NEUTRAL",
-        "score": 0.0,
-        "content_type": "PRESCRIPTIVE",
-        "directness": "DIRECT",
-        "temporal": "FORWARD_LOOKING",
-        "uncertainty": "CERTAIN",
-        "evidence": "Congress wisely chose to insulate monetary policy decisions from political pressure. Our federated structure is a bit complex, but the legal protections that support the non-political conduct of monetary policy are straightforward. Fed governors and Reserve Bank presidents hold office with legal protection against removal.",
-        "reasoning": "Powell (the speaker) argues the Fed must be insulated from political pressure—'insulate monetary policy decisions from political pressure'—which is a prescriptive defense of institutional framework rather than a directional statement about interest-rate policy, so the stance is neutral.",
-        "policy_action": "NOT_APPLICABLE",
-        "signal_strength": "NOT_APPLICABLE",
-        "policy_relevance_score": 4,
-        "speaker_evidence_type": "DIRECT_QUOTE",
-        "policy_bearing_phrase": "insulate monetary policy decisions from political pressure",
-        "stance_driver": "POLICY_FRAMEWORK",
-        "bis_stance": "NEUTRAL",
-        "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       }
     ]
   },
@@ -1668,7 +1876,9 @@
         "stance_driver": "INFLATION",
         "bis_stance": "MOSTLY_HAWKISH",
         "evidence_confidence": "MEDIUM",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "john_williams_3918d25010_002",
@@ -1689,7 +1899,9 @@
         "stance_driver": "INFLATION",
         "bis_stance": "NEUTRAL",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "john_williams_3918d25010_003",
@@ -1710,7 +1922,9 @@
         "stance_driver": "INFLATION",
         "bis_stance": "MOSTLY_HAWKISH",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "john_williams_6409d7f6f9_001",
@@ -1731,7 +1945,9 @@
         "stance_driver": "GROWTH",
         "bis_stance": "NEUTRAL",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "john_williams_6409d7f6f9_002",
@@ -1752,7 +1968,9 @@
         "stance_driver": "NOT_APPLICABLE",
         "bis_stance": "NEUTRAL",
         "evidence_confidence": "MEDIUM",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "john_williams_6409d7f6f9_003",
@@ -1773,7 +1991,9 @@
         "stance_driver": "INFLATION",
         "bis_stance": "NEUTRAL",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "john_williams_6409d7f6f9_004",
@@ -1794,7 +2014,9 @@
         "stance_driver": "POLICY_FRAMEWORK",
         "bis_stance": "NEUTRAL",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "john_williams_d87e6c69ea_001",
@@ -1815,7 +2037,9 @@
         "stance_driver": "NOT_APPLICABLE",
         "bis_stance": "NOT_APPLICABLE",
         "evidence_confidence": "NOT_APPLICABLE",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "john_williams_d87e6c69ea_002",
@@ -1836,7 +2060,9 @@
         "stance_driver": "INFLATION",
         "bis_stance": "NEUTRAL",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "john_williams_d87e6c69ea_003",
@@ -1857,7 +2083,9 @@
         "stance_driver": "INFLATION",
         "bis_stance": "NEUTRAL",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "john_williams_0137bddc06_001",
@@ -1878,7 +2106,9 @@
         "stance_driver": "NOT_APPLICABLE",
         "bis_stance": "NEUTRAL",
         "evidence_confidence": "MEDIUM",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "john_williams_0137bddc06_002",
@@ -1899,7 +2129,9 @@
         "stance_driver": "MULTIPLE",
         "bis_stance": "NEUTRAL",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "john_williams_0137bddc06_003",
@@ -1920,7 +2152,9 @@
         "stance_driver": "INFLATION",
         "bis_stance": "NEUTRAL",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "john_williams_26fc3f07cd_001",
@@ -1941,7 +2175,9 @@
         "stance_driver": "MULTIPLE",
         "bis_stance": "NEUTRAL",
         "evidence_confidence": "MEDIUM",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "john_williams_26fc3f07cd_002",
@@ -1962,7 +2198,9 @@
         "stance_driver": "INFLATION",
         "bis_stance": "MOSTLY_HAWKISH",
         "evidence_confidence": "MEDIUM",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "john_williams_3567f2bd36_001",
@@ -1983,7 +2221,9 @@
         "stance_driver": "LABOR",
         "bis_stance": "NEUTRAL",
         "evidence_confidence": "MEDIUM",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "john_williams_3567f2bd36_002",
@@ -2004,7 +2244,9 @@
         "stance_driver": "MULTIPLE",
         "bis_stance": "NEUTRAL",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "john_williams_3567f2bd36_003",
@@ -2025,7 +2267,9 @@
         "stance_driver": "INFLATION",
         "bis_stance": "MOSTLY_DOVISH",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "john_williams_e38951aea9_001",
@@ -2046,7 +2290,9 @@
         "stance_driver": "NOT_APPLICABLE",
         "bis_stance": "NEUTRAL",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "john_williams_e38951aea9_002",
@@ -2067,7 +2313,9 @@
         "stance_driver": "MULTIPLE",
         "bis_stance": "MOSTLY_DOVISH",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "john_williams_e38951aea9_003",
@@ -2088,19 +2336,205 @@
         "stance_driver": "POLICY_FRAMEWORK",
         "bis_stance": "NEUTRAL",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       }
     ]
   },
   {
     "member": "Kevin Warsh",
-    "score": 0.3167,
+    "score": 0.2091,
     "stance": "HAWKISH",
-    "policy_segment_count": 3,
+    "policy_segment_count": 11,
     "irrelevant_segment_count": 0,
-    "evidence_count": 3,
-    "latest_date": "2026-07-14T12:30:00+00:00",
+    "evidence_count": 8,
+    "latest_date": "2026-08-28T14:00:00+00:00",
     "segment_results": [
+      {
+        "segment_id": "kevin_warsh_410eea679c_001",
+        "policy_relevant": true,
+        "stance": "IRRELEVANT",
+        "score": 0.0,
+        "content_type": "IRRELEVANT",
+        "directness": "NOT_APPLICABLE",
+        "temporal": "NOT_APPLICABLE",
+        "uncertainty": "UNCERTAIN",
+        "evidence": "",
+        "reasoning": "Kevin Warsh (the speaker) discusses AI and its implications for the conduct of monetary policy but offers no explicit directional policy recommendation or phrase, so no monetary-policy stance can be assigned.",
+        "policy_action": "NOT_APPLICABLE",
+        "signal_strength": "NOT_APPLICABLE",
+        "policy_relevance_score": 4,
+        "speaker_evidence_type": "DIRECT_QUOTE",
+        "policy_bearing_phrase": "",
+        "stance_driver": "NOT_APPLICABLE",
+        "bis_stance": "NOT_APPLICABLE",
+        "evidence_confidence": "NOT_APPLICABLE",
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
+      },
+      {
+        "segment_id": "kevin_warsh_410eea679c_002",
+        "policy_relevant": true,
+        "stance": "NEUTRAL",
+        "score": 0.0,
+        "content_type": "PRESCRIPTIVE",
+        "directness": "DIRECT",
+        "temporal": "FORWARD_LOOKING",
+        "uncertainty": "CERTAIN",
+        "evidence": "To highlight one example, I have set out to change the form and function of the Fed Chairman's so-called forward guidance. ... In normal times, the role of forward guidance should be limited and circumscribed. Otherwise it risks creating ambiguity in the name of clarity. Oversharing policy deliberations and overcommitting to future decisions can lead markets, businesses, and households astray. And I believe when policymakers make quasi-commitments on interest rates through the cycle, we inhibit our own freedom to make the right calls when it's time to decide.",
+        "reasoning": "Warsh (the speaker) advocates limiting forward guidance—a prescriptive change to the policy framework rather than a directional call on rates—so the statement yields a neutral monetary-policy stance focused on communications.",
+        "policy_action": "UNCLEAR",
+        "signal_strength": "NOT_APPLICABLE",
+        "policy_relevance_score": 4,
+        "speaker_evidence_type": "DIRECT_QUOTE",
+        "policy_bearing_phrase": "In normal times, the role of forward guidance should be limited and circumscribed.",
+        "stance_driver": "POLICY_FRAMEWORK",
+        "bis_stance": "NEUTRAL",
+        "evidence_confidence": "HIGH",
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
+      },
+      {
+        "segment_id": "kevin_warsh_410eea679c_003",
+        "policy_relevant": true,
+        "stance": "NEUTRAL",
+        "score": 0.0,
+        "content_type": "PRESCRIPTIVE",
+        "directness": "DIRECT",
+        "temporal": "FORWARD_LOOKING",
+        "uncertainty": "UNCERTAIN",
+        "evidence": "So, if forward guidance is ill-suited to normal times, then how about the new Fed chief commitsâat the very leastâto an explicit reaction function? Surely, he should tell us his interest rate pathâif, say, the data were to come in hot or cold.",
+        "reasoning": "Kevin Warsh (the speaker) urges limiting open-ended forward guidance and proposing an explicit reaction function—this is a prescriptive change to the Fed's communication framework rather than a directional call on tightening or easing, so it is classified as NEUTRAL with a score of 0.0.",
+        "policy_action": "UNCLEAR",
+        "signal_strength": "NOT_APPLICABLE",
+        "policy_relevance_score": 5,
+        "speaker_evidence_type": "DIRECT_QUOTE",
+        "policy_bearing_phrase": "he should tell us his interest rate path",
+        "stance_driver": "POLICY_FRAMEWORK",
+        "bis_stance": "NEUTRAL",
+        "evidence_confidence": "HIGH",
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
+      },
+      {
+        "segment_id": "kevin_warsh_410eea679c_004",
+        "policy_relevant": true,
+        "stance": "HAWKISH",
+        "score": 0.55,
+        "content_type": "PRESCRIPTIVE",
+        "directness": "DIRECT",
+        "temporal": "FORWARD_LOOKING",
+        "uncertainty": "CERTAIN",
+        "evidence": "Third, there should be no misunderstanding: The Fed's price-stability objective of 2 percent, as measured by the personal consumption expenditures (PCE) price index, is a firm, fixed target.\n\nFifth, short-term interest rates are the predominant tool to achieve the dual mandate. Unconventional policies to spur economic activity may suit genuine crises but should otherwise be used sparingly, if at all.",
+        "reasoning": "Warsh explicitly characterizes the 2% PCE target as a 'firm, fixed target' and favors using short-term rates while avoiding unconventional easing, implying a moderately strong hawkish preference to maintain policy restraint.",
+        "policy_action": "MAINTAIN_RESTRAINT",
+        "signal_strength": "MODERATE",
+        "policy_relevance_score": 5,
+        "speaker_evidence_type": "DIRECT_QUOTE",
+        "policy_bearing_phrase": "The Fed's price-stability objective of 2 percent, as measured by the personal consumption expenditures (PCE) price index, is a firm, fixed target.",
+        "stance_driver": "INFLATION",
+        "bis_stance": "MOSTLY_HAWKISH",
+        "evidence_confidence": "HIGH",
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
+      },
+      {
+        "segment_id": "kevin_warsh_410eea679c_005",
+        "policy_relevant": true,
+        "stance": "HAWKISH",
+        "score": 0.5,
+        "content_type": "PRESCRIPTIVE",
+        "directness": "DIRECT",
+        "temporal": "FORWARD_LOOKING",
+        "uncertainty": "CERTAIN",
+        "evidence": "Inflation is running above our 2 percent target. So the Fed's predominant focus right now should be on prices.",
+        "reasoning": "Warsh (I-statements in the text) states inflation is above target and explicitly says the Fed's focus should be on prices, implying a preference to maintain policy restraint (a moderate hawkish signal).",
+        "policy_action": "MAINTAIN_RESTRAINT",
+        "signal_strength": "MODERATE",
+        "policy_relevance_score": 5,
+        "speaker_evidence_type": "DIRECT_QUOTE",
+        "policy_bearing_phrase": "the Fed's predominant focus right now should be on prices",
+        "stance_driver": "INFLATION",
+        "bis_stance": "MOSTLY_HAWKISH",
+        "evidence_confidence": "HIGH",
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
+      },
+      {
+        "segment_id": "kevin_warsh_410eea679c_006",
+        "policy_relevant": true,
+        "stance": "HAWKISH",
+        "score": 0.3,
+        "content_type": "PRESCRIPTIVE",
+        "directness": "DIRECT",
+        "temporal": "FORWARD_LOOKING",
+        "uncertainty": "CERTAIN",
+        "evidence": "We must be confident that underlying inflation is moving to our objective, clearly and at sufficient speed. Otherwise, we have work to do.",
+        "reasoning": "Warsh (the speaker) states that inflation must be clearly moving to the objective and that 'we have work to do' otherwise, implying a moderate hawkish inclination to delay easing or maintain restraint until confidence is achieved.",
+        "policy_action": "DELAY_EASING",
+        "signal_strength": "MODERATE",
+        "policy_relevance_score": 5,
+        "speaker_evidence_type": "DIRECT_QUOTE",
+        "policy_bearing_phrase": "We must be confident that underlying inflation is moving to our objective, clearly and at sufficient speed. Otherwise, we have work to do.",
+        "stance_driver": "INFLATION",
+        "bis_stance": "MOSTLY_HAWKISH",
+        "evidence_confidence": "MEDIUM",
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
+      },
+      {
+        "segment_id": "kevin_warsh_410eea679c_007",
+        "policy_relevant": true,
+        "stance": "IRRELEVANT",
+        "score": 0.0,
+        "content_type": "IRRELEVANT",
+        "directness": "NOT_APPLICABLE",
+        "temporal": "NOT_APPLICABLE",
+        "uncertainty": "UNCERTAIN",
+        "evidence": "",
+        "reasoning": "Kevin Warsh is only cited as an authored work in the references with no quoted or paraphrased policy view, so no monetary-policy stance can be attributed.",
+        "policy_action": "NOT_APPLICABLE",
+        "signal_strength": "NOT_APPLICABLE",
+        "policy_relevance_score": 5,
+        "speaker_evidence_type": "CONTEXT_ONLY",
+        "policy_bearing_phrase": "",
+        "stance_driver": "NOT_APPLICABLE",
+        "bis_stance": "NOT_APPLICABLE",
+        "evidence_confidence": "NOT_APPLICABLE",
+        "text_sufficiency": "INSUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
+      },
+      {
+        "segment_id": "kevin_warsh_410eea679c_008",
+        "policy_relevant": true,
+        "stance": "IRRELEVANT",
+        "score": 0.0,
+        "content_type": "IRRELEVANT",
+        "directness": "NOT_APPLICABLE",
+        "temporal": "NOT_APPLICABLE",
+        "uncertainty": "UNCERTAIN",
+        "evidence": "",
+        "reasoning": "The excerpt contains only an FOMC minutes title and bibliographic references with no quote or paraphrase attributable to Kevin Warsh, so no policy-bearing phrase or stance can be assigned.",
+        "policy_action": "NOT_APPLICABLE",
+        "signal_strength": "NOT_APPLICABLE",
+        "policy_relevance_score": 5,
+        "speaker_evidence_type": "NONE",
+        "policy_bearing_phrase": "",
+        "stance_driver": "NOT_APPLICABLE",
+        "bis_stance": "NOT_APPLICABLE",
+        "evidence_confidence": "NOT_APPLICABLE",
+        "text_sufficiency": "INSUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
+      },
       {
         "segment_id": "kevin_warsh_80e5a0faa1_001",
         "policy_relevant": true,
@@ -2120,7 +2554,9 @@
         "stance_driver": "INFLATION",
         "bis_stance": "MOSTLY_HAWKISH",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "kevin_warsh_80e5a0faa1_002",
@@ -2141,7 +2577,9 @@
         "stance_driver": "INFLATION",
         "bis_stance": "MOSTLY_HAWKISH",
         "evidence_confidence": "MEDIUM",
-        "text_sufficiency": "PARTIAL"
+        "text_sufficiency": "PARTIAL",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "kevin_warsh_80e5a0faa1_003",
@@ -2162,7 +2600,9 @@
         "stance_driver": "INFLATION",
         "bis_stance": "NEUTRAL",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       }
     ]
   },
@@ -2194,7 +2634,9 @@
         "stance_driver": "INFLATION",
         "bis_stance": "MOSTLY_HAWKISH",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "lisa_cook_604fbf455e_002",
@@ -2215,7 +2657,9 @@
         "stance_driver": "INFLATION",
         "bis_stance": "MOSTLY_HAWKISH",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "lisa_cook_604fbf455e_003",
@@ -2236,7 +2680,9 @@
         "stance_driver": "INFLATION",
         "bis_stance": "NEUTRAL",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "lisa_cook_604fbf455e_004",
@@ -2257,7 +2703,9 @@
         "stance_driver": "INFLATION",
         "bis_stance": "MOSTLY_HAWKISH",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "lisa_cook_3390016ec2_001",
@@ -2278,7 +2726,9 @@
         "stance_driver": "INFLATION",
         "bis_stance": "MOSTLY_HAWKISH",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "lisa_cook_3390016ec2_002",
@@ -2299,7 +2749,9 @@
         "stance_driver": "INFLATION",
         "bis_stance": "MOSTLY_HAWKISH",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "lisa_cook_3390016ec2_003",
@@ -2320,7 +2772,9 @@
         "stance_driver": "INFLATION",
         "bis_stance": "MOSTLY_HAWKISH",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "lisa_cook_3390016ec2_004",
@@ -2341,7 +2795,9 @@
         "stance_driver": "NOT_APPLICABLE",
         "bis_stance": "NOT_APPLICABLE",
         "evidence_confidence": "NOT_APPLICABLE",
-        "text_sufficiency": "INSUFFICIENT"
+        "text_sufficiency": "INSUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "lisa_cook_05360d8bbe_001",
@@ -2362,7 +2818,9 @@
         "stance_driver": "POLICY_FRAMEWORK",
         "bis_stance": "NEUTRAL",
         "evidence_confidence": "MEDIUM",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "lisa_cook_05360d8bbe_002",
@@ -2383,7 +2841,9 @@
         "stance_driver": "NOT_APPLICABLE",
         "bis_stance": "NOT_APPLICABLE",
         "evidence_confidence": "NOT_APPLICABLE",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       }
     ]
   },
@@ -2415,7 +2875,9 @@
         "stance_driver": "INFLATION",
         "bis_stance": "MOSTLY_HAWKISH",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "lorie_logan_2effc6d5c2_002",
@@ -2436,7 +2898,9 @@
         "stance_driver": "INFLATION",
         "bis_stance": "MOSTLY_HAWKISH",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "lorie_logan_2effc6d5c2_003",
@@ -2457,7 +2921,9 @@
         "stance_driver": "INFLATION",
         "bis_stance": "MOSTLY_HAWKISH",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "lorie_logan_2effc6d5c2_004",
@@ -2478,7 +2944,9 @@
         "stance_driver": "INFLATION",
         "bis_stance": "MOSTLY_HAWKISH",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "lorie_logan_2b0e77d6ed_001",
@@ -2499,7 +2967,9 @@
         "stance_driver": "NOT_APPLICABLE",
         "bis_stance": "NEUTRAL",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "lorie_logan_2b0e77d6ed_002",
@@ -2520,7 +2990,9 @@
         "stance_driver": "POLICY_FRAMEWORK",
         "bis_stance": "NEUTRAL",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "lorie_logan_29f70e418d_001",
@@ -2541,7 +3013,9 @@
         "stance_driver": "INFLATION",
         "bis_stance": "MOSTLY_HAWKISH",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "lorie_logan_29f70e418d_002",
@@ -2562,7 +3036,9 @@
         "stance_driver": "INFLATION",
         "bis_stance": "MOSTLY_HAWKISH",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "lorie_logan_29f70e418d_003",
@@ -2583,7 +3059,9 @@
         "stance_driver": "NOT_APPLICABLE",
         "bis_stance": "NEUTRAL",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "lorie_logan_5523bde85b_001",
@@ -2604,7 +3082,9 @@
         "stance_driver": "POLICY_FRAMEWORK",
         "bis_stance": "NEUTRAL",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "lorie_logan_5523bde85b_002",
@@ -2625,7 +3105,9 @@
         "stance_driver": "POLICY_FRAMEWORK",
         "bis_stance": "NEUTRAL",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "lorie_logan_e04bdd5bb3_001",
@@ -2646,7 +3128,9 @@
         "stance_driver": "NOT_APPLICABLE",
         "bis_stance": "NOT_APPLICABLE",
         "evidence_confidence": "NOT_APPLICABLE",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "lorie_logan_e04bdd5bb3_002",
@@ -2667,7 +3151,9 @@
         "stance_driver": "NOT_APPLICABLE",
         "bis_stance": "NOT_APPLICABLE",
         "evidence_confidence": "NOT_APPLICABLE",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "lorie_logan_e04bdd5bb3_003",
@@ -2688,7 +3174,9 @@
         "stance_driver": "INFLATION",
         "bis_stance": "MOSTLY_HAWKISH",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "lorie_logan_f72b93b49f_001",
@@ -2709,7 +3197,9 @@
         "stance_driver": "BALANCE_SHEET",
         "bis_stance": "NEUTRAL",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "lorie_logan_f72b93b49f_002",
@@ -2730,7 +3220,9 @@
         "stance_driver": "BALANCE_SHEET",
         "bis_stance": "MOSTLY_DOVISH",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "lorie_logan_f72b93b49f_003",
@@ -2751,7 +3243,9 @@
         "stance_driver": "BALANCE_SHEET",
         "bis_stance": "NEUTRAL",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "lorie_logan_f72b93b49f_004",
@@ -2772,7 +3266,9 @@
         "stance_driver": "NOT_APPLICABLE",
         "bis_stance": "NOT_APPLICABLE",
         "evidence_confidence": "NOT_APPLICABLE",
-        "text_sufficiency": "INSUFFICIENT"
+        "text_sufficiency": "INSUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "lorie_logan_3c57f92588_001",
@@ -2793,7 +3289,9 @@
         "stance_driver": "INFLATION",
         "bis_stance": "NEUTRAL",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "lorie_logan_3c57f92588_002",
@@ -2814,7 +3312,9 @@
         "stance_driver": "INFLATION",
         "bis_stance": "NEUTRAL",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "lorie_logan_3c57f92588_003",
@@ -2835,7 +3335,9 @@
         "stance_driver": "INFLATION",
         "bis_stance": "MOSTLY_HAWKISH",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "lorie_logan_3c57f92588_004",
@@ -2856,7 +3358,9 @@
         "stance_driver": "FINANCIAL_CONDITIONS",
         "bis_stance": "NEUTRAL",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "lorie_logan_a2b915d2e0_001",
@@ -2877,7 +3381,9 @@
         "stance_driver": "NOT_APPLICABLE",
         "bis_stance": "NOT_APPLICABLE",
         "evidence_confidence": "NOT_APPLICABLE",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       }
     ]
   },
@@ -2909,7 +3415,9 @@
         "stance_driver": "NOT_APPLICABLE",
         "bis_stance": "NOT_APPLICABLE",
         "evidence_confidence": "NOT_APPLICABLE",
-        "text_sufficiency": "INSUFFICIENT"
+        "text_sufficiency": "INSUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "mary_daly_22d8401c1e_001",
@@ -2930,7 +3438,9 @@
         "stance_driver": "NOT_APPLICABLE",
         "bis_stance": "NOT_APPLICABLE",
         "evidence_confidence": "NOT_APPLICABLE",
-        "text_sufficiency": "PARTIAL"
+        "text_sufficiency": "PARTIAL",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "mary_daly_22d8401c1e_002",
@@ -2951,7 +3461,9 @@
         "stance_driver": "NOT_APPLICABLE",
         "bis_stance": "NOT_APPLICABLE",
         "evidence_confidence": "NOT_APPLICABLE",
-        "text_sufficiency": "PARTIAL"
+        "text_sufficiency": "PARTIAL",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "mary_daly_22d8401c1e_003",
@@ -2972,7 +3484,9 @@
         "stance_driver": "NOT_APPLICABLE",
         "bis_stance": "NOT_APPLICABLE",
         "evidence_confidence": "NOT_APPLICABLE",
-        "text_sufficiency": "INSUFFICIENT"
+        "text_sufficiency": "INSUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "mary_daly_22d8401c1e_004",
@@ -2993,7 +3507,9 @@
         "stance_driver": "NOT_APPLICABLE",
         "bis_stance": "NOT_APPLICABLE",
         "evidence_confidence": "NOT_APPLICABLE",
-        "text_sufficiency": "INSUFFICIENT"
+        "text_sufficiency": "INSUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "mary_daly_04dbce3ebd_001",
@@ -3014,7 +3530,9 @@
         "stance_driver": "POLICY_FRAMEWORK",
         "bis_stance": "NEUTRAL",
         "evidence_confidence": "MEDIUM",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "mary_daly_04dbce3ebd_002",
@@ -3035,7 +3553,9 @@
         "stance_driver": "POLICY_FRAMEWORK",
         "bis_stance": "NOT_APPLICABLE",
         "evidence_confidence": "NOT_APPLICABLE",
-        "text_sufficiency": "PARTIAL"
+        "text_sufficiency": "PARTIAL",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "mary_daly_04dbce3ebd_003",
@@ -3056,7 +3576,9 @@
         "stance_driver": "POLICY_FRAMEWORK",
         "bis_stance": "NEUTRAL",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "mary_daly_04dbce3ebd_004",
@@ -3077,7 +3599,9 @@
         "stance_driver": "NOT_APPLICABLE",
         "bis_stance": "NOT_APPLICABLE",
         "evidence_confidence": "NOT_APPLICABLE",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "mary_daly_04dbce3ebd_005",
@@ -3098,7 +3622,9 @@
         "stance_driver": "NOT_APPLICABLE",
         "bis_stance": "NOT_APPLICABLE",
         "evidence_confidence": "NOT_APPLICABLE",
-        "text_sufficiency": "INSUFFICIENT"
+        "text_sufficiency": "INSUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "mary_daly_04dbce3ebd_006",
@@ -3119,19 +3645,182 @@
         "stance_driver": "NOT_APPLICABLE",
         "bis_stance": "NOT_APPLICABLE",
         "evidence_confidence": "NOT_APPLICABLE",
-        "text_sufficiency": "INSUFFICIENT"
+        "text_sufficiency": "INSUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       }
     ]
   },
   {
     "member": "Michael Barr",
-    "score": 0.0,
+    "score": 0.0563,
     "stance": "NEUTRAL",
-    "policy_segment_count": 7,
-    "irrelevant_segment_count": 7,
-    "evidence_count": 0,
-    "latest_date": "2026-07-14T16:40:00+00:00",
+    "policy_segment_count": 8,
+    "irrelevant_segment_count": 13,
+    "evidence_count": 1,
+    "latest_date": "2026-09-01T13:05:00+00:00",
     "segment_results": [
+      {
+        "segment_id": "michael_barr_c2ec2c18dd_001",
+        "policy_relevant": true,
+        "stance": "HAWKISH",
+        "score": 0.45,
+        "content_type": "PRESCRIPTIVE",
+        "directness": "DIRECT",
+        "temporal": "FORWARD_LOOKING",
+        "uncertainty": "UNCERTAIN",
+        "evidence": "If trends in the data give me some confidence that inflation is moderating on a path to 2 percent, then I think we can take a bit more time to assess our policy stance. However, if inflation appears not to be moderating sufficiently, then I think we should act decisively to raise rates.",
+        "reasoning": "Michael Barr (the speaker) states that if inflation does not moderate 'we should act decisively to raise rates,' which is a conditional but clear preference for tighter policy, warranting a mostly-hawkish classification with moderate signal strength.",
+        "policy_action": "TIGHTENING",
+        "signal_strength": "MODERATE",
+        "policy_relevance_score": 4,
+        "speaker_evidence_type": "DIRECT_QUOTE",
+        "policy_bearing_phrase": "we should act decisively to raise rates",
+        "stance_driver": "INFLATION",
+        "bis_stance": "MOSTLY_HAWKISH",
+        "evidence_confidence": "HIGH",
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
+      },
+      {
+        "segment_id": "michael_barr_c2ec2c18dd_002",
+        "policy_relevant": false,
+        "stance": "IRRELEVANT",
+        "score": 0.0,
+        "content_type": "IRRELEVANT",
+        "directness": "NOT_APPLICABLE",
+        "temporal": "NOT_APPLICABLE",
+        "uncertainty": "CERTAIN",
+        "evidence": "",
+        "reasoning": "The passage (attributed to Michael Barr) summarizes research on incarceration, employment, licensing, and financial inclusion but contains no Federal Reserve monetary-policy recommendation or directional language, so no monetary-policy stance can be assigned.",
+        "policy_action": "NOT_APPLICABLE",
+        "signal_strength": "NOT_APPLICABLE",
+        "policy_relevance_score": 1,
+        "speaker_evidence_type": "CONTEXT_ONLY",
+        "policy_bearing_phrase": "",
+        "stance_driver": "NOT_APPLICABLE",
+        "bis_stance": "NOT_APPLICABLE",
+        "evidence_confidence": "NOT_APPLICABLE",
+        "text_sufficiency": "INSUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
+      },
+      {
+        "segment_id": "michael_barr_c2ec2c18dd_003",
+        "policy_relevant": false,
+        "stance": "IRRELEVANT",
+        "score": 0.0,
+        "content_type": "IRRELEVANT",
+        "directness": "NOT_APPLICABLE",
+        "temporal": "NOT_APPLICABLE",
+        "uncertainty": "UNCERTAIN",
+        "evidence": "",
+        "reasoning": "The passage discusses entrepreneurship and second‑chance lending but contains no statement attributable to Michael Barr or any Fed monetary‑policy view, so no target‑speaker stance can be assigned.",
+        "policy_action": "NOT_APPLICABLE",
+        "signal_strength": "NOT_APPLICABLE",
+        "policy_relevance_score": 0,
+        "speaker_evidence_type": "NONE",
+        "policy_bearing_phrase": "",
+        "stance_driver": "NOT_APPLICABLE",
+        "bis_stance": "NOT_APPLICABLE",
+        "evidence_confidence": "NOT_APPLICABLE",
+        "text_sufficiency": "INSUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
+      },
+      {
+        "segment_id": "michael_barr_c2ec2c18dd_004",
+        "policy_relevant": false,
+        "stance": "IRRELEVANT",
+        "score": 0.0,
+        "content_type": "IRRELEVANT",
+        "directness": "NOT_APPLICABLE",
+        "temporal": "NOT_APPLICABLE",
+        "uncertainty": "UNCERTAIN",
+        "evidence": "",
+        "reasoning": "Michael Barr is discussing entrepreneurship, credit access, and financial-inclusion programs rather than Federal Reserve monetary policy, so no monetary-policy stance can be attributed.",
+        "policy_action": "NOT_APPLICABLE",
+        "signal_strength": "NOT_APPLICABLE",
+        "policy_relevance_score": 0,
+        "speaker_evidence_type": "DIRECT_QUOTE",
+        "policy_bearing_phrase": "",
+        "stance_driver": "NOT_APPLICABLE",
+        "bis_stance": "NOT_APPLICABLE",
+        "evidence_confidence": "NOT_APPLICABLE",
+        "text_sufficiency": "INSUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
+      },
+      {
+        "segment_id": "michael_barr_c2ec2c18dd_005",
+        "policy_relevant": false,
+        "stance": "IRRELEVANT",
+        "score": 0.0,
+        "content_type": "IRRELEVANT",
+        "directness": "NOT_APPLICABLE",
+        "temporal": "NOT_APPLICABLE",
+        "uncertainty": "UNCERTAIN",
+        "evidence": "",
+        "reasoning": "Michael Barr's text discusses AI and financial inclusion rather than Federal Reserve monetary policy, so no monetary-policy phrase or directional stance is attributable to him.",
+        "policy_action": "NOT_APPLICABLE",
+        "signal_strength": "NOT_APPLICABLE",
+        "policy_relevance_score": 0,
+        "speaker_evidence_type": "NONE",
+        "policy_bearing_phrase": "",
+        "stance_driver": "NOT_APPLICABLE",
+        "bis_stance": "NOT_APPLICABLE",
+        "evidence_confidence": "NOT_APPLICABLE",
+        "text_sufficiency": "INSUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
+      },
+      {
+        "segment_id": "michael_barr_c2ec2c18dd_006",
+        "policy_relevant": false,
+        "stance": "IRRELEVANT",
+        "score": 0.0,
+        "content_type": "IRRELEVANT",
+        "directness": "NOT_APPLICABLE",
+        "temporal": "NOT_APPLICABLE",
+        "uncertainty": "UNCERTAIN",
+        "evidence": "",
+        "reasoning": "No statement from Michael Barr is present; the text is a set of academic and policy citations about incarceration and labor markets and contains no monetary-policy language attributable to the target speaker.",
+        "policy_action": "NOT_APPLICABLE",
+        "signal_strength": "NOT_APPLICABLE",
+        "policy_relevance_score": 0,
+        "speaker_evidence_type": "NONE",
+        "policy_bearing_phrase": "",
+        "stance_driver": "NOT_APPLICABLE",
+        "bis_stance": "NOT_APPLICABLE",
+        "evidence_confidence": "NOT_APPLICABLE",
+        "text_sufficiency": "INSUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
+      },
+      {
+        "segment_id": "michael_barr_c2ec2c18dd_007",
+        "policy_relevant": false,
+        "stance": "IRRELEVANT",
+        "score": 0.0,
+        "content_type": "IRRELEVANT",
+        "directness": "NOT_APPLICABLE",
+        "temporal": "NOT_APPLICABLE",
+        "uncertainty": "UNCERTAIN",
+        "evidence": "",
+        "reasoning": "Michael S. Barr is cited as giving opening remarks but no quoted or paraphrased policy content appears, so no monetary-policy stance can be attributed.",
+        "policy_action": "NOT_APPLICABLE",
+        "signal_strength": "NOT_APPLICABLE",
+        "policy_relevance_score": 1,
+        "speaker_evidence_type": "CONTEXT_ONLY",
+        "policy_bearing_phrase": "",
+        "stance_driver": "NOT_APPLICABLE",
+        "bis_stance": "NOT_APPLICABLE",
+        "evidence_confidence": "NOT_APPLICABLE",
+        "text_sufficiency": "INSUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
+      },
       {
         "segment_id": "michael_barr_7db70dbb0c_001",
         "policy_relevant": false,
@@ -3151,7 +3840,9 @@
         "stance_driver": "NOT_APPLICABLE",
         "bis_stance": "NOT_APPLICABLE",
         "evidence_confidence": "NOT_APPLICABLE",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "michael_barr_7db70dbb0c_002",
@@ -3172,7 +3863,9 @@
         "stance_driver": "NOT_APPLICABLE",
         "bis_stance": "NOT_APPLICABLE",
         "evidence_confidence": "NOT_APPLICABLE",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "michael_barr_7db70dbb0c_003",
@@ -3193,7 +3886,9 @@
         "stance_driver": "NOT_APPLICABLE",
         "bis_stance": "NOT_APPLICABLE",
         "evidence_confidence": "NOT_APPLICABLE",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "michael_barr_7db70dbb0c_004",
@@ -3214,7 +3909,9 @@
         "stance_driver": "NOT_APPLICABLE",
         "bis_stance": "NOT_APPLICABLE",
         "evidence_confidence": "NOT_APPLICABLE",
-        "text_sufficiency": "INSUFFICIENT"
+        "text_sufficiency": "INSUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "michael_barr_7db70dbb0c_005",
@@ -3235,7 +3932,9 @@
         "stance_driver": "NOT_APPLICABLE",
         "bis_stance": "NOT_APPLICABLE",
         "evidence_confidence": "NOT_APPLICABLE",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "michael_barr_7db70dbb0c_006",
@@ -3256,7 +3955,9 @@
         "stance_driver": "NOT_APPLICABLE",
         "bis_stance": "NOT_APPLICABLE",
         "evidence_confidence": "NOT_APPLICABLE",
-        "text_sufficiency": "INSUFFICIENT"
+        "text_sufficiency": "INSUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "michael_barr_bec71f09c0_001",
@@ -3277,7 +3978,9 @@
         "stance_driver": "POLICY_FRAMEWORK",
         "bis_stance": "NOT_APPLICABLE",
         "evidence_confidence": "NOT_APPLICABLE",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "michael_barr_bec71f09c0_002",
@@ -3298,7 +4001,9 @@
         "stance_driver": "BALANCE_SHEET",
         "bis_stance": "NOT_APPLICABLE",
         "evidence_confidence": "NOT_APPLICABLE",
-        "text_sufficiency": "PARTIAL"
+        "text_sufficiency": "PARTIAL",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "michael_barr_bec71f09c0_003",
@@ -3319,7 +4024,9 @@
         "stance_driver": "NOT_APPLICABLE",
         "bis_stance": "NOT_APPLICABLE",
         "evidence_confidence": "NOT_APPLICABLE",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "michael_barr_bec71f09c0_004",
@@ -3340,7 +4047,9 @@
         "stance_driver": "NOT_APPLICABLE",
         "bis_stance": "NOT_APPLICABLE",
         "evidence_confidence": "NOT_APPLICABLE",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "michael_barr_bec71f09c0_005",
@@ -3361,7 +4070,9 @@
         "stance_driver": "POLICY_FRAMEWORK",
         "bis_stance": "NOT_APPLICABLE",
         "evidence_confidence": "NOT_APPLICABLE",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "michael_barr_bec71f09c0_006",
@@ -3382,7 +4093,9 @@
         "stance_driver": "BALANCE_SHEET",
         "bis_stance": "NOT_APPLICABLE",
         "evidence_confidence": "NOT_APPLICABLE",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "michael_barr_bec71f09c0_007",
@@ -3403,7 +4116,9 @@
         "stance_driver": "NOT_APPLICABLE",
         "bis_stance": "NOT_APPLICABLE",
         "evidence_confidence": "NOT_APPLICABLE",
-        "text_sufficiency": "INSUFFICIENT"
+        "text_sufficiency": "INSUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "michael_barr_bec71f09c0_008",
@@ -3424,17 +4139,19 @@
         "stance_driver": "NOT_APPLICABLE",
         "bis_stance": "NOT_APPLICABLE",
         "evidence_confidence": "NOT_APPLICABLE",
-        "text_sufficiency": "INSUFFICIENT"
+        "text_sufficiency": "INSUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       }
     ]
   },
   {
     "member": "Michelle Bowman",
-    "score": -0.1143,
+    "score": 0.0,
     "stance": "NEUTRAL",
-    "policy_segment_count": 14,
+    "policy_segment_count": 6,
     "irrelevant_segment_count": 11,
-    "evidence_count": 7,
+    "evidence_count": 1,
     "latest_date": "2026-07-14T18:55:00+00:00",
     "segment_results": [
       {
@@ -3456,7 +4173,9 @@
         "stance_driver": "POLICY_FRAMEWORK",
         "bis_stance": "NOT_APPLICABLE",
         "evidence_confidence": "NOT_APPLICABLE",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "michelle_bowman_c7e1ec8ab1_002",
@@ -3477,7 +4196,9 @@
         "stance_driver": "NOT_APPLICABLE",
         "bis_stance": "NOT_APPLICABLE",
         "evidence_confidence": "NOT_APPLICABLE",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "michelle_bowman_b51c40b632_001",
@@ -3498,7 +4219,9 @@
         "stance_driver": "NOT_APPLICABLE",
         "bis_stance": "NOT_APPLICABLE",
         "evidence_confidence": "NOT_APPLICABLE",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "michelle_bowman_b51c40b632_002",
@@ -3519,7 +4242,9 @@
         "stance_driver": "POLICY_FRAMEWORK",
         "bis_stance": "NEUTRAL",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "michelle_bowman_b51c40b632_003",
@@ -3540,7 +4265,9 @@
         "stance_driver": "NOT_APPLICABLE",
         "bis_stance": "NOT_APPLICABLE",
         "evidence_confidence": "NOT_APPLICABLE",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "michelle_bowman_b51c40b632_004",
@@ -3561,7 +4288,9 @@
         "stance_driver": "NOT_APPLICABLE",
         "bis_stance": "NOT_APPLICABLE",
         "evidence_confidence": "NOT_APPLICABLE",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "michelle_bowman_fab517402e_001",
@@ -3582,7 +4311,9 @@
         "stance_driver": "NOT_APPLICABLE",
         "bis_stance": "NOT_APPLICABLE",
         "evidence_confidence": "NOT_APPLICABLE",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "michelle_bowman_fab517402e_002",
@@ -3603,175 +4334,9 @@
         "stance_driver": "NOT_APPLICABLE",
         "bis_stance": "NOT_APPLICABLE",
         "evidence_confidence": "NOT_APPLICABLE",
-        "text_sufficiency": "INSUFFICIENT"
-      },
-      {
-        "segment_id": "michelle_bowman_aa965ffc6b_001",
-        "policy_relevant": true,
-        "stance": "NEUTRAL",
-        "score": 0.0,
-        "content_type": "DESCRIPTIVE",
-        "directness": "DIRECT",
-        "temporal": "FORWARD_LOOKING",
-        "uncertainty": "CERTAIN",
-        "evidence": "Today, I will describe the decision making framework that I use to guide my approach to setting the target range for the federal funds rate. Specifically, I will discuss how I consider the conditions that would lead to a decision to cut, increase, or hold the policy rate constant.",
-        "reasoning": "Michelle Bowman (the speaker) describes her decision-making framework and the conditions for cutting, raising, or holding the policy rate but offers no directional recommendation, so a neutral stance with no signal is appropriate.",
-        "policy_action": "NOT_APPLICABLE",
-        "signal_strength": "NOT_APPLICABLE",
-        "policy_relevance_score": 5,
-        "speaker_evidence_type": "DIRECT_QUOTE",
-        "policy_bearing_phrase": "",
-        "stance_driver": "NOT_APPLICABLE",
-        "bis_stance": "NEUTRAL",
-        "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
-      },
-      {
-        "segment_id": "michelle_bowman_aa965ffc6b_002",
-        "policy_relevant": true,
-        "stance": "IRRELEVANT",
-        "score": 0.0,
-        "content_type": "IRRELEVANT",
-        "directness": "NOT_APPLICABLE",
-        "temporal": "NOT_APPLICABLE",
-        "uncertainty": "UNCERTAIN",
-        "evidence": "",
-        "reasoning": "Michelle Bowman outlines her data-driven framework for assessing GDP, labor, and inflation (PCE/core PCE) but provides no explicit policy recommendation or directional rate guidance, so no monetary-policy stance is assigned.",
-        "policy_action": "NOT_APPLICABLE",
-        "signal_strength": "NOT_APPLICABLE",
-        "policy_relevance_score": 4,
-        "speaker_evidence_type": "DIRECT_QUOTE",
-        "policy_bearing_phrase": "",
-        "stance_driver": "NOT_APPLICABLE",
-        "bis_stance": "NOT_APPLICABLE",
-        "evidence_confidence": "NOT_APPLICABLE",
-        "text_sufficiency": "SUFFICIENT"
-      },
-      {
-        "segment_id": "michelle_bowman_aa965ffc6b_003",
-        "policy_relevant": true,
-        "stance": "DOVISH",
-        "score": -0.3,
-        "content_type": "PRESCRIPTIVE",
-        "directness": "DIRECT",
-        "temporal": "FORWARD_LOOKING",
-        "uncertainty": "UNCERTAIN",
-        "evidence": "Therefore, looking through temporary inflation shocks may be appropriate to achieve optimal policy, as long as doing so does not affect our credibility to bring inflation back to 2 percent.",
-        "reasoning": "Michelle Bowman states that 'looking through temporary inflation shocks may be appropriate,' implying a mild dovish inclination to avoid reacting to transitory price moves, so a mostly-dovish, low-to-moderate signal is warranted.",
-        "policy_action": "LEAN_EASING",
-        "signal_strength": "MILD",
-        "policy_relevance_score": 5,
-        "speaker_evidence_type": "DIRECT_QUOTE",
-        "policy_bearing_phrase": "looking through temporary inflation shocks may be appropriate",
-        "stance_driver": "INFLATION",
-        "bis_stance": "MOSTLY_DOVISH",
-        "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
-      },
-      {
-        "segment_id": "michelle_bowman_aa965ffc6b_004",
-        "policy_relevant": true,
-        "stance": "DOVISH",
-        "score": -0.55,
-        "content_type": "PRESCRIPTIVE",
-        "directness": "DIRECT",
-        "temporal": "FORWARD_LOOKING",
-        "uncertainty": "UNCERTAIN",
-        "evidence": "In these conditions, when the policy stance is somewhat restrictive or close to neutral, policymakers should cut the federal funds rate to bring it into an accommodative position. At the July 2025 meeting, I dissented from the Committee's decision to maintain the target range for the federal funds rate at its then-current level and voted for a 25 basis point cut to support the labor market.",
-        "reasoning": "Bowman (first-person) explicitly recommends cutting the federal funds rate under fragile labor/low-inflation conditions and reports voting for a 25 bp cut, a conditional but clear inclination toward easing, warranting a moderate dovish signal.",
-        "policy_action": "EASING",
-        "signal_strength": "MODERATE",
-        "policy_relevance_score": 5,
-        "speaker_evidence_type": "DIRECT_QUOTE",
-        "policy_bearing_phrase": "policymakers should cut the federal funds rate",
-        "stance_driver": "LABOR",
-        "bis_stance": "MOSTLY_DOVISH",
-        "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
-      },
-      {
-        "segment_id": "michelle_bowman_aa965ffc6b_005",
-        "policy_relevant": true,
-        "stance": "NEUTRAL",
-        "score": 0.0,
-        "content_type": "MIXED",
-        "directness": "DIRECT",
-        "temporal": "MIXED",
-        "uncertainty": "UNCERTAIN",
-        "evidence": "With economic growth slowing, the unemployment rate continuing to rise, signs of a less dynamic labor market becoming clear, and inflation, excluding tariff effects, descending toward 2 percent, I preferred to begin the process of moving the policy stance from restrictive toward neutral. That action would have begun the process to proactively hedge against the risk of greater and more persistent damage to the labor market and weakening economic activity one meeting earlier. For the same reasons, at our September meeting last year, and again at our meetings in October and December, I supported the Committee's actions to lower the policy rate by a total of 75 basis points. If the existing monetary policy stance is accommodative or close to neutral, in my view, it would be appropriate to withdraw any remaining accommodation by raising the policy rate deliberately or even expeditiously.",
-        "reasoning": "Michelle Bowman (speaker) expresses conditional and mixed policy preferences—she supported moving from restrictive toward neutral and past rate cuts while also endorsing forceful tightening when inflation persists and supporting holding when restraint is appropriate—so the overall attributable signal is neutral.",
-        "policy_action": "HOLD",
-        "signal_strength": "NOT_APPLICABLE",
-        "policy_relevance_score": 5,
-        "speaker_evidence_type": "DIRECT_QUOTE",
-        "policy_bearing_phrase": "preferred to begin the process of moving the policy stance from restrictive toward neutral",
-        "stance_driver": "MULTIPLE",
-        "bis_stance": "NEUTRAL",
-        "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
-      },
-      {
-        "segment_id": "michelle_bowman_aa965ffc6b_006",
-        "policy_relevant": true,
-        "stance": "DOVISH",
-        "score": -0.35,
-        "content_type": "PRESCRIPTIVE",
-        "directness": "DIRECT",
-        "temporal": "FORWARD_LOOKING",
-        "uncertainty": "UNCERTAIN",
-        "evidence": "I will conclude this part of the discussion with an example of tension between our goals, with inflation somewhat elevated, a weak or weakening labor market, and a policy stance that is already accommodative. Under these conditions, balancing the maximum-employment and price-stability goals would call for holding the policy rate at an accommodative level.",
-        "reasoning": "Bowman argues that when inflation is elevated and labor weak while policy is accommodative, the Fed should hold the policy rate at an accommodative level, implying a mild-to-moderate dovish bias (hence MOSTLY_DOVISH with a mild signal).",
-        "policy_action": "HOLD",
-        "signal_strength": "MILD",
-        "policy_relevance_score": 5,
-        "speaker_evidence_type": "DIRECT_QUOTE",
-        "policy_bearing_phrase": "would call for holding the policy rate at an accommodative level",
-        "stance_driver": "INTEREST_RATES",
-        "bis_stance": "MOSTLY_DOVISH",
-        "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
-      },
-      {
-        "segment_id": "michelle_bowman_aa965ffc6b_007",
-        "policy_relevant": true,
-        "stance": "DOVISH",
-        "score": -0.4,
-        "content_type": "PRESCRIPTIVE",
-        "directness": "DIRECT",
-        "temporal": "FORWARD_LOOKING",
-        "uncertainty": "UNCERTAIN",
-        "evidence": "it is appropriate to look through temporarily elevated inflation readings largely due to higher energy prices, provided that we remain credible in our commitment to achieve our inflation goal and one-off tariff effects wane, as I expect. Reacting to temporarily elevated energy price inflation would add unwarranted policy restraint, weighing unnecessarily on economic activity and labor market conditions.",
-        "reasoning": "Michelle Bowman states it is appropriate to 'look through temporarily elevated inflation readings...' which implies resistance to adding policy restraint in response to temporary energy-driven inflation, a moderately dovish stance because she favors maintaining the current restrictive stance rather than tightening further.",
-        "policy_action": "MAINTAIN_RESTRAINT",
-        "signal_strength": "MODERATE",
-        "policy_relevance_score": 5,
-        "speaker_evidence_type": "DIRECT_QUOTE",
-        "policy_bearing_phrase": "look through temporarily elevated inflation readings largely due to higher energy prices",
-        "stance_driver": "INFLATION",
-        "bis_stance": "MOSTLY_DOVISH",
-        "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
-      },
-      {
-        "segment_id": "michelle_bowman_aa965ffc6b_008",
-        "policy_relevant": true,
-        "stance": "IRRELEVANT",
-        "score": 0.0,
-        "content_type": "IRRELEVANT",
-        "directness": "NOT_APPLICABLE",
-        "temporal": "NOT_APPLICABLE",
-        "uncertainty": "UNCERTAIN",
-        "evidence": "",
-        "reasoning": "The passage cites multiple Michelle Bowman speeches and statements but contains no quoted or paraphrased policy content, so no monetary-policy stance can be attributed to her from this text.",
-        "policy_action": "NOT_APPLICABLE",
-        "signal_strength": "NOT_APPLICABLE",
-        "policy_relevance_score": 4,
-        "speaker_evidence_type": "CONTEXT_ONLY",
-        "policy_bearing_phrase": "",
-        "stance_driver": "NOT_APPLICABLE",
-        "bis_stance": "NOT_APPLICABLE",
-        "evidence_confidence": "NOT_APPLICABLE",
-        "text_sufficiency": "INSUFFICIENT"
+        "text_sufficiency": "INSUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "michelle_bowman_abbccec061_001",
@@ -3792,7 +4357,9 @@
         "stance_driver": "NOT_APPLICABLE",
         "bis_stance": "NOT_APPLICABLE",
         "evidence_confidence": "NOT_APPLICABLE",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "michelle_bowman_abbccec061_002",
@@ -3813,7 +4380,9 @@
         "stance_driver": "NOT_APPLICABLE",
         "bis_stance": "NOT_APPLICABLE",
         "evidence_confidence": "NOT_APPLICABLE",
-        "text_sufficiency": "INSUFFICIENT"
+        "text_sufficiency": "INSUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "michelle_bowman_abbccec061_003",
@@ -3834,7 +4403,9 @@
         "stance_driver": "NOT_APPLICABLE",
         "bis_stance": "NOT_APPLICABLE",
         "evidence_confidence": "NOT_APPLICABLE",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "michelle_bowman_abbccec061_004",
@@ -3855,7 +4426,9 @@
         "stance_driver": "NOT_APPLICABLE",
         "bis_stance": "NOT_APPLICABLE",
         "evidence_confidence": "NOT_APPLICABLE",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "michelle_bowman_69f1884a2c_001",
@@ -3876,7 +4449,9 @@
         "stance_driver": "NOT_APPLICABLE",
         "bis_stance": "NOT_APPLICABLE",
         "evidence_confidence": "NOT_APPLICABLE",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "michelle_bowman_69f1884a2c_002",
@@ -3897,7 +4472,9 @@
         "stance_driver": "NOT_APPLICABLE",
         "bis_stance": "NOT_APPLICABLE",
         "evidence_confidence": "NOT_APPLICABLE",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "michelle_bowman_69f1884a2c_003",
@@ -3918,7 +4495,9 @@
         "stance_driver": "NOT_APPLICABLE",
         "bis_stance": "NOT_APPLICABLE",
         "evidence_confidence": "NOT_APPLICABLE",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "michelle_bowman_69f1884a2c_004",
@@ -3939,7 +4518,9 @@
         "stance_driver": "NOT_APPLICABLE",
         "bis_stance": "NOT_APPLICABLE",
         "evidence_confidence": "NOT_APPLICABLE",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "michelle_bowman_69f1884a2c_005",
@@ -3960,17 +4541,19 @@
         "stance_driver": "NOT_APPLICABLE",
         "bis_stance": "NOT_APPLICABLE",
         "evidence_confidence": "NOT_APPLICABLE",
-        "text_sufficiency": "INSUFFICIENT"
+        "text_sufficiency": "INSUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       }
     ]
   },
   {
     "member": "Philip Jefferson",
-    "score": 0.25,
+    "score": 0.24,
     "stance": "HAWKISH",
-    "policy_segment_count": 6,
+    "policy_segment_count": 5,
     "irrelevant_segment_count": 0,
-    "evidence_count": 5,
+    "evidence_count": 4,
     "latest_date": "2026-07-16T23:00:00+00:00",
     "segment_results": [
       {
@@ -3992,7 +4575,9 @@
         "stance_driver": "POLICY_FRAMEWORK",
         "bis_stance": "NOT_APPLICABLE",
         "evidence_confidence": "NOT_APPLICABLE",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "philip_jefferson_f2697dd25c_002",
@@ -4013,7 +4598,9 @@
         "stance_driver": "INFLATION",
         "bis_stance": "NEUTRAL",
         "evidence_confidence": "MEDIUM",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "philip_jefferson_f2697dd25c_003",
@@ -4034,7 +4621,9 @@
         "stance_driver": "INFLATION",
         "bis_stance": "MOSTLY_HAWKISH",
         "evidence_confidence": "MEDIUM",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "philip_jefferson_f2697dd25c_004",
@@ -4055,7 +4644,9 @@
         "stance_driver": "INFLATION",
         "bis_stance": "MOSTLY_HAWKISH",
         "evidence_confidence": "MEDIUM",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "philip_jefferson_f2697dd25c_005",
@@ -4076,39 +4667,20 @@
         "stance_driver": "INFLATION",
         "bis_stance": "MOSTLY_HAWKISH",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
-      },
-      {
-        "segment_id": "philip_jefferson_08c5747571_001",
-        "policy_relevant": true,
-        "stance": "HAWKISH",
-        "score": 0.3,
-        "content_type": "PRESCRIPTIVE",
-        "directness": "DIRECT",
-        "temporal": "FORWARD_LOOKING",
-        "uncertainty": "UNCERTAIN",
-        "evidence": "I am firmly committed to returning inflation to the Federal Open Market Committee's (FOMC) 2 percent target, aligned with our dual-mandate objectives of price stability and maximum employment given to us by Congress. At our last meeting, in late April, the FOMC decided to maintain the target range for the federal funds rate at 3-1/2 to 3-3/4 percent. I believe this policy stance leaves us well positioned to respond to economic developments based on the incoming data, the evolving outlook, and the balance of risks.",
-        "reasoning": "Jefferson states a firm commitment to returning inflation to 2% and endorses the current maintained policy stance, implying a moderate hawkish tilt toward delaying easing rather than cutting rates, with a mild signal because he supports the status quo without calling for immediate tightening.",
-        "policy_action": "DELAY_EASING",
-        "signal_strength": "MILD",
-        "policy_relevance_score": 5,
-        "speaker_evidence_type": "DIRECT_QUOTE",
-        "policy_bearing_phrase": "I am firmly committed to returning inflation to the Federal Open Market Committee's (FOMC) 2 percent target",
-        "stance_driver": "INFLATION",
-        "bis_stance": "MOSTLY_HAWKISH",
-        "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       }
     ]
   },
   {
     "member": "Susan Collins",
-    "score": 0.0,
-    "stance": "NEUTRAL",
-    "policy_segment_count": 3,
+    "score": 0.26,
+    "stance": "HAWKISH",
+    "policy_segment_count": 5,
     "irrelevant_segment_count": 1,
-    "evidence_count": 1,
-    "latest_date": "2026-05-13T00:00:00+00:00",
+    "evidence_count": 3,
+    "latest_date": "2026-08-25T00:00:00+00:00",
     "segment_results": [
       {
         "segment_id": "susan_collins_8456b1868f_001",
@@ -4129,7 +4701,9 @@
         "stance_driver": "INFLATION",
         "bis_stance": "NEUTRAL",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "susan_collins_715fe778ec_001",
@@ -4150,7 +4724,9 @@
         "stance_driver": "NOT_APPLICABLE",
         "bis_stance": "NOT_APPLICABLE",
         "evidence_confidence": "NOT_APPLICABLE",
-        "text_sufficiency": "INSUFFICIENT"
+        "text_sufficiency": "INSUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "susan_collins_38bf14b486_001",
@@ -4171,7 +4747,9 @@
         "stance_driver": "NOT_APPLICABLE",
         "bis_stance": "NOT_APPLICABLE",
         "evidence_confidence": "NOT_APPLICABLE",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "susan_collins_3f94e6b6b0_001",
@@ -4192,7 +4770,55 @@
         "stance_driver": "NOT_APPLICABLE",
         "bis_stance": "NOT_APPLICABLE",
         "evidence_confidence": "NOT_APPLICABLE",
-        "text_sufficiency": "INSUFFICIENT"
+        "text_sufficiency": "INSUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
+      },
+      {
+        "segment_id": "susan_collins_364c804b8d_001",
+        "policy_relevant": true,
+        "stance": "HAWKISH",
+        "score": 0.5,
+        "content_type": "MIXED",
+        "directness": "DIRECT",
+        "temporal": "FORWARD_LOOKING",
+        "uncertainty": "UNCERTAIN",
+        "evidence": "Against this stable labor market backdrop, I am particularly focused on inflation, which has been running above the FOMC's 2 percent target for over five years. ... Second, mildly restrictive monetary policy, together with the recent rise in longer-term interest rates, should mitigate, at least to some extent, a possible re-acceleration in household and business spending.",
+        "reasoning": "Susan Collins expresses concern that inflation remains too high and endorses a mildly restrictive policy stance (\"mildly restrictive monetary policy\"), implying maintenance of restraint rather than easing, with a mild signal strength because she does not call for further tightening.",
+        "policy_action": "MAINTAIN_RESTRAINT",
+        "signal_strength": "MILD",
+        "policy_relevance_score": 5,
+        "speaker_evidence_type": "DIRECT_QUOTE",
+        "policy_bearing_phrase": "mildly restrictive monetary policy",
+        "stance_driver": "INFLATION",
+        "bis_stance": "MOSTLY_HAWKISH",
+        "evidence_confidence": "HIGH",
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
+      },
+      {
+        "segment_id": "susan_collins_364c804b8d_002",
+        "policy_relevant": true,
+        "stance": "HAWKISH",
+        "score": 0.8,
+        "content_type": "PRESCRIPTIVE",
+        "directness": "DIRECT",
+        "temporal": "FORWARD_LOOKING",
+        "uncertainty": "UNCERTAIN",
+        "evidence": "I was comfortable with July’s FOMC decision to maintain the current target range for the federal funds rate. For now, this mildly restrictive policy stance should leave the Committee well positioned to address evolving economic conditions and return inflation to target in a reasonable amount of time. ... Should evidence of sustained inflation progress not materialize, I believe it will be appropriate to tighten policy soon to ensure we deliver price stability in a reasonable time frame.",
+        "reasoning": "Susan Collins states she supported holding rates but explicitly says \"it will be appropriate to tighten policy soon\" if inflation progress stalls, which implies a forward-looking hawkish inclination of moderate strength.",
+        "policy_action": "TIGHTENING",
+        "signal_strength": "MODERATE",
+        "policy_relevance_score": 5,
+        "speaker_evidence_type": "DIRECT_QUOTE",
+        "policy_bearing_phrase": "it will be appropriate to tighten policy soon",
+        "stance_driver": "INFLATION",
+        "bis_stance": "HAWKISH",
+        "evidence_confidence": "HIGH",
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       }
     ]
   },
@@ -4224,7 +4850,9 @@
         "stance_driver": "INFLATION",
         "bis_stance": "MOSTLY_HAWKISH",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "thomas_barkin_1145e613a8_002",
@@ -4245,7 +4873,9 @@
         "stance_driver": "NOT_APPLICABLE",
         "bis_stance": "NEUTRAL",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "thomas_barkin_1145e613a8_003",
@@ -4266,7 +4896,9 @@
         "stance_driver": "INFLATION",
         "bis_stance": "NEUTRAL",
         "evidence_confidence": "MEDIUM",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "thomas_barkin_1145e613a8_004",
@@ -4287,7 +4919,9 @@
         "stance_driver": "GROWTH",
         "bis_stance": "MOSTLY_DOVISH",
         "evidence_confidence": "MEDIUM",
-        "text_sufficiency": "PARTIAL"
+        "text_sufficiency": "PARTIAL",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "thomas_barkin_b3e2dceeba_001",
@@ -4308,7 +4942,9 @@
         "stance_driver": "INFLATION",
         "bis_stance": "NEUTRAL",
         "evidence_confidence": "MEDIUM",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "thomas_barkin_b3e2dceeba_002",
@@ -4329,7 +4965,9 @@
         "stance_driver": "INFLATION",
         "bis_stance": "NEUTRAL",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "thomas_barkin_b3e2dceeba_003",
@@ -4350,7 +4988,9 @@
         "stance_driver": "MULTIPLE",
         "bis_stance": "MOSTLY_HAWKISH",
         "evidence_confidence": "MEDIUM",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "thomas_barkin_e83eedea2b_001",
@@ -4371,7 +5011,9 @@
         "stance_driver": "INTEREST_RATES",
         "bis_stance": "MOSTLY_HAWKISH",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "thomas_barkin_e83eedea2b_002",
@@ -4392,7 +5034,9 @@
         "stance_driver": "MULTIPLE",
         "bis_stance": "NEUTRAL",
         "evidence_confidence": "MEDIUM",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "thomas_barkin_e83eedea2b_003",
@@ -4413,7 +5057,9 @@
         "stance_driver": "MULTIPLE",
         "bis_stance": "NEUTRAL",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "thomas_barkin_61a4c0e542_001",
@@ -4434,7 +5080,9 @@
         "stance_driver": "INFLATION",
         "bis_stance": "MOSTLY_DOVISH",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "thomas_barkin_61a4c0e542_002",
@@ -4455,7 +5103,9 @@
         "stance_driver": "INFLATION",
         "bis_stance": "MOSTLY_HAWKISH",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "thomas_barkin_61a4c0e542_003",
@@ -4476,7 +5126,9 @@
         "stance_driver": "LABOR",
         "bis_stance": "MOSTLY_DOVISH",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "thomas_barkin_276124ade6_001",
@@ -4497,7 +5149,9 @@
         "stance_driver": "MULTIPLE",
         "bis_stance": "NEUTRAL",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "thomas_barkin_276124ade6_002",
@@ -4518,7 +5172,9 @@
         "stance_driver": "POLICY_FRAMEWORK",
         "bis_stance": "NEUTRAL",
         "evidence_confidence": "HIGH",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       },
       {
         "segment_id": "thomas_barkin_276124ade6_003",
@@ -4539,7 +5195,9 @@
         "stance_driver": "LABOR",
         "bis_stance": "NEUTRAL",
         "evidence_confidence": "MEDIUM",
-        "text_sufficiency": "SUFFICIENT"
+        "text_sufficiency": "SUFFICIENT",
+        "macro_calibrated": false,
+        "macro_background": ""
       }
     ]
   }

@@ -1,8 +1,8 @@
 {
   "source": "Reuters",
   "source_url": "https://graphics.thomsonreuters.com/testfiles/2025/1wtMSweut5YR/",
-  "reuters_updated_at": "2026-08-11T15:30:00.000Z",
-  "collected_at": "2026-08-24T01:46:15.712807+00:00",
+  "reuters_updated_at": "2026-09-01T14:30:00.000Z",
+  "collected_at": "2026-09-03T23:53:14.954949+00:00",
   "member_count": 18,
   "members": {
     "Michelle Bowman": {
@@ -41,9 +41,9 @@
       "stance": "CENTRIST",
       "title": "Governor",
       "voting_status": "Permanent Voter",
-      "quote": "“I am particularly concerned that yet another price shock could increase longer-term inflation expectations.”",
-      "quote_date": "March 26, 2026",
-      "article_url": "https://www.reuters.com/business/energy/feds-faith-anchored-inflation-expectations-may-be-coming-under-stress-2026-03-30/"
+      "quote": "“At our September FOMC meeting, we will again discuss the outlook for inflation and our policy stance… If inflation appears not to be moderating sufficiently, then I think we should act decisively to raise rates..”",
+      "quote_date": "September 1, 2026",
+      "article_url": "https://www.reuters.com/business/feds-barr-open-rate-hike-if-inflation-does-not-moderate-2026-09-01/"
     },
     "Chris Waller": {
       "stance": "CENTRIST",
@@ -73,9 +73,9 @@
       "stance": "HAWKISH",
       "title": "Chairman",
       "voting_status": "Permanent Voter",
-      "quote": "“The path to central bank heaven requires delivering on our remit. These days that means delivering on price stability. I wouldn't measure that path in 42 days, or any one particular meeting.”",
-      "quote_date": "July 29, 2026",
-      "article_url": "https://www.reuters.com/markets/us/uncertainty-creeps-into-feds-rate-decision-warsh-keeps-his-cards-hidden-2026-07-29/"
+      "quote": "“We must be confident that underlying inflation is moving to our objective, clearly and at sufficient speed. Otherwise, ‌we have work to do.”",
+      "quote_date": "August 28, 2026",
+      "article_url": "https://www.reuters.com/business/will-warshs-jackson-hole-speech-be-course-correction-or-detour-2026-08-28/"
     },
     "Lisa Cook": {
       "stance": "HAWKISH",
@@ -105,9 +105,9 @@
       "stance": "HAWK",
       "title": "Minneapolis Fed President",
       "voting_status": "2026 Voter",
-      "quote": "“My goal is not to slow the economy down….The goal is to ⁠get inflation ​back down to our 2% target.”",
-      "quote_date": "August 5, 2026",
-      "article_url": "https://www.reuters.com/business/feds-kashkari-communicating-feds-reaction-function-is-helpful-2026-08-05/"
+      "quote": "“The conflict with Iran is now a big driver of what's happening on inflation…the longer that goes on, the less confident I am that inflation is going to return to target.”",
+      "quote_date": "August 23, 2026",
+      "article_url": "https://www.youtube.com/watch?v=6udon6k3Aic"
     },
     "Lorie Logan": {
       "stance": "HAWK",
@@ -121,33 +121,33 @@
       "stance": "HAWK",
       "title": "Cleveland Fed President",
       "voting_status": "2026 Voter",
-      "quote": "“One 25-basis-point move probably doesn't do a whole lot for the economy, so it's probably some number of movements, but I don't want to prejudge what that number is going to be.”",
-      "quote_date": "August 10, 2026",
-      "article_url": "https://finance.yahoo.com/economy/policy/article/cleveland-feds-hammack-it-will-take-more-than-one-interest-rate-hike-to-bring-down-inflation-173530729.html?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAAM4x9ASnURdHZvDVt2Z3jrpJ50xHsKwJlGk5gIUXbS6W1-baA_0ZkQpEWJFct99QemuGYJugUCUE1prpgfjHbVcGNKQfHlbm__s7s2e8-dI7QCGNmJJm2cDyxX2mirVjYrbpsjyYh0ejkS0yndTWPEyApdGBoqGdITPptJVZZc0U"
+      "quote": "“I don't want to prejudge anything, but I believe now is the time to act.”",
+      "quote_date": "August 27, 2026",
+      "article_url": "https://www.reuters.com/business/jackson-hole-conference-kicks-off-two-fed-officials-warn-about-inflation-2026-08-27/"
     },
     "Austan Goolsbee": {
       "stance": "HAWK",
       "title": "Chicago Fed President",
       "voting_status": "2027 Voter",
-      "quote": "\"I'm heartened by this CPI today but we need a lot more than one month to think that it is going well.”",
-      "quote_date": "July 14, 2026",
-      "article_url": "https://www.reuters.com/world/top-fed-officials-embrace-cooler-inflation-reading-clamor-more-2026-07-14/"
+      "quote": "\"TEverybody should be on edge….We hear ‌a lot ⁠about affordability and we better be mindful because if inflation starts going up again, it's very hard to get rid of it.”",
+      "quote_date": "August 27, 2026",
+      "article_url": "https://www.reuters.com/business/jackson-hole-conference-kicks-off-two-fed-officials-warn-about-inflation-2026-08-27/"
     },
     "Susan Collins": {
       "stance": "HAWK",
       "title": "Boston Fed President",
       "voting_status": "2028 Voter",
-      "quote": "“While it is not in my most likely outlook, I could envision a scenario in which some policy tightening is needed to ensure that inflation returns durably to 2% in a timely manner.”",
-      "quote_date": "May 13, 2026",
-      "article_url": "https://www.reuters.com/markets/us/feds-collins-says-rate-hikes-may-be-needed-quell-inflation-2026-05-13/"
+      "quote": "“My modal scenario does continue to have that gradual disinflation.”",
+      "quote_date": "August 27, 2026",
+      "article_url": "https://www.reuters.com/business/feds-collins-says-latest-us-inflation-readings-are-mixed-2026-08-27/"
     },
     "Jeffrey Schmid": {
       "stance": "HAWK",
       "title": "Kansas City Fed President",
       "voting_status": "2028 Voter",
-      "quote": "“I believe that bringing inflation down to the Fed’s 2% objective will require tighter policy.”",
-      "quote_date": "August 4, 2026",
-      "article_url": "https://www.reuters.com/world/feds-schmid-calls-tighter-monetary-policy-tamp-down-too-high-inflation-2026-08-05/"
+      "quote": "“I don't know what we're restricting currently with the rate policy that we're at today.”",
+      "quote_date": "August 27, 2026",
+      "article_url": "https://www.reuters.com/business/jackson-hole-conference-kicks-off-two-fed-officials-warn-about-inflation-2026-08-27/"
     }
   }
 }
